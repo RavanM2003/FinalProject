@@ -1,0 +1,264 @@
+.contact-box {
+  background-color: #fff;
+  position: relative;
+  margin: 3rem auto;
+  width: 60%;
+}
+.contact-box .box-info {
+  position: absolute;
+  background-color: #3498db;
+  padding: 2rem 1rem;
+  left: -22%;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  min-height: 350px;
+}
+.contact-box .box-info .header {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+.contact-box .box-info .info-link {
+  width: 280px;
+  display: flex;
+  margin: 2rem 0;
+  font-size: 18px;
+}
+.contact-box .box-info .info-link i {
+  font-size: 21px;
+  margin-right: 0.5rem;
+}
+.contact-box .box-info .info-link:last-child {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-box .box-info .info-link:last-child p {
+  margin-right: 0.5rem;
+}
+.contact-box .box-info .info-link:last-child p:last-child {
+  margin-left: 1.8rem;
+  margin-top: 0.3rem;
+}
+.contact-box .box-info .social-links {
+  margin-top: 2rem;
+  text-align: center;
+}
+.contact-box .box-info .social-links a {
+  color: #fff;
+  font-size: 25px;
+  margin-right: 0.7rem;
+}
+.contact-box .box-form {
+  padding: 2rem 1rem 1rem 10rem;
+}
+.contact-box .box-form .header h2 {
+  font-size: 50px;
+  color: #3498db;
+}
+.contact-box .box-form form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-box .box-form form div {
+  width: 46%;
+  margin: 1rem auto 1rem 0;
+  position: relative;
+}
+.contact-box .box-form form div input {
+  font-size: 18px;
+  color: #3498db;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #3498db;
+}
+.contact-box .box-form form div input:focus + label {
+  top: -15px;
+}
+.contact-box .box-form form div input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+.contact-box .box-form form div label {
+  position: absolute;
+  top: 10px;
+  color: #3498db;
+  transition: 0.5s;
+}
+.contact-box .box-form form .message {
+  width: 96%;
+}
+.contact-box .box-form form .message textarea {
+  width: 100%;
+  height: 100px;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem;
+  border: 1px solid #3498db;
+  resize: none;
+  font-size: 18px;
+  color: #3498db;
+}
+.contact-box .box-form form .message textarea::-moz-placeholder {
+  font-size: 18px;
+  color: #3498db;
+}
+.contact-box .box-form form .message textarea::placeholder {
+  font-size: 18px;
+  color: #3498db;
+}
+.contact-box .box-form form .button {
+  width: 100%;
+}
+.contact-box .box-form form .button button {
+  background-color: #fff;
+  border: 1px solid #3498db;
+  color: #3498db;
+  padding: 0.5rem 2rem;
+  font-size: 18px;
+  transition: 0.5s;
+}
+.contact-box .box-form form .button button:hover {
+  color: #fff;
+  background-color: #3498db;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .contact-box {
+    background-color: #fff;
+    position: relative;
+    margin: 2rem 0 2rem 7rem;
+    width: 65%;
+  }
+  .contact-box .box-info {
+    position: absolute;
+    background-color: #3498db;
+    padding: 0.5rem;
+    left: -38%;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    min-height: 350px;
+    width: 150px;
+    text-align: center;
+  }
+  .contact-box .box-info .header {
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }
+  .contact-box .box-info .info-link {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact-box .box-info .info-link i {
+    width: 100%;
+    font-size: 16px;
+    margin-right: 0;
+  }
+  .contact-box .box-info .info-link:last-child {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact-box .box-info .info-link:last-child p {
+    margin-right: 0;
+  }
+  .contact-box .box-info .info-link:last-child p:last-child {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .contact-box .box-info .social-links {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .contact-box .box-info .social-links a {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 0.7rem;
+  }
+  .contact-box .box-form {
+    padding: 1rem 0.1rem 0.1rem 5rem;
+  }
+  .contact-box .box-form .header h2 {
+    font-size: 22px;
+    color: #3498db;
+    margin-bottom: 1rem;
+  }
+  .contact-box .box-form form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact-box .box-form form div {
+    width: 88%;
+    margin: 0.5rem 0;
+    position: relative;
+  }
+  .contact-box .box-form form div input {
+    font-size: 14px;
+    color: #3498db;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid #3498db;
+  }
+  .contact-box .box-form form div input:focus + label {
+    top: -15px;
+  }
+  .contact-box .box-form form div input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  }
+  .contact-box .box-form form div label {
+    position: absolute;
+    top: 10px;
+    color: #3498db;
+    transition: 0.5s;
+  }
+  .contact-box .box-form form .message {
+    width: 88%;
+  }
+  .contact-box .box-form form .message textarea {
+    width: 100%;
+    height: 100px;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem;
+    border: 1px solid #3498db;
+    resize: none;
+    font-size: 18px;
+    color: #3498db;
+  }
+  .contact-box .box-form form .message textarea::-moz-placeholder {
+    font-size: 18px;
+    color: #3498db;
+  }
+  .contact-box .box-form form .message textarea::placeholder {
+    font-size: 18px;
+    color: #3498db;
+  }
+  .contact-box .box-form form .button {
+    width: 100%;
+  }
+  .contact-box .box-form form .button button {
+    background-color: #fff;
+    border: 1px solid #3498db;
+    color: #3498db;
+    padding: 0.5rem 2rem;
+    font-size: 18px;
+    transition: 0.5s;
+  }
+  .contact-box .box-form form .button button:hover {
+    color: #fff;
+    background-color: #3498db;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=contact.css.map */

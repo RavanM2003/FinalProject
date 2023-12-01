@@ -97,13 +97,9 @@ body{
         .product-detail-price{
             margin: .5rem 0;
             p{
-                font-size: 35px;
-                color: #82b4d6;
-                span{
                     font-size: 40px;
                     text-decoration: none;
                     color: #3498db;
-                }
             }
         }
         .product-detail-review{
@@ -152,7 +148,7 @@ body{
                     }
                 }
                 input[type=text]{
-                    width: 50px;
+                    width: 200px;
                 }
             }
         }
@@ -177,10 +173,23 @@ body{
     }
 }
 .comments{
+    hr{
+        width: 98%;
+        margin: .5rem auto;
+        height: 2px;
+        border: 0;
+        background-color: #3498db;
+    }
     .header{
         font-size: 25px;
         color: #3498db;
         padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        i{
+            margin: 0 .5rem;
+            cursor: pointer;
+        }
     }
     .comment{
         margin: 2rem 0;

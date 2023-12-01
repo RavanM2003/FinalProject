@@ -67,17 +67,17 @@
             <div class="product">
                 <div class="product-images">
                     <div class="main-image">
-                        <img src="./assets/images/BestOffice High-Back Gaming Chair.jpg" alt="">
+                        <img src="./assets/images/BestOffice_High-Back_Gaming_Chair.png" alt="">
                     </div>
                     <div class="other-images">
                         <div class="other-image">
-                            <img src="./assets/images/BestOffice High-Back Gaming Chair.jpg" alt="">
+                            <img src="./assets/images/BestOffice_High-Back_Gaming_Chair.png" alt="">
                         </div>
                         <div class="other-image">
-                            <img src="./assets/images/Corsair HS65 SURROUND Gaming Headset.jpg" alt="">
+                            <img src="./assets/images/Corsair_HS65_SURROUND_Gaming_Headset.png" alt="">
                         </div>
                         <div class="other-image">
-                            <img src="./assets/images/Microsoft Xbox One S 1TB.jpg" alt="">
+                            <img src="./assets/images/Microsoft_Xbox_One_S_1TB.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                         <h3>Acer Nitro 5 AN515-58-57Y8 Gaming Laptop</h3>
                     </div>
                     <div class="product-detail-price">
-                        <p>$70 <span>/ $65 </span></p>
+                        <p >$<span id="productPrice">70</span></p>
                     </div>
                     <div class="product-detail-review">
                         <a href="#comment">3 Comments</a>
@@ -106,8 +106,8 @@
                     </div>
                     <div class="product-details-count">
                         <form action="">
-                            <input type="number" min="1" value="1">
-                            <input type="text" name="" id="" value="$65" disabled>
+                            <input id="count" type="number" min="1" value="1">
+                            <input id="price" type="text" name="" id="" value="$70" disabled>
                         </form>
                     </div>
                     <div class="product-details-addcart">
@@ -120,67 +120,90 @@
           <div class="comments" id="comment">
             <div class="header">
               <h3>3 Comments</h3>
+              <i class="fa-solid fa-caret-down"></i>
+              <i class="fa-solid fa-caret-up" style="display: none;"></i>
             </div>
             <hr>
-            <div class="comment">
-              <div class="message">
-                <div class="message-detail">
-                  <p>11:23 AM / 23 Oct 2023</p>
-                  <i class="fa-solid fa-ellipsis"></i>
-                  <div class="edit" style="display: none;">
-                    <a href=""><i class="fa-solid fa-trash"></i> Delete Comment</a>
+            <div class="commnetdiv" style="display: none;">
+              <div class="comment">
+                <div class="message">
+                  <div class="message-detail">
+                    <p>11:23 AM / 23 Oct 2023</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <div class="edit" style="display: none;">
+                      <a href=""><i class="fa-solid fa-trash"></i> Delete Comment</a>
+                    </div>
+                  </div>
+                  <div class="message-body">
+                    <p>Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?</p>
+                  </div>
+                  <div class="author">
+                    <img src="./assets/images/worker-1.jpg" alt="">
+                    <p>Akif Islamzade</p>
                   </div>
                 </div>
-                <div class="message-body">
-                  <p>Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?</p>
-                </div>
-                <div class="author">
-                  <img src="./assets/images/worker-1.jpg" alt="">
-                  <p>Akif Islamzade</p>
-                </div>
               </div>
-            </div>
-            <div class="comment">
-              <div class="message">
-                <div class="message-detail">
-                  <p>11:23 AM / 23 Oct 2023</p>
-                  <i class="fa-solid fa-ellipsis"></i>
-                  <div class="edit" style="display: none;">
-                    <a href=""><i class="fa-solid fa-trash"></i> Delete Comment</a>
+              <div class="comment">
+                <div class="message">
+                  <div class="message-detail">
+                    <p>11:23 AM / 23 Oct 2023</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <div class="edit" style="display: none;">
+                      <a href=""><i class="fa-solid fa-trash"></i> Delete Comment</a>
+                    </div>
+                  </div>
+                  <div class="message-body">
+                    <p>Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?</p>
+                  </div>
+                  <div class="author">
+                    <img src="./assets/images/worker-1.jpg" alt="">
+                    <p>Akif Islamzade</p>
                   </div>
                 </div>
-                <div class="message-body">
-                  <p>Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?</p>
-                </div>
-                <div class="author">
-                  <img src="./assets/images/worker-1.jpg" alt="">
-                  <p>Akif Islamzade</p>
-                </div>
               </div>
-            </div>
-            <div class="comment">
-              <div class="message">
-                <div class="message-detail">
-                  <p>11:23 AM / 23 Oct 2023</p>
-                  <i class="fa-solid fa-ellipsis"></i>
-                  <div class="edit" style="display: none;">
-                    <a href=""><i class="fa-solid fa-trash"></i> Delete Comment</a>
+              <div class="comment">
+                <div class="message">
+                  <div class="message-detail">
+                    <p>11:23 AM / 23 Oct 2023</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <div class="edit" style="display: none;">
+                      <a href=""><i class="fa-solid fa-trash"></i> Delete Comment</a>
+                    </div>
+                  </div>
+                  <div class="message-body">
+                    <p>Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?</p>
+                  </div>
+                  <div class="author">
+                    <img src="./assets/images/worker-1.jpg" alt="">
+                    <p>Akif Islamzade</p>
                   </div>
                 </div>
-                <div class="message-body">
-                  <p>Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?Hello, how are you?</p>
-                </div>
-                <div class="author">
-                  <img src="./assets/images/worker-1.jpg" alt="">
-                  <p>Akif Islamzade</p>
-                </div>
               </div>
+              <h1>Add New Comment</h1>
+              <form action="">
+                <textarea></textarea>
+                <button type="submit">Send</button>
+              </form>
             </div>
-            <h1>Add New Comment</h1>
-            <form action="">
-              <textarea></textarea>
-              <button type="submit">Send</button>
-            </form>
+          </div>
+        </section>
+        <section class="sponsore">
+          <div class="sponsores">
+            <div class="sponsore">
+              <img src="/assets/images/Acer.png" alt="">
+            </div>
+            <div class="sponsore">
+              <img src="/assets/images/asus.png" alt="">
+            </div>
+            <div class="sponsore">
+              <img src="/assets/images/Nintendo.png" alt="">
+            </div>
+            <div class="sponsore">
+              <img src="/assets/images/xbox.png" alt="">
+            </div>
+            <div class="sponsore">
+              <img src="/assets/images/playstation.png" alt="">
+            </div>
           </div>
         </section>
     </main>

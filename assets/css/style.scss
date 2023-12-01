@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 ul,ol{
     list-style: none;
@@ -530,6 +531,12 @@ body{
         }
       }
       .worker-location{
+        margin-bottom: 1rem;
+        P{
+          color: #626262;
+        }
+      }
+      .worker-number{
         margin-bottom: 1rem;
         P{
           color: #626262;

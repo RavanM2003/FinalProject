@@ -35,10 +35,8 @@ var countProduct = document.querySelector("#count")
 var priceProduct = document.querySelector("#price")
 var realPrice = document.querySelector("#productPrice")
 countProduct.addEventListener("mouseup",function(e){
-    console.log(realPrice.innerHTML);
     priceProduct.value = `$${realPrice.innerHTML * e.target.value}`
 })
 countProduct.addEventListener("keyup",function(e){
-    console.log(realPrice.innerHTML);
     priceProduct.value = `$${realPrice.innerHTML * e.target.value}`
 })

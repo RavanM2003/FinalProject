@@ -1,0 +1,89 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 3rem 0;
+}
+.card .cards {
+  width: 69%;
+  padding: 0 1rem;
+}
+.card .cards .card-header {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.card .cards .card-header .header-text {
+  display: flex;
+  align-items: center;
+}
+.card .cards .card-header .header-text h3 {
+  font-size: 30px;
+  color: #3498db;
+  margin-right: 0.5rem;
+}
+.card .cards .card-header .header-text span {
+  font-size: 18px;
+}
+.card .cards .card-header .header-button {
+  margin: 1rem 0;
+}
+.card .cards .card-header .header-button a {
+  color: #3498db;
+  border: 1px solid #3498db;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+}
+.card .cards .card-products .card-product {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+}
+.card .cards .card-products .card-product .card-image {
+  width: 25%;
+}
+.card .cards .card-products .card-product .card-image img {
+  width: 100%;
+}
+.card .cards .card-products .card-product .card-name {
+  width: 55%;
+  font-size: 20px;
+  color: #3498db;
+}
+.card .cards .card-products .card-product .card-count {
+  width: 20%;
+}
+.card .cards .card-products .card-product .card-count form i {
+  color: #3498db;
+  font-size: 25px;
+  cursor: pointer;
+}
+.card .cards .card-products .card-product .card-count form input {
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #3498db;
+  width: 50px;
+  padding: 0.5rem;
+  font-size: 20px;
+  color: #3498db;
+}
+.card .cards .card-products .card-product .card-count form input:focus {
+  border: 1px solid #3498db;
+}
+.card .cards .card-products .card-product .card-price {
+  width: 15%;
+  font-size: 20px;
+}
+.card .cards .card-products .card-product .delete {
+  width: 5%;
+  font-size: 20px;
+  color: red;
+}
+.card .card-prices {
+  width: 29%;
+  padding: 0 1rem;
+}/*# sourceMappingURL=card.css.map */

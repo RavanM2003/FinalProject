@@ -1,0 +1,93 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3rem 0;
+    .cards{
+        width: 69%;
+        padding: 0 1rem;
+        .card-header{
+            padding: .5rem 1rem;
+            background-color: #fff;
+            border-radius: 10px;
+            .header-text{
+                h3{
+                    font-size: 30px;
+                    color: #3498db;
+                    margin-right: .5rem;
+                }
+                span{
+                    font-size: 18px;
+                }
+                display: flex;
+                align-items: center;
+            }
+            .header-button{
+                margin: 1rem 0;
+                a{
+                    color: #3498db;
+                    border: 1px solid #3498db;
+                    padding: .5rem 1rem;
+                    border-radius: 30px;
+                }
+            }
+        }
+        .card-products{
+            .card-product{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                background-color: #fff;
+                padding: .5rem 1rem;
+                margin: .5rem 0;
+                border-radius: 10px;
+                .card-image{
+                    width: 25%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .card-name{
+                    width: 55%;
+                    font-size: 20px;
+                    color: #3498db;
+                }
+                .card-count{
+                    width: 20%;
+                    form{
+                        i{
+                            color: #3498db;
+                            font-size: 25px;
+                            cursor: pointer;
+                        }
+                        input{
+                            outline: 0;
+                            border: 0;
+                            border-bottom: 1px solid #3498db;
+                            width: 50px;
+                            padding: .5rem;
+                            font-size: 20px;
+                            color: #3498db;
+                            &:focus{
+                                border: 1px solid #3498db;
+                            }
+                        }
+                    }
+                }
+                .card-price{
+                    width: 15%;
+                    font-size: 20px;
+                }
+                .delete{
+                    width: 5%;
+                    font-size: 20px;
+                    color: red;
+                }
+            }
+        }
+    }
+    .card-prices{
+        width: 29%;
+        padding: 0 1rem;
+    }
+}

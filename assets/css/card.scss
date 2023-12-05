@@ -44,7 +44,7 @@
                 .card-image{
                     width: 25%;
                     img{
-                        width: 100%;
+                        width: 40%;
                     }
                 }
                 .card-name{
@@ -88,6 +88,178 @@
     }
     .card-prices{
         width: 29%;
-        padding: 0 1rem;
+        padding: 1rem;
+        background-color: #fff;
+        height:180px;
+        border-radius: 10px;
+        margin: 0 .5rem;
+        .total-price,.discount-price,.final-price{
+            display: flex;
+            justify-content: space-between;
+            margin: .5rem 0;
+            padding: 0 .5rem;
+            p{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .key{
+                font-size: 18px;
+                color: #3498db;
+                font-weight: normal;
+            }
+        }
+        button{
+            width: 100%;
+            margin: 1rem .5rem;
+            padding: .5rem 0;
+            font-size: 20px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            color: #3498db;
+            background-color: #fff;
+            border: 1px solid #3498db;
+            border-radius: 30px;
+            transition: .5s;
+            &:hover{
+                background-color: #3498db;
+                color: #fff;
+            }
+        }
     }
+}
+@media (max-width: 500px){
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem 0;
+    .cards{
+        width:75%;
+        overflow: hidden;
+        .card-header{
+            padding: .3rem .5rem;
+            background-color: #fff;
+            border-radius: 10px;
+            .header-text{
+                h3{
+                    font-size: 15px;
+                    color: #3498db;
+                    margin-right: .5rem;
+                }
+                span{
+                    font-size: 12px;
+                }
+                display: flex;
+                align-items: center;
+            }
+            .header-button{
+                margin: .5rem 0;
+                a{
+                    color: #3498db;
+                    border: 1px solid #3498db;
+                    padding: .2rem .5rem;
+                    font-size: 10px;
+                    border-radius: 30px;
+                }
+            }
+        }
+        .card-products{
+            .card-product{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                background-color: #fff;
+                padding: .5rem 1rem;
+                margin: .5rem 0;
+                border-radius: 10px;
+                .card-image{
+                    width: 10%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .card-name{
+                    width: 50%;
+                    font-size: 8px;
+                    color: #3498db;
+                }
+                .card-count{
+                    width: 30%;
+                    form{
+                        i{
+                            color: #3498db;
+                            font-size: 8px;
+                            cursor: pointer;
+                        }
+                        input{
+                            outline: 0;
+                            border: 0;
+                            border-bottom: 1px solid #3498db;
+                            width: 10px;
+                            padding: .5rem;
+                            font-size: 10px;
+                            color: #3498db;
+                            &:focus{
+                                border: 1px solid #3498db;
+                            }
+                        }
+                    }
+                }
+                .card-price{
+                    width: 15%;
+                    font-size: 10px;
+                }
+                .delete{
+                    width: 5%;
+                    font-size: 10px;
+                    color: red;
+                }
+            }
+        }
+    }
+    .card-prices{
+        width: 20%;
+        padding: .5rem;
+        background-color: #fff;
+        height:200px;
+        border-radius: 10px;
+        margin: 0 .5rem 0 0;
+        overflow: hidden;
+        .total-price,.discount-price,.final-price{
+            display: flex;
+            flex-direction: column;
+            margin: .5rem 0;
+            padding: 0 .5rem;
+            p{
+                font-size: 10px;
+                margin: .2rem 0;
+                font-weight: bold;
+            }
+            .key{
+                font-size: 12px;
+                color: #3498db;
+                font-weight: normal;
+            }
+        }
+        button{
+            width: 100%;
+            margin: .5rem .1rem;
+            padding: .1rem 0;
+            font-size: 10px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            color: #3498db;
+            background-color: #fff;
+            border: 1px solid #3498db;
+            border-radius: 30px;
+            transition: .5s;
+            &:hover{
+                background-color: #3498db;
+                color: #fff;
+            }
+        }
+    }
+}
 }

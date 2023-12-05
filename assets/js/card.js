@@ -1,5 +1,16 @@
 var minuses = document.querySelectorAll(".fa-circle-minus")
 var pluses = document.querySelectorAll(".fa-circle-plus")
+var inputs = document.querySelectorAll(".priceInput")
+var prices = document.querySelectorAll(".prices")
+var total = document.querySelector("#total")
+var discount = document.querySelector("#discount")
+var finalPrice = document.querySelector("#final")
+var sum = 0;
+prices.forEach(function(e) {
+    var valueprice = parseInt(e.textContent.replace('$', ''));
+    sum += valueprice;
+});
+total.innerHTML =`$${sum}`
 minuses.forEach(element => {
     element.addEventListener("click",function(e){
         const input = e.target.nextElementSibling
@@ -9,6 +20,23 @@ minuses.forEach(element => {
             input.value -= 1
         }
         priceDiv.innerText = `$${price * input.value}`
+        var sum = 0;
+        prices.forEach(function(e) {
+            var valueprice = parseInt(e.textContent.replace('$', ''));
+            sum += valueprice;
+        });
+        var total = document.querySelector("#total")
+        total.innerHTML =`$${sum}`
+        if (total.innerHTML.substring(1)>=1000 && total.innerHTML.substring(1)<2000) {
+            discount.innerHTML = `-$${200}`
+        }
+        else if(total.innerHTML.substring(1)>=2000 && total.innerHTML.substring(1)<3000){
+            discount.innerHTML = `-$${400}`
+        }
+        else if(total.innerHTML.substring(1)>=3000){
+            discount.innerHTML = `-$${600}`
+        }
+        finalPrice.innerHTML = `$${total.innerHTML.substring(1) - discount.innerHTML.substring(2)}`
     })
 });
 pluses.forEach(element => {
@@ -20,5 +48,56 @@ pluses.forEach(element => {
         value += 1
         input.value = value
         priceDiv.innerText = `$${price * input.value}`
+        var sum = 0;
+        prices.forEach(function(e) {
+            var valueprice = parseInt(e.textContent.replace('$', ''));
+            sum += valueprice;
+        });
+        var total = document.querySelector("#total")
+        total.innerHTML =`$${sum}`
+        if (total.innerHTML.substring(1)>=1000 && total.innerHTML.substring(1)<2000) {
+            discount.innerHTML = `-$${200}`
+        }
+        else if(total.innerHTML.substring(1)>=2000 && total.innerHTML.substring(1)<3000){
+            discount.innerHTML = `-$${400}`
+        }
+        else if(total.innerHTML.substring(1)>=3000){
+            discount.innerHTML = `-$${600}`
+        }
+        finalPrice.innerHTML = `$${total.innerHTML.substring(1) - discount.innerHTML.substring(2)}`
     })
 });
+inputs.forEach(element => {
+    element.addEventListener("keyup",function(e){
+        var total = e.target.parentElement.parentElement.nextElementSibling.firstElementChild;
+        var price = e.target.nextElementSibling.value
+        total.innerText = `$${e.target.value * price}`
+        var sum = 0;
+        prices.forEach(function(e) {
+            var valueprice = parseInt(e.textContent.replace('$', ''));
+            sum += valueprice;
+        });
+        var total = document.querySelector("#total")
+        total.innerHTML =`$${sum}`
+        if (total.innerHTML.substring(1)>=1000 && total.innerHTML.substring(1)<2000) {
+            discount.innerHTML = `-$${200}`
+        }
+        else if(total.innerHTML.substring(1)>=2000 && total.innerHTML.substring(1)<3000){
+            discount.innerHTML = `-$${400}`
+        }
+        else if(total.innerHTML.substring(1)>=3000){
+            discount.innerHTML = `-$${600}`
+        }
+        finalPrice.innerHTML = `$${total.innerHTML.substring(1) - discount.innerHTML.substring(2)}`
+    })
+});
+if (total.innerHTML.substring(1)>=1000 && total.innerHTML.substring(1)<2000) {
+    discount.innerHTML = `-$${200}`
+}
+else if(total.innerHTML.substring(1)>=2000 && total.innerHTML.substring(1)<3000){
+    discount.innerHTML = `-$${400}`
+}
+else if(total.innerHTML.substring(1)>=3000){
+    discount.innerHTML = `-$${600}`
+}
+finalPrice.innerHTML = `$${total.innerHTML.substring(1) - discount.innerHTML.substring(2)}`

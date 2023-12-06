@@ -1,214 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/images/icon.png" type="image/x-icon">
-    <!-- My css codes -->
-    <link rel="stylesheet" href="./assets/static/css/style.css">
-    <link rel="stylesheet" href="./assets/css/login.css">
-    <link rel="stylesheet" href="./assets/static/css/myacc.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Gametronica - Playing is Easy Now!</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/assets/images/icon.png" type="image/x-icon">
+        <!-- My css codes -->
+        <link rel="stylesheet" href="./assets/static/css/style.css">
+        <link rel="stylesheet" href="./assets/static/css/category-products.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Gametronica - Playing is Easy Now!</title>
+    </head>
 <body>
-  <header>
-      <div class="navbar">
-          <a href="./index.html" class="site-name">Gametronica</a>
-          <ul class="nav-links">
-            <li><a href="./index.html" class="nav-link">Home</a></li>
-            <li><a href="./about.html" class="nav-link">About</a></li>
-            <li><a href="./contact.html" class="nav-link">Contact</a></li>
-            <li><a href="./blog.html" class="nav-link">Blog</a></li>
-            <li><a href="#team" class="nav-link">Team</a></li>
-          </ul>
-          <div class="icons">
-            <a class="icon" href="./wishlist.html"><i class="fas fa-heart"></i></a>
-            <span class="icon" data-name="User" id="userIcon"><i class="fas fa-user"></i>
-              <div class="dropdown" id="userDropdown">
-                <a href="login.html" class="dropdown-item">Login</a>
-                <a href="./myacc.html" class="dropdown-item">My Account</a>
-                <a href="#" class="dropdown-item">Admin Panel</a>
-              </div>
-            </span>
-            <a class="icon" href="./cart.html"><i class="fas fa-shopping-basket"></i></a>
+    <header>
+        <div class="navbar">
+            <a href="./index.html" class="site-name">Gametronica</a>
+            <ul class="nav-links">
+              <li><a href="./index.html" class="nav-link">Home</a></li>
+              <li><a href="./about.html" class="nav-link">About</a></li>
+              <li><a href="./contact.html" class="nav-link">Contact</a></li>
+              <li><a href="./blog.html" class="nav-link">Blog</a></li>
+              <li><a href="#team" class="nav-link">Team</a></li>
+            </ul>
+            <div class="icons">
+              <a class="icon" href="./wishlist.html"><i class="fas fa-heart"></i></a>
+              <span class="icon" data-name="User" id="userIcon"><i class="fas fa-user"></i>
+                <div class="dropdown" id="userDropdown">
+                  <a href="login.html" class="dropdown-item">Login</a>
+                  <a href="./myacc.html" class="dropdown-item">My Account</a>
+                  <a href="#" class="dropdown-item">Admin Panel</a>
+                </div>
+              </span>
+              <a class="icon" href="./cart.html"><i class="fas fa-shopping-basket"></i></a>
+            </div>
+            
+          <!-- Responsive start-->
+          <div class="bars">
+            <i class="fa-solid fa-bars"></i>
+            <div class="bars-dropdown">
+                <ul>
+                    <li class="list"><a href="./index.html">Home</a></li>
+                    <li class="list"><a href="./about.html">About</a></li>
+                    <li class="list"><a href="./contact.html">Contact</a></li>
+                    <li class="list"><a href="./blog.html">Blog</a></li>
+                    <li class="list"><a href="#team">Team</a></li>
+                    <hr>
+                    <li class="list"><a href="./wishlist.html"><i class="fas fa-heart"></i> Wishlist</a></li>
+                    <li class="list" id="dropdown-user">
+                        <a href="#"><i class="fas fa-user"></i> User</a>
+                        <ul class="dropdownUl">
+                          <a href="login.html"><li class="dropdown-list">Login</li></a>
+                          <a href="login.html"><li class="dropdown-list">Register</li></a>
+                          <a href="#"><li class="dropdown-list">Admin Panel</li></a>
+                          <a href="./myacc.html"><li class="dropdown-list">My account</li></a>
+                        </ul>
+                    </li>
+                    <li class="list"><a href="./cart.html"><i class="fas fa-shopping-basket"></i> Basket</a></li>
+                </ul>
+            </div>
           </div>
-          
-        <!-- Responsive start-->
-        <div class="bars">
-          <i class="fa-solid fa-bars"></i>
-          <div class="bars-dropdown">
-              <ul>
-                  <li class="list"><a href="./index.html">Home</a></li>
-                  <li class="list"><a href="./about.html">About</a></li>
-                  <li class="list"><a href="./contact.html">Contact</a></li>
-                  <li class="list"><a href="./blog.html">Blog</a></li>
-                  <li class="list"><a href="#team">Team</a></li>
-                  <hr>
-                  <li class="list"><a href="./wishlist.html"><i class="fas fa-heart"></i> Wishlist</a></li>
-                  <li class="list" id="dropdown-user">
-                      <a href="#"><i class="fas fa-user"></i> User</a>
-                      <ul class="dropdownUl">
-                        <a href="login.html"><li class="dropdown-list">Login</li></a>
-                        <a href="login.html"><li class="dropdown-list">Register</li></a>
-                        <a href="#"><li class="dropdown-list">Admin Panel</li></a>
-                        <a href="./myacc.html"><li class="dropdown-list">My account</li></a>
-                      </ul>
-                  </li>
-                  <li class="list"><a href="./cart.html"><i class="fas fa-shopping-basket"></i> Basket</a></li>
-              </ul>
+          <!-- Responsive end -->
           </div>
-        </div>
-        <!-- Responsive end -->
-        </div>
-  </header>
+    </header>
     <main>
-        <section class="slider">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                  <img src="/assets/images/slider-1.jpg" >
-                  <div class="text to-left-text">
-                    <div class="text-header">
-                        <h1>Gametronica! <span>Play Now!</span></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas debitis, assumenda veritatis possimus quasi laudantium magni et tempore quo. Rem, laborum? Ea, provident distinctio! Velit, hic. Recusandae, non debitis.</p>
-                    </div>
-                    <div class="text-link">
-                        <a href="#">Show Me More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="mySlides fade">
-                  <img src="/assets/images/slider-2.jpg" >
-                  <div class="text to-left-text">
-                    <div class="text-header">
-                        <h1>Gametronica! <span>Play Now!</span></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas debitis, assumenda veritatis possimus quasi laudantium magni et tempore quo. Rem, laborum? Ea, provident distinctio! Velit, hic. Recusandae, non debitis.</p>
-                        
-                    </div>
-                    <div class="text-link">
-                        <a href="#">Show Me More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="mySlides fade">
-                  <img src="./assets/images/slider-3.jpg" >
-                  <div class="text to-left-text">
-                    <div class="text-header">
-                        <h1>Gametronica! <span>Play Now!</span></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas debitis, assumenda veritatis possimus quasi laudantium magni et tempore quo. Rem, laborum? Ea, provident distinctio! Velit, hic. Recusandae, non debitis.</p>
-                        
-                    </div>
-                    <div class="text-link">
-                        <a href="#">Show Me More</a>
-                    </div>
-                  </div>
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              </div>
-        </section>
-        <section class="category">
-          <div class="header">
-            <h1>Categories</h1>
-          </div>
-          <div class="carousel">
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Appareal</div></a>
-                <img src="./assets/images/CategoryApparel.jpg" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Chair</div></a>
-                <img src="./assets/images/CategoryChair.jpg" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Mouse</div></a>
-                <img src="./assets/images/CategoryMouse.jpg" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Controller</div></a>
-                <img src="./assets/images/CategoryController.png" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Figure</div></a>
-                <img src="./assets/images/CategoryFigure.jpg" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Game</div></a>
-                <img src="./assets/images/CategoryGame.png" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Hat</div></a>
-                <img src="./assets/images/CategoryHat.jpg" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">HeadSet</div></a>
-                <img src="./assets/images/CategoryHeadset.jpg" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Keyboard</div></a>
-                <img src="./assets/images/CategoryKeyboard.jpg" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Laptop</div></a>
-                <img src="./assets/images/CategoryLaptop.png" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Mug</div></a>
-                <img src="./assets/images/CategoryMug.jpg" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Nintendo</div></a>
-                <img src="./assets/images/CategoryNintendo.png" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Oculus</div></a>
-                <img src="./assets/images/CategoryOculus.jpg" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Playstation</div></a>
-                <img src="./assets/images/CategoryPlaystation.jpg" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">XBOX</div></a>
-                <img src="./assets/images/CategoryXBOX.png" />
-              </div>
-            </div>
-          </div>
-        </section>
         <section class="product">
           <div class="products">
             <div class="header">
-              <h1>Top Products</h1>
+              <h1>HeadSets</h1>
               <form action="">
                 <input id="searchProduct" type="text" placeholder="Search">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -221,7 +79,7 @@
                   <div class="name">
                     <h4>Nintendo Switch - OLED Model White set</h4>
                   </div>
-                  <div class="card-desc">
+                  <div class="card-desc-a">
                     <div class="prices">
                       <p class="price">$300.00</p>
                       <p class="sale-price">$250.00</p>
@@ -248,7 +106,7 @@
                   <div class="name">
                     <h4>Head Strap Compatible with Oculus Quest 2</h4>
                   </div>
-                  <div class="card-desc">
+                  <div class="card-desc-a">
                     <div class="prices">
                       <p class="price">$300.00</p>
                       <p class="sale-price">$250.00</p>
@@ -275,7 +133,7 @@
                   <div class="name">
                     <h4>Microsoft Xbox One S 1TB</h4>
                   </div>
-                  <div class="card-desc">
+                  <div class="card-desc-a">
                     <div class="prices">
                       <p class="price">$300.00</p>
                       <p class="sale-price">$250.00</p>
@@ -302,7 +160,7 @@
                   <div class="name">
                     <h4>Acer Nitro 5 AN515-58-57Y8 Gaming Laptop</h4>
                   </div>
-                  <div class="card-desc">
+                  <div class="card-desc-a">
                     <div class="prices">
                       <p class="price">$300.00</p>
                       <p class="sale-price">$250.00</p>
@@ -329,7 +187,7 @@
                   <div class="name">
                     <h4>Official Luna Wireless Controller</h4>
                   </div>
-                  <div class="card-desc">
+                  <div class="card-desc-a">
                     <div class="prices">
                       <p class="price">$300.00</p>
                       <p class="sale-price">$250.00</p>
@@ -356,7 +214,7 @@
                   <div class="name">
                     <h4>PlayStation 5 Enhanced</h4>
                   </div>
-                  <div class="card-desc">
+                  <div class="card-desc-a">
                     <div class="prices">
                       <p class="price">$300.00</p>
                       <p class="sale-price">$250.00</p>
@@ -383,7 +241,7 @@
                   <div class="name">
                     <h4>Super Smash Bros. Ultimate</h4>
                   </div>
-                  <div class="card-desc">
+                  <div class="card-desc-a">
                     <div class="prices">
                       <p class="price">$300.00</p>
                       <p class="sale-price">$250.00</p>
@@ -410,7 +268,7 @@
                   <div class="name">
                     <h4>Corsair HS65 SURROUND Gaming Headset</h4>
                   </div>
-                  <div class="card-desc">
+                  <div class="card-desc-a">
                     <div class="prices">
                       <p class="price">$300.00</p>
                       <p class="sale-price">$250.00</p>
@@ -437,7 +295,7 @@
                   <div class="name">
                     <h4>SteelSeries USB Apex 5 Hybrid Mechanical Gaming Keyboard</h4>
                   </div>
-                  <div class="card-desc">
+                  <div class="card-desc-a">
                     <div class="prices">
                       <p class="price">$300.00</p>
                       <p class="sale-price">$250.00</p>
@@ -464,7 +322,7 @@
                   <div class="name">
                     <h4>BestOffice High-Back Gaming Chair</h4>
                   </div>
-                  <div class="card-desc">
+                  <div class="card-desc-a">
                     <div class="prices">
                       <p class="price">$300.00</p>
                       <p class="sale-price">$250.00</p>
@@ -485,118 +343,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-        <section class="banner" style="background-image: url(/assets/images/banner_bg.jpg);">
-          <div class="banner-text">
-            <h1>Up to <span>70% Off</span> - All Laptops & Playstations</h1>
-            <a href="">Explore</a>
-          </div>
-        </section>
-        <section class="team" id="team">
-          <div class="team-header">
-            <h1 class="header">Our Team</h1>
-          </div>
-          <div class="workers">
-            <div class="worker">
-                <div class="worker-image">
-                  <img src="./assets/images/worker-3.jpg" alt="">
-                </div>
-                <div class="worker-name">
-                  <h1>Qara Qarayev</h1>
-                </div>
-                <div class="worker-position">
-                  <p>General salesman</p>
-                </div>
-                <div class="worker-location">
-                  <p>Baku,Azerbaijan</p>
-                </div>
-                <div class="worker-number">
-                  <p>050-289-91-41</p>
-                </div>
-                <div class="worker-contact">
-                  <a href=""><i class="fa-brands fa-facebook"></i></a>
-                  <a href=""><i class="fa-brands fa-instagram"></i></a>
-                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="worker">
-              <div class="worker-image">
-                <img src="./assets/images/worker-2.jpg" alt="">
-              </div>
-              <div class="worker-name">
-                <h1>Vaqif Mustafazade</h1>
-              </div>
-              <div class="worker-position">
-                <p>Salesman</p>
-              </div>
-              <div class="worker-location">
-                <p>Baku,Azerbaijan</p>
-              </div>
-              <div class="worker-number">
-                <p>050-289-91-41</p>
-              </div>
-              <div class="worker-contact">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="worker">
-            <div class="worker-image">
-              <img src="./assets/images/worker-1.jpg" alt="">
-            </div>
-            <div class="worker-name">
-              <h1>Akif Islamzade</h1>
-            </div>
-            <div class="worker-position">
-              <p>Salesman</p>
-            </div>
-            <div class="worker-location">
-              <p>Baku,Azerbaijan</p>
-            </div>
-            <div class="worker-number">
-              <p>050-289-91-41</p>
-            </div>
-            <div class="worker-contact">
-              <div class="facebook"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
-              <div class="instagram"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
-              <div class="linkedin"><a href=""><i class="fa-brands fa-linkedin"></i></a></div>
-            </div>
-            </div>
-          </div>
-        </section>
-        <section class="newsletter">
-          <div class="newsletters">
-            <div class="text">
-              <h1>Sign Up For Newsletters</h1>
-              <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
-            </div>
-            <div class="form">
-              <form action="">
-                <input type="email" name="" id="">
-                <button type="submit">Sign Up</button>
-              </form>
-            </div>
-          </div>
-        </section>
-        <section class="sponsore">
-          <div class="sponsores">
-            <div class="sponsore">
-              <img src="/assets/images/Acer.png" alt="">
-            </div>
-            <div class="sponsore">
-              <img src="/assets/images/asus.png" alt="">
-            </div>
-            <div class="sponsore">
-              <img src="/assets/images/Nintendo.png" alt="">
-            </div>
-            <div class="sponsore">
-              <img src="/assets/images/xbox.png" alt="">
-            </div>
-            <div class="sponsore">
-              <img src="/assets/images/playstation.png" alt="">
             </div>
           </div>
         </section>
@@ -666,7 +412,5 @@
     </footer>
     <!-- My JS -->
     <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/login.js"></script>
-    <script src="./assets/js/myacc.js"></script>
 </body>
 </html>

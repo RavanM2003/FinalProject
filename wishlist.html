@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/assets/images/icon.png" type="image/x-icon">
+        <!-- My css codes -->
+        <link rel="stylesheet" href="./assets/static/css/style.css">
+        <link rel="stylesheet" href="./assets/static/css/wishlist.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Gametronica - Playing is Easy Now!</title>
+    </head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="./index.html" class="site-name">Gametronica</a>
+            <ul class="nav-links">
+              <li><a href="./index.html" class="nav-link">Home</a></li>
+              <li><a href="./about.html" class="nav-link">About</a></li>
+              <li><a href="./contact.html" class="nav-link">Contact</a></li>
+              <li><a href="./blog.html" class="nav-link">Blog</a></li>
+              <li><a href="#team" class="nav-link">Team</a></li>
+            </ul>
+            <div class="icons">
+              <a class="icon" href="./wishlist.html"><i class="fas fa-heart"></i></a>
+              <span class="icon" data-name="User" id="userIcon"><i class="fas fa-user"></i>
+                <div class="dropdown" id="userDropdown">
+                  <a href="login.html" class="dropdown-item">Login</a>
+                  <a href="./myacc.html" class="dropdown-item">My Account</a>
+                  <a href="#" class="dropdown-item">Admin Panel</a>
+                </div>
+              </span>
+              <a class="icon" href="./cart.html"><i class="fas fa-shopping-basket"></i></a>
+            </div>
+            
+          <!-- Responsive start-->
+          <div class="bars">
+            <i class="fa-solid fa-bars"></i>
+            <div class="bars-dropdown">
+                <ul>
+                    <li class="list"><a href="./index.html">Home</a></li>
+                    <li class="list"><a href="./about.html">About</a></li>
+                    <li class="list"><a href="./contact.html">Contact</a></li>
+                    <li class="list"><a href="./blog.html">Blog</a></li>
+                    <li class="list"><a href="#team">Team</a></li>
+                    <hr>
+                    <li class="list"><a href="./wishlist.html"><i class="fas fa-heart"></i> Wishlist</a></li>
+                    <li class="list" id="dropdown-user">
+                        <a href="#"><i class="fas fa-user"></i> User</a>
+                        <ul class="dropdownUl">
+                          <a href="login.html"><li class="dropdown-list">Login</li></a>
+                          <a href="login.html"><li class="dropdown-list">Register</li></a>
+                          <a href="#"><li class="dropdown-list">Admin Panel</li></a>
+                          <a href="./myacc.html"><li class="dropdown-list">My account</li></a>
+                        </ul>
+                    </li>
+                    <li class="list"><a href="./cart.html"><i class="fas fa-shopping-basket"></i> Basket</a></li>
+                </ul>
+            </div>
+          </div>
+          <!-- Responsive end -->
+          </div>
+    </header>
+    <main>
+        <section class="product">
+          <div class="products">
+            <div class="header">
+              <h1>Wishlist Products</h1>
+              <form action="">
+                <input id="searchProduct" type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </form>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="card-main">
+                  <img src="./assets/images/Nintendo_Switch_-_OLED_Model_White_.png" alt="">
+                  <div class="name">
+                    <h4>Nintendo Switch - OLED Model White set</h4>
+                  </div>
+                  <div class="card-desc-a">
+                    <div class="prices">
+                      <p class="price">$300.00</p>
+                      <p class="sale-price">$250.00</p>
+                    </div>
+                    <div class="desc">
+                      <p class="desc-text">Get the gaming system that lets you play the games you want</p>
+                    </div>
+                    <div class="link">
+                      <a class="wish-btn">WISHLIST</a>
+                      <a class="cart-btn">ADD TO CART</a>
+                      <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                    </div>
+                  </div>
+                  <div class="link-phone">
+                    <a class="wish-btn">WISHLIST</a>
+                    <a class="cart-btn">ADD TO CART</a>
+                    <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-main">
+                  <img src="./assets/images/Head_Strap_Compatible_with_Oculus_Quest_2.png" alt="">
+                  <div class="name">
+                    <h4>Head Strap Compatible with Oculus Quest 2</h4>
+                  </div>
+                  <div class="card-desc-a">
+                    <div class="prices">
+                      <p class="price">$300.00</p>
+                      <p class="sale-price">$250.00</p>
+                    </div>
+                    <div class="desc">
+                      <p class="desc-text">Get the gaming system that lets you play the games you want</p>
+                    </div>
+                    <div class="link">
+                      <a class="wish-btn">WISHLIST</a>
+                      <a class="cart-btn">ADD TO CART</a>
+                      <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                    </div>
+                  </div>
+                  <div class="link-phone">
+                    <a class="wish-btn">WISHLIST</a>
+                    <a class="cart-btn">ADD TO CART</a>
+                    <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-main">
+                  <img src="./assets/images/Microsoft_Xbox_One_S_1TB.png" alt="">
+                  <div class="name">
+                    <h4>Microsoft Xbox One S 1TB</h4>
+                  </div>
+                  <div class="card-desc-a">
+                    <div class="prices">
+                      <p class="price">$300.00</p>
+                      <p class="sale-price">$250.00</p>
+                    </div>
+                    <div class="desc">
+                      <p class="desc-text">Get the gaming system that lets you play the games you want</p>
+                    </div>
+                    <div class="link">
+                      <a class="wish-btn">WISHLIST</a>
+                      <a class="cart-btn">ADD TO CART</a>
+                      <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                    </div>
+                  </div>
+                  <div class="link-phone">
+                    <a class="wish-btn">WISHLIST</a>
+                    <a class="cart-btn">ADD TO CART</a>
+                    <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-main">
+                  <img src="./assets/images/Acer_Nitro_5_AN515-58-57Y8_Gaming_Laptop.png" alt="">
+                  <div class="name">
+                    <h4>Acer Nitro 5 AN515-58-57Y8 Gaming Laptop</h4>
+                  </div>
+                  <div class="card-desc-a">
+                    <div class="prices">
+                      <p class="price">$300.00</p>
+                      <p class="sale-price">$250.00</p>
+                    </div>
+                    <div class="desc">
+                      <p class="desc-text">Get the gaming system that lets you play the games you want</p>
+                    </div>
+                    <div class="link">
+                      <a class="wish-btn">WISHLIST</a>
+                      <a class="cart-btn">ADD TO CART</a>
+                      <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                    </div>
+                  </div>
+                  <div class="link-phone">
+                    <a class="wish-btn">WISHLIST</a>
+                    <a class="cart-btn">ADD TO CART</a>
+                    <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-main">
+                  <img src="./assets/images/Official_Luna_Wireless_Controller.png" alt="">
+                  <div class="name">
+                    <h4>Official Luna Wireless Controller</h4>
+                  </div>
+                  <div class="card-desc-a">
+                    <div class="prices">
+                      <p class="price">$300.00</p>
+                      <p class="sale-price">$250.00</p>
+                    </div>
+                    <div class="desc">
+                      <p class="desc-text">Get the gaming system that lets you play the games you want</p>
+                    </div>
+                    <div class="link">
+                      <a class="wish-btn">WISHLIST</a>
+                      <a class="cart-btn">ADD TO CART</a>
+                      <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                    </div>
+                  </div>
+                  <div class="link-phone">
+                    <a class="wish-btn">WISHLIST</a>
+                    <a class="cart-btn">ADD TO CART</a>
+                    <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-main">
+                  <img src="./assets/images/PlayStation_5_Enhanced.png" alt="">
+                  <div class="name">
+                    <h4>PlayStation 5 Enhanced</h4>
+                  </div>
+                  <div class="card-desc-a">
+                    <div class="prices">
+                      <p class="price">$300.00</p>
+                      <p class="sale-price">$250.00</p>
+                    </div>
+                    <div class="desc">
+                      <p class="desc-text">Get the gaming system that lets you play the games you want</p>
+                    </div>
+                    <div class="link">
+                      <a class="wish-btn">WISHLIST</a>
+                      <a class="cart-btn">ADD TO CART</a>
+                      <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                    </div>
+                  </div>
+                  <div class="link-phone">
+                    <a class="wish-btn">WISHLIST</a>
+                    <a class="cart-btn">ADD TO CART</a>
+                    <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-main">
+                  <img src="./assets/images/Super_Smash_Bros._Ultimate.png" alt="">
+                  <div class="name">
+                    <h4>Super Smash Bros. Ultimate</h4>
+                  </div>
+                  <div class="card-desc-a">
+                    <div class="prices">
+                      <p class="price">$300.00</p>
+                      <p class="sale-price">$250.00</p>
+                    </div>
+                    <div class="desc">
+                      <p class="desc-text">Get the gaming system that lets you play the games you want</p>
+                    </div>
+                    <div class="link">
+                      <a class="wish-btn">WISHLIST</a>
+                      <a class="cart-btn">ADD TO CART</a>
+                      <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                    </div>
+                  </div>
+                  <div class="link-phone">
+                    <a class="wish-btn">WISHLIST</a>
+                    <a class="cart-btn">ADD TO CART</a>
+                    <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-main">
+                  <img src="./assets/images/Corsair_HS65_SURROUND_Gaming_Headset.png" alt="">
+                  <div class="name">
+                    <h4>Corsair HS65 SURROUND Gaming Headset</h4>
+                  </div>
+                  <div class="card-desc-a">
+                    <div class="prices">
+                      <p class="price">$300.00</p>
+                      <p class="sale-price">$250.00</p>
+                    </div>
+                    <div class="desc">
+                      <p class="desc-text">Get the gaming system that lets you play the games you want</p>
+                    </div>
+                    <div class="link">
+                      <a class="wish-btn">WISHLIST</a>
+                      <a class="cart-btn">ADD TO CART</a>
+                      <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                    </div>
+                  </div>
+                  <div class="link-phone">
+                    <a class="wish-btn">WISHLIST</a>
+                    <a class="cart-btn">ADD TO CART</a>
+                    <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-main">
+                  <img src="./assets/images/SteelSeries_USB_Apex_5_Hybrid_Mechanical_Gaming_Keyboard.png" alt="">
+                  <div class="name">
+                    <h4>SteelSeries USB Apex 5 Hybrid Mechanical Gaming Keyboard</h4>
+                  </div>
+                  <div class="card-desc-a">
+                    <div class="prices">
+                      <p class="price">$300.00</p>
+                      <p class="sale-price">$250.00</p>
+                    </div>
+                    <div class="desc">
+                      <p class="desc-text">Get the gaming system that lets you play the games you want</p>
+                    </div>
+                    <div class="link">
+                      <a class="wish-btn">WISHLIST</a>
+                      <a class="cart-btn">ADD TO CART</a>
+                      <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                    </div>
+                  </div>
+                  <div class="link-phone">
+                    <a class="wish-btn">WISHLIST</a>
+                    <a class="cart-btn">ADD TO CART</a>
+                    <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-main">
+                  <img src="./assets/images/BestOffice_High-Back_Gaming_Chair.png" alt="">
+                  <div class="name">
+                    <h4>BestOffice High-Back Gaming Chair</h4>
+                  </div>
+                  <div class="card-desc-a">
+                    <div class="prices">
+                      <p class="price">$300.00</p>
+                      <p class="sale-price">$250.00</p>
+                    </div>
+                    <div class="desc">
+                      <p class="desc-text">Get the gaming system that lets you play the games you want</p>
+                    </div>
+                    <div class="link">
+                      <a class="wish-btn">WISHLIST</a>
+                      <a class="cart-btn">ADD TO CART</a>
+                      <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                    </div>
+                  </div>
+                  <div class="link-phone">
+                    <a class="wish-btn">WISHLIST</a>
+                    <a class="cart-btn">ADD TO CART</a>
+                    <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="contact">
+          <div class="header">
+            <h1>Gametronica</h1>
+          </div>
+          <p class="main">Contact</p>
+          <p class="key">Address: <span>Baku, Surakhani, Z.Taghiyev 14, Menzil 22</span></p>
+          <p class="key">Phone: <span>(012) 458-02-95</span></p>
+          <p class="key">Hour: <span>09:00 - 20:00</span></p>
+          <p class="main">Follow Us</p>
+          <div class="links">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="about">
+          <div class="header">
+            <h3>About</h3>
+          </div>
+          <div class="links">
+            <ul>
+              <a href=""><li>About us</li></a>
+              <a href=""><li>Delivery Information</li></a>
+              <a href=""><li>Privacy Policy</li></a>
+              <a href=""><li>Terms & Conditions</li></a>
+              <a href=""><li>Contact Us</li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="myaccount">
+          <div class="header">
+            <h3>My Account</h3>
+          </div>
+          <div class="links">
+            <ul>
+              <a href="./login.html"><li>Sign in</li></a>
+              <a href=""><li>View Cart</li></a>
+              <a href=""><li>My Wishlist</li></a>
+              <a href="./myacc.html"><li>My Account</li></a>
+              <a href=""><li>Help <i class="fa-regular fa-circle-question"></i></li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="installapp">
+          <div class="header">
+            <h3>Install App</h3>
+            <p>From Apple Store or Google Play</p>
+          </div>
+          <div class="images">
+            <img src="./assets/images/apple-app-store-logo.png" alt="">
+            <img src="./assets/images/play-store-logo-nisi-filters-australia-11.png" alt="">
+          </div>
+          <p>Secured Payment Gateways</p>
+          <div class="payment-images">
+            <img src="./assets/images/visa-and-mastercard-logo-26.png" alt="">
+            <img src="/assets/images/Paypal-logo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- My JS -->
+    <script src="/assets/js/main.js"></script>
+    <script src="./assets/js/wishlist.js"></script>
+</body>
+</html>

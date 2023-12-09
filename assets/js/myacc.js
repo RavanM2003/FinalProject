@@ -63,6 +63,8 @@ messagesLi.addEventListener("click",function(e){
     pSecurity.classList.remove("active")
     pBasket.classList.remove("active")
     pSale.classList.remove("active")
+    var scrollableDiv = document.getElementById("scrollableDiv");
+    scrollableDiv.scrollTop = scrollableDiv.scrollHeight;
 })
 securityLi.addEventListener("click",function(e){
     e.preventDefault()
@@ -108,19 +110,4 @@ saleLi.addEventListener("click",function(e){
     pSecurity.classList.remove("active")
     pBasket.classList.remove("active")
     pSale.classList.add("active")
-})
-
-var input = document.querySelector("#pass")
-var openEye = document.querySelector(".fa-eye")
-var closeEye = document.querySelector(".fa-eye-slash")
-
-closeEye.addEventListener("click",function(){
-    closeEye.classList.add("d-none")
-    openEye.classList.remove("d-none")
-    input.type="text"
-})
-openEye.addEventListener("click",function(){
-    closeEye.classList.remove("d-none")
-    openEye.classList.add("d-none")
-    input.type="password"
 })

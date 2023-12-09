@@ -1,9 +1,9 @@
-.card{
+.card-basket{
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: 3rem 0;
-    .cards{
+    .cards-basket{
         width: 69%;
         padding: 0 1rem;
         .card-header{
@@ -86,11 +86,11 @@
             }
         }
     }
-    .card-prices{
+    .card-basket-prices{
         width: 29%;
         padding: 1rem;
         background-color: #fff;
-        height:180px;
+        height:200px;
         border-radius: 10px;
         margin: 0 .5rem;
         .total-price,.discount-price,.final-price{
@@ -129,12 +129,12 @@
     }
 }
 @media (max-width: 500px){
-.card{
+.card-basket{
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: 1rem 0;
-    .cards{
+    .cards-basket{
         width:75%;
         overflow: hidden;
         .card-header{
@@ -218,11 +218,11 @@
             }
         }
     }
-    .card-prices{
+    .card-basket-prices{
         width: 20%;
         padding: .5rem;
         background-color: #fff;
-        height:200px;
+        height:250px;
         border-radius: 10px;
         margin: 0 .5rem 0 0;
         overflow: hidden;

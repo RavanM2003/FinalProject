@@ -1,40 +1,40 @@
-.card {
+.card-basket {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin: 3rem 0;
 }
-.card .cards {
+.card-basket .cards-basket {
   width: 69%;
   padding: 0 1rem;
 }
-.card .cards .card-header {
+.card-basket .cards-basket .card-header {
   padding: 0.5rem 1rem;
   background-color: #fff;
   border-radius: 10px;
 }
-.card .cards .card-header .header-text {
+.card-basket .cards-basket .card-header .header-text {
   display: flex;
   align-items: center;
 }
-.card .cards .card-header .header-text h3 {
+.card-basket .cards-basket .card-header .header-text h3 {
   font-size: 30px;
   color: #3498db;
   margin-right: 0.5rem;
 }
-.card .cards .card-header .header-text span {
+.card-basket .cards-basket .card-header .header-text span {
   font-size: 18px;
 }
-.card .cards .card-header .header-button {
+.card-basket .cards-basket .card-header .header-button {
   margin: 1rem 0;
 }
-.card .cards .card-header .header-button a {
+.card-basket .cards-basket .card-header .header-button a {
   color: #3498db;
   border: 1px solid #3498db;
   padding: 0.5rem 1rem;
   border-radius: 30px;
 }
-.card .cards .card-products .card-product {
+.card-basket .cards-basket .card-products .card-product {
   display: flex;
   align-items: center;
   text-align: center;
@@ -43,26 +43,26 @@
   margin: 0.5rem 0;
   border-radius: 10px;
 }
-.card .cards .card-products .card-product .card-image {
+.card-basket .cards-basket .card-products .card-product .card-image {
   width: 25%;
 }
-.card .cards .card-products .card-product .card-image img {
+.card-basket .cards-basket .card-products .card-product .card-image img {
   width: 40%;
 }
-.card .cards .card-products .card-product .card-name {
+.card-basket .cards-basket .card-products .card-product .card-name {
   width: 55%;
   font-size: 20px;
   color: #3498db;
 }
-.card .cards .card-products .card-product .card-count {
+.card-basket .cards-basket .card-products .card-product .card-count {
   width: 20%;
 }
-.card .cards .card-products .card-product .card-count form i {
+.card-basket .cards-basket .card-products .card-product .card-count form i {
   color: #3498db;
   font-size: 25px;
   cursor: pointer;
 }
-.card .cards .card-products .card-product .card-count form input {
+.card-basket .cards-basket .card-products .card-product .card-count form input {
   outline: 0;
   border: 0;
   border-bottom: 1px solid #3498db;
@@ -71,42 +71,42 @@
   font-size: 20px;
   color: #3498db;
 }
-.card .cards .card-products .card-product .card-count form input:focus {
+.card-basket .cards-basket .card-products .card-product .card-count form input:focus {
   border: 1px solid #3498db;
 }
-.card .cards .card-products .card-product .card-price {
+.card-basket .cards-basket .card-products .card-product .card-price {
   width: 15%;
   font-size: 20px;
 }
-.card .cards .card-products .card-product .delete {
+.card-basket .cards-basket .card-products .card-product .delete {
   width: 5%;
   font-size: 20px;
   color: red;
 }
-.card .card-prices {
+.card-basket .card-basket-prices {
   width: 29%;
   padding: 1rem;
   background-color: #fff;
-  height: 180px;
+  height: 200px;
   border-radius: 10px;
   margin: 0 0.5rem;
 }
-.card .card-prices .total-price, .card .card-prices .discount-price, .card .card-prices .final-price {
+.card-basket .card-basket-prices .total-price, .card-basket .card-basket-prices .discount-price, .card-basket .card-basket-prices .final-price {
   display: flex;
   justify-content: space-between;
   margin: 0.5rem 0;
   padding: 0 0.5rem;
 }
-.card .card-prices .total-price p, .card .card-prices .discount-price p, .card .card-prices .final-price p {
+.card-basket .card-basket-prices .total-price p, .card-basket .card-basket-prices .discount-price p, .card-basket .card-basket-prices .final-price p {
   font-size: 20px;
   font-weight: bold;
 }
-.card .card-prices .total-price .key, .card .card-prices .discount-price .key, .card .card-prices .final-price .key {
+.card-basket .card-basket-prices .total-price .key, .card-basket .card-basket-prices .discount-price .key, .card-basket .card-basket-prices .final-price .key {
   font-size: 18px;
   color: #3498db;
   font-weight: normal;
 }
-.card .card-prices button {
+.card-basket .card-basket-prices button {
   width: 100%;
   margin: 1rem 0.5rem;
   padding: 0.5rem 0;
@@ -120,50 +120,50 @@
   border-radius: 30px;
   transition: 0.5s;
 }
-.card .card-prices button:hover {
+.card-basket .card-basket-prices button:hover {
   background-color: #3498db;
   color: #fff;
 }
 
 @media (max-width: 500px) {
-  .card {
+  .card-basket {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: 1rem 0;
   }
-  .card .cards {
+  .card-basket .cards-basket {
     width: 75%;
     overflow: hidden;
   }
-  .card .cards .card-header {
+  .card-basket .cards-basket .card-header {
     padding: 0.3rem 0.5rem;
     background-color: #fff;
     border-radius: 10px;
   }
-  .card .cards .card-header .header-text {
+  .card-basket .cards-basket .card-header .header-text {
     display: flex;
     align-items: center;
   }
-  .card .cards .card-header .header-text h3 {
+  .card-basket .cards-basket .card-header .header-text h3 {
     font-size: 15px;
     color: #3498db;
     margin-right: 0.5rem;
   }
-  .card .cards .card-header .header-text span {
+  .card-basket .cards-basket .card-header .header-text span {
     font-size: 12px;
   }
-  .card .cards .card-header .header-button {
+  .card-basket .cards-basket .card-header .header-button {
     margin: 0.5rem 0;
   }
-  .card .cards .card-header .header-button a {
+  .card-basket .cards-basket .card-header .header-button a {
     color: #3498db;
     border: 1px solid #3498db;
     padding: 0.2rem 0.5rem;
     font-size: 10px;
     border-radius: 30px;
   }
-  .card .cards .card-products .card-product {
+  .card-basket .cards-basket .card-products .card-product {
     display: flex;
     align-items: center;
     text-align: center;
@@ -172,26 +172,26 @@
     margin: 0.5rem 0;
     border-radius: 10px;
   }
-  .card .cards .card-products .card-product .card-image {
+  .card-basket .cards-basket .card-products .card-product .card-image {
     width: 10%;
   }
-  .card .cards .card-products .card-product .card-image img {
+  .card-basket .cards-basket .card-products .card-product .card-image img {
     width: 100%;
   }
-  .card .cards .card-products .card-product .card-name {
+  .card-basket .cards-basket .card-products .card-product .card-name {
     width: 50%;
     font-size: 8px;
     color: #3498db;
   }
-  .card .cards .card-products .card-product .card-count {
+  .card-basket .cards-basket .card-products .card-product .card-count {
     width: 30%;
   }
-  .card .cards .card-products .card-product .card-count form i {
+  .card-basket .cards-basket .card-products .card-product .card-count form i {
     color: #3498db;
     font-size: 8px;
     cursor: pointer;
   }
-  .card .cards .card-products .card-product .card-count form input {
+  .card-basket .cards-basket .card-products .card-product .card-count form input {
     outline: 0;
     border: 0;
     border-bottom: 1px solid #3498db;
@@ -200,44 +200,44 @@
     font-size: 10px;
     color: #3498db;
   }
-  .card .cards .card-products .card-product .card-count form input:focus {
+  .card-basket .cards-basket .card-products .card-product .card-count form input:focus {
     border: 1px solid #3498db;
   }
-  .card .cards .card-products .card-product .card-price {
+  .card-basket .cards-basket .card-products .card-product .card-price {
     width: 15%;
     font-size: 10px;
   }
-  .card .cards .card-products .card-product .delete {
+  .card-basket .cards-basket .card-products .card-product .delete {
     width: 5%;
     font-size: 10px;
     color: red;
   }
-  .card .card-prices {
+  .card-basket .card-basket-prices {
     width: 20%;
     padding: 0.5rem;
     background-color: #fff;
-    height: 200px;
+    height: 250px;
     border-radius: 10px;
     margin: 0 0.5rem 0 0;
     overflow: hidden;
   }
-  .card .card-prices .total-price, .card .card-prices .discount-price, .card .card-prices .final-price {
+  .card-basket .card-basket-prices .total-price, .card-basket .card-basket-prices .discount-price, .card-basket .card-basket-prices .final-price {
     display: flex;
     flex-direction: column;
     margin: 0.5rem 0;
     padding: 0 0.5rem;
   }
-  .card .card-prices .total-price p, .card .card-prices .discount-price p, .card .card-prices .final-price p {
+  .card-basket .card-basket-prices .total-price p, .card-basket .card-basket-prices .discount-price p, .card-basket .card-basket-prices .final-price p {
     font-size: 10px;
     margin: 0.2rem 0;
     font-weight: bold;
   }
-  .card .card-prices .total-price .key, .card .card-prices .discount-price .key, .card .card-prices .final-price .key {
+  .card-basket .card-basket-prices .total-price .key, .card-basket .card-basket-prices .discount-price .key, .card-basket .card-basket-prices .final-price .key {
     font-size: 12px;
     color: #3498db;
     font-weight: normal;
   }
-  .card .card-prices button {
+  .card-basket .card-basket-prices button {
     width: 100%;
     margin: 0.5rem 0.1rem;
     padding: 0.1rem 0;
@@ -251,7 +251,7 @@
     border-radius: 30px;
     transition: 0.5s;
   }
-  .card .card-prices button:hover {
+  .card-basket .card-basket-prices button:hover {
     background-color: #3498db;
     color: #fff;
   }

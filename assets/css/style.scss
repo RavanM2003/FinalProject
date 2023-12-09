@@ -343,10 +343,11 @@ body{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 4rem 2rem 2rem;
+    padding: 4rem 0rem 2rem;
     .card{
       width: 18%;
       min-height: 280px;
+      text-align: center;
       background-color: #fff;
       padding: 1rem 0;
       position: relative;
@@ -356,12 +357,13 @@ body{
       .card-main{
         img{
           position: absolute;
-          width: 80%;
+          width: 70%;
           top: 60%;
           left: 50%;
           transform: translate(-50%,-50%);
         }
         .name{
+          padding: 0 1rem;
           font-size: 15px;
           text-align: center;
           color: #3498db;
@@ -409,14 +411,15 @@ body{
           }
           .desc{
             text-align: center;
-            font-size: 18px;
-            padding: .3rem 0;
+            font-size: 16px;
+            padding: .5rem 0;
           }
           .link{
             display: flex;
             flex-direction: column;
             text-align: center;
             align-items: center;
+            width: 100%;
             .wish-btn{
               color: #3498db;
               border: 2px solid #3498db;
@@ -487,7 +490,7 @@ body{
       color: #3498db;
       &::before{
         content: "";
-        width: 440px;
+        width: 400px;
         height: 3px;
         background-color: #3498db;
         position: absolute;
@@ -497,7 +500,7 @@ body{
       }
       &::after{
         content: "";
-        width: 440px;
+        width: 400px;
         height: 3px;
         background-color: #3498db;
         position: absolute;
@@ -531,6 +534,7 @@ body{
         }
       }
       .worker-name{
+        text-align: center;
         margin: 1rem 0;
         color: #3498db;
       }

@@ -84,6 +84,7 @@
 .contact-box .box-form form div label {
   position: absolute;
   top: 10px;
+  left: 0;
   color: #3498db;
   transition: 0.5s;
 }
@@ -109,10 +110,10 @@
   font-size: 18px;
   color: #3498db;
 }
-.contact-box .box-form form .button {
+.contact-box .box-form form .buttona {
   width: 100%;
 }
-.contact-box .box-form form .button button {
+.contact-box .box-form form .buttona button {
   background-color: #fff;
   border: 1px solid #3498db;
   color: #3498db;
@@ -120,7 +121,7 @@
   font-size: 18px;
   transition: 0.5s;
 }
-.contact-box .box-form form .button button:hover {
+.contact-box .box-form form .buttona button:hover {
   color: #fff;
   background-color: #3498db;
   cursor: pointer;

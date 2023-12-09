@@ -70,7 +70,7 @@
   border-radius: 50%;
 }
 .blogs .blog .blog-text .footer .link {
-  width: 30%;
+  width: 40%;
 }
 .blogs .blog .blog-text .footer .link a {
   color: #3498db;
@@ -133,7 +133,7 @@
     font-size: 10px;
   }
   .blogs .blog .blog-text .footer .link {
-    width: 130%;
+    width: 150%;
   }
   .blogs .blog .blog-text .footer .link a {
     padding: 0.1rem 0.2rem;

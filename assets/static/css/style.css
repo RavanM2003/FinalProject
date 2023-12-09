@@ -350,11 +350,12 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 4rem 2rem 2rem;
+  padding: 4rem 0rem 2rem;
 }
 .products .cards .card {
   width: 18%;
   min-height: 280px;
+  text-align: center;
   background-color: #fff;
   padding: 1rem 0;
   position: relative;
@@ -364,12 +365,13 @@ body {
 }
 .products .cards .card .card-main img {
   position: absolute;
-  width: 80%;
+  width: 70%;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .products .cards .card .card-main .name {
+  padding: 0 1rem;
   font-size: 15px;
   text-align: center;
   color: #3498db;
@@ -418,14 +420,15 @@ body {
 }
 .products .cards .card .card-main .card-desc .desc {
   text-align: center;
-  font-size: 18px;
-  padding: 0.3rem 0;
+  font-size: 16px;
+  padding: 0.5rem 0;
 }
 .products .cards .card .card-main .card-desc .link {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  width: 100%;
 }
 .products .cards .card .card-main .card-desc .link .wish-btn {
   color: #3498db;
@@ -494,7 +497,7 @@ body {
 }
 .team .team-header .header::before {
   content: "";
-  width: 440px;
+  width: 400px;
   height: 3px;
   background-color: #3498db;
   position: absolute;
@@ -504,7 +507,7 @@ body {
 }
 .team .team-header .header::after {
   content: "";
-  width: 440px;
+  width: 400px;
   height: 3px;
   background-color: #3498db;
   position: absolute;
@@ -539,6 +542,7 @@ body {
      object-fit: cover;
 }
 .team .workers .worker .worker-name {
+  text-align: center;
   margin: 1rem 0;
   color: #3498db;
 }

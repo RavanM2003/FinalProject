@@ -29,7 +29,7 @@
 }
 .card-category .card-main .card-desc-a {
   position: absolute;
-  background-color: #ffffff;
+  background-color: #fff;
   top: 0;
   left: 0%;
   width: 100%;
@@ -57,24 +57,23 @@
 .card-category .card-main .card-desc-a .prices .price {
   color: rgb(61, 61, 61);
   text-decoration: line-through;
-  font-size: 20px;
+  font-size: 15px;
 }
 .card-category .card-main .card-desc-a .prices .sale-price {
-  font-size: 25px;
+  font-size: 20px;
   color: #3498db;
   font-weight: bold;
 }
 .card-category .card-main .card-desc-a .desc {
   text-align: center;
-  font-size: 16px;
-  padding: 0.5rem 0;
+  font-size: 18px;
+  padding: 0.3rem 0;
 }
 .card-category .card-main .card-desc-a .link {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  width: 100%;
 }
 .card-category .card-main .card-desc-a .link .wish-btn {
   color: #3498db;
@@ -87,7 +86,7 @@
 .card-category .card-main .card-desc-a .link .cart-btn {
   color: #3498db;
   border: 2px solid #3498db;
-  padding: 0.6rem 1.1rem;
+  padding: 0.5rem 1.1rem;
   border-radius: 30px;
   cursor: pointer;
   margin: 0.1rem 0;

@@ -350,7 +350,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 4rem 0rem 2rem;
+  padding: 4rem 2rem 2rem;
 }
 .products .cards .card {
   width: 18%;

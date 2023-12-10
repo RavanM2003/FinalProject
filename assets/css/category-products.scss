@@ -1,6 +1,6 @@
 
 .card-category{
-    width: 18%;
+  width: 18%;
   min-height: 280px;
   text-align: center;
   background-color: #fff;
@@ -29,69 +29,68 @@
       opacity: 1;
     }
     .card-desc-a{
-      position: absolute;
-      background-color: #ffffff;
-      top: 0;
-      left: 0%;
-      width: 100%;
-      border: 1px solid #3498db;
-      padding: .5rem 1rem;
-      max-height: 280px;
-      opacity: 0;
-      transition: .5s;
-      z-index: 1;
-  border-radius: 10px;
-      cursor: pointer;
-      @keyframes fadeIn {
-        0% {
-          display: none;
-        }
-        100%{
-          display: block;
-        }
-      }
-      .prices{
-        padding: 0 .3rem;
-        text-align: center;
-        .price{
-          color: rgb(61, 61, 61);
-          text-decoration: line-through;
-          font-size: 20px;
-        }
-        .sale-price{
-          font-size: 25px;
-          color: #3498db;
-          font-weight: bold;
-        }
-      }
-      .desc{
-        text-align: center;
-        font-size: 16px;
-        padding: .5rem 0;
-      }
-      .link{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+        position: absolute;
+        background-color: #fff;
+        top: 0;
+        left: 0%;
         width: 100%;
-        .wish-btn{
-          color: #3498db;
-          border: 2px solid #3498db;
-          padding: .5rem 1rem;
-          border-radius: 30px;
-          margin: .1rem 0;
-          cursor: pointer;
+        border: 1px solid #3498db;
+        padding: .5rem 1rem;
+        max-height: 280px;
+        opacity: 0;
+        transition: .5s;
+        z-index: 1;
+    border-radius: 10px;
+        cursor: pointer;
+        @keyframes fadeIn {
+          0% {
+            display: none;
+          }
+          100%{
+            display: block;
+          }
         }
-        .cart-btn{
-          color: #3498db;
-          border: 2px solid #3498db;
-          padding: .6rem 1.1rem;
-          border-radius: 30px;
-          cursor: pointer;
-          margin: .1rem 0;
+        .prices{
+          padding: 0 .3rem;
+          text-align: center;
+          .price{
+            color: rgb(61, 61, 61);
+            text-decoration: line-through;
+            font-size: 15px;
+          }
+          .sale-price{
+            font-size: 20px;
+            color: #3498db;
+            font-weight: bold;
+          }
         }
-      }
+        .desc{
+          text-align: center;
+          font-size: 18px;
+          padding: .3rem 0;
+        }
+        .link{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          .wish-btn{
+            color: #3498db;
+            border: 2px solid #3498db;
+            padding: .5rem 1rem;
+            border-radius: 30px;
+            margin: .1rem 0;
+            cursor: pointer;
+          }
+          .cart-btn{
+            color: #3498db;
+            border: 2px solid #3498db;
+            padding: .5rem 1.1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: .1rem 0;
+          }
+        }
     }
   }
   .link-phone{

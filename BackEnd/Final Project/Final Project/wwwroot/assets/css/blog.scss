@@ -1,0 +1,159 @@
+.blogs{
+    .blog{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2rem 7rem;
+        background-color: #fff;
+        border-radius: 10px;
+        transition: .5s;
+        &:hover{
+            box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.75);
+            cursor: pointer;
+        }
+        .blog-image{
+            width: 40%;
+            .image{
+                width: 100%;
+                margin: auto;
+                img{
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 52% 48% 66% 34% / 30% 27% 73% 70%;
+                    padding: 1rem;
+                }
+            }
+        }
+        .blog-text{
+            width: 60%;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .category-name{
+                    font-size: 15px;
+                    color: #fff;
+                    background-color: #3498db;
+                    border: 1px solid #3498db;
+                    border-radius: 30px;
+                    padding: .2rem .5rem;
+                }
+                .create-time{
+                    p{
+                        font-size: 15px;
+                        color: #929292;
+                    }
+                }
+            }
+            .title{
+                h4{
+                    font-size: 40px;
+                    color: #3498db;
+                }
+            }
+            .description{
+                p{
+                    font-size: 18px;
+                }
+            }
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .author{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        margin-right: .5rem;
+                        width: 8%;
+                        aspect-ratio: 1;
+                        border-radius: 50%;
+                    }
+                }
+                .link{
+                    width: 40%;
+                    a{
+                        color: #3498db;
+                        border: 1px solid #3498db;
+                        padding: .5rem 1rem;
+                        border-radius: 30px;
+                        transition: .5s;
+                        &:hover{
+                            background-color: #3498db;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px){
+.blogs{
+    .blog{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2rem 1rem;
+        background-color: #fff;
+        border-radius: 10px;
+        transition: .5s;
+        &:hover{
+            box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.75);
+            cursor: pointer;
+        }
+        .blog-image{
+            width: 40%;
+            .image{
+                width: 100%;
+                margin: auto;
+                img{
+                    width: 100%;
+                    height: 100px;
+                    border-radius: 52% 48% 66% 34% / 30% 27% 73% 70%;
+                    padding: .5rem;
+                }
+            }
+        }
+        .blog-text{
+            padding: .5rem 1rem;
+            .header{
+                .category-name{
+                    font-size: 8px;
+                    padding: .2rem .5rem;
+                }
+                .create-time{
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+            .title{
+                h4{
+                    font-size: 15px;
+                }
+            }
+            .description{
+                margin: .2rem 0;
+                p{
+                    font-size: 6px;
+                }
+            }
+            .footer{
+                .author{
+                    font-size: 10px;
+                }
+                .link{
+                    width: 150%;
+                    a{
+                        padding: .1rem .2rem;
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+}

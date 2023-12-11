@@ -1,0 +1,657 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\css\\about.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\about.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\css\\blog-detail.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\blog-detail.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\css\\blog.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\blog.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\css\\card.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\card.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\css\\category-products.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\category-products.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\css\\contact.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\css\\help.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\help.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\css\\login.css",
+      "PackagePath": "staticwebassets\\assets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\css\\myacc.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\myacc.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\css\\product-detail.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\product-detail.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\css\\style.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\css\\wishlist.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\wishlist.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\ASUS Chromebook Vibe CX55 Flip-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ASUS Chromebook Vibe CX55 Flip-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\ASUS Chromebook Vibe CX55 Flip-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ASUS Chromebook Vibe CX55 Flip-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\ASUS Chromebook Vibe CX55 Flip.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ASUS Chromebook Vibe CX55 Flip.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Acer Nitro 5 Gaming Laptop-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Acer Nitro 5 Gaming Laptop-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Acer Nitro 5 Gaming Laptop-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Acer Nitro 5 Gaming Laptop-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Acer Nitro 5 Gaming Laptop.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Acer Nitro 5 Gaming Laptop.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Acer.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Acer.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\BestOffice_High-Back_Gaming_Chair.png",
+      "PackagePath": "staticwebassets\\assets\\images\\BestOffice_High-Back_Gaming_Chair.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryApparel.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryApparel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryChair.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryChair.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryController.png",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryController.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryFigure.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryFigure.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryGame.png",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryGame.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryHat.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryHat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryHeadset.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryHeadset.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryKeyboard.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryKeyboard.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryLaptop.png",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryLaptop.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryMouse.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryMouse.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryMug.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryMug.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryNintendo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryNintendo.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryOculus.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryOculus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryPlaystation.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryPlaystation.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\CategoryXBOX.png",
+      "PackagePath": "staticwebassets\\assets\\images\\CategoryXBOX.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Corsair HS65 SURROUND Gaming Headset-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Corsair HS65 SURROUND Gaming Headset-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Corsair HS65 SURROUND Gaming Headset-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Corsair HS65 SURROUND Gaming Headset-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Corsair HS65 SURROUND Gaming Headset.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Corsair HS65 SURROUND Gaming Headset.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Head Strap Compatible with Oculus Quest 2-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Head Strap Compatible with Oculus Quest 2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Head Strap Compatible with Oculus Quest 2-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Head Strap Compatible with Oculus Quest 2-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Head Strap Compatible with Oculus Quest 2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Head Strap Compatible with Oculus Quest 2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\MSI Katana 17 Gaming Laptop-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\MSI Katana 17 Gaming Laptop-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\MSI Katana 17 Gaming Laptop-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\MSI Katana 17 Gaming Laptop-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\MSI Katana 17 Gaming Laptop.png",
+      "PackagePath": "staticwebassets\\assets\\images\\MSI Katana 17 Gaming Laptop.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Microsoft Xbox One S 1TB-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Microsoft Xbox One S 1TB-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Microsoft Xbox One S 1TB-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Microsoft Xbox One S 1TB-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Microsoft Xbox One S 1TB.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Microsoft Xbox One S 1TB.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Microsoft Xbox Series S 512GB All-Digital-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Microsoft Xbox Series S 512GB All-Digital-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Microsoft Xbox Series S 512GB All-Digital-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Microsoft Xbox Series S 512GB All-Digital-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Microsoft Xbox Series S 512GB All-Digital.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Microsoft Xbox Series S 512GB All-Digital.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Microsoft Xbox Series S 512GB-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Microsoft Xbox Series S 512GB-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Microsoft Xbox Series S 512GB-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Microsoft Xbox Series S 512GB-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Microsoft Xbox Series S 512GB.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Microsoft Xbox Series S 512GB.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\MightySkins Skin Compatible with Oculus Quest 2 - Eagle Eye-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\MightySkins Skin Compatible with Oculus Quest 2 - Eagle Eye-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\MightySkins Skin Compatible with Oculus Quest 2 - Eagle Eye-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\MightySkins Skin Compatible with Oculus Quest 2 - Eagle Eye-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\MightySkins Skin Compatible with Oculus Quest 2 - Eagle Eye.png",
+      "PackagePath": "staticwebassets\\assets\\images\\MightySkins Skin Compatible with Oculus Quest 2 - Eagle Eye.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\MightySkins Skin Compatible with Oculus Quest 2-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\MightySkins Skin Compatible with Oculus Quest 2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\MightySkins Skin Compatible with Oculus Quest 2-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\MightySkins Skin Compatible with Oculus Quest 2-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\MightySkins Skin Compatible with Oculus Quest 2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\MightySkins Skin Compatible with Oculus Quest 2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Nintendo Switch - OLED Model Neon BlueNeon Red set-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Nintendo Switch - OLED Model Neon BlueNeon Red set-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Nintendo Switch - OLED Model Neon BlueNeon Red set-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Nintendo Switch - OLED Model Neon BlueNeon Red set-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Nintendo Switch - OLED Model Neon BlueNeon Red set.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Nintendo Switch - OLED Model Neon BlueNeon Red set.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Nintendo Switch - OLED Model White set-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Nintendo Switch - OLED Model White set-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Nintendo Switch - OLED Model White set-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Nintendo Switch - OLED Model White set-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Nintendo Switch - OLED Model White set.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Nintendo Switch - OLED Model White set.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Nintendo Switch™ - OLED Model - Mario Red Edition-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Nintendo Switch™ - OLED Model - Mario Red Edition-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Nintendo Switch™ - OLED Model - Mario Red Edition-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Nintendo Switch™ - OLED Model - Mario Red Edition-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Nintendo Switch™ - OLED Model - Mario Red Edition.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Nintendo Switch™ - OLED Model - Mario Red Edition.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Nintendo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Nintendo.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Official Luna Wireless Controller-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Official Luna Wireless Controller-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Official Luna Wireless Controller-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Official Luna Wireless Controller-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Official Luna Wireless Controller.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Official Luna Wireless Controller.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Paypal-logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Paypal-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\PlayStation 5 Enhanced-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\PlayStation 5 Enhanced-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\PlayStation 5 Enhanced-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\PlayStation 5 Enhanced-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\PlayStation 5 Enhanced.png",
+      "PackagePath": "staticwebassets\\assets\\images\\PlayStation 5 Enhanced.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\PlayStation 5 Slim Upgraded 2TB-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\PlayStation 5 Slim Upgraded 2TB-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\PlayStation 5 Slim Upgraded 2TB-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\PlayStation 5 Slim Upgraded 2TB-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\PlayStation 5 Slim Upgraded 2TB.png",
+      "PackagePath": "staticwebassets\\assets\\images\\PlayStation 5 Slim Upgraded 2TB.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\PowerA Spectra Infinity Enhanced Wired Controller-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\PowerA Spectra Infinity Enhanced Wired Controller-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\PowerA Spectra Infinity Enhanced Wired Controller-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\PowerA Spectra Infinity Enhanced Wired Controller-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\PowerA Spectra Infinity Enhanced Wired Controller.png",
+      "PackagePath": "staticwebassets\\assets\\images\\PowerA Spectra Infinity Enhanced Wired Controller.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Razer BlackShark V2 Pro Wireless Gaming Headset-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Razer BlackShark V2 Pro Wireless Gaming Headset-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Razer BlackShark V2 Pro Wireless Gaming Headset-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Razer BlackShark V2 Pro Wireless Gaming Headset-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Razer BlackShark V2 Pro Wireless Gaming Headset.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Razer BlackShark V2 Pro Wireless Gaming Headset.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Sony Playstation 4 1TB Marvel's Spider-Man-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Sony Playstation 4 1TB Marvel's Spider-Man-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Sony Playstation 4 1TB Marvel's Spider-Man-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Sony Playstation 4 1TB Marvel's Spider-Man-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Sony Playstation 4 1TB Marvel's Spider-Man.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Sony Playstation 4 1TB Marvel's Spider-Man.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\SteelSeries Arctis Nova 1P Multi-System Gaming Headset-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SteelSeries Arctis Nova 1P Multi-System Gaming Headset-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\SteelSeries Arctis Nova 1P Multi-System Gaming Headset-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SteelSeries Arctis Nova 1P Multi-System Gaming Headset-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\SteelSeries Arctis Nova 1P Multi-System Gaming Headset.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SteelSeries Arctis Nova 1P Multi-System Gaming Headset.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\SteelSeries_USB_Apex_5_Hybrid_Mechanical_Gaming_Keyboard.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SteelSeries_USB_Apex_5_Hybrid_Mechanical_Gaming_Keyboard.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Super Smash Bros. Ultimate-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Super Smash Bros. Ultimate-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Super Smash Bros. Ultimate-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Super Smash Bros. Ultimate-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Super Smash Bros. Ultimate.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Super Smash Bros. Ultimate.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Turtle Beach Recon 50 Xbox Gaming Headset-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Turtle Beach Recon 50 Xbox Gaming Headset-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Turtle Beach Recon 50 Xbox Gaming Headset-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Turtle Beach Recon 50 Xbox Gaming Headset-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Turtle Beach Recon 50 Xbox Gaming Headset.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Turtle Beach Recon 50 Xbox Gaming Headset.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Turtle Beach Stealth 600 Gen 2-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Turtle Beach Stealth 600 Gen 2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Turtle Beach Stealth 600 Gen 2-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Turtle Beach Stealth 600 Gen 2-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Turtle Beach Stealth 600 Gen 2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Turtle Beach Stealth 600 Gen 2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Xbox Core Wireless Gaming Controller-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Xbox Core Wireless Gaming Controller-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Xbox Core Wireless Gaming Controller-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Xbox Core Wireless Gaming Controller-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\Xbox Core Wireless Gaming Controller.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Xbox Core Wireless Gaming Controller.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\about-us.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about-us.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\apple-app-store-logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\apple-app-store-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\asus.png",
+      "PackagePath": "staticwebassets\\assets\\images\\asus.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\banner_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner_bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\blog-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\blog-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\blog-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\discount.png",
+      "PackagePath": "staticwebassets\\assets\\images\\discount.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\icon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\play-store-logo-nisi-filters-australia-11.png",
+      "PackagePath": "staticwebassets\\assets\\images\\play-store-logo-nisi-filters-australia-11.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\playstation.png",
+      "PackagePath": "staticwebassets\\assets\\images\\playstation.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\slider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\slider-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\slider-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\user-profile.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user-profile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\visa-and-mastercard-logo-26.png",
+      "PackagePath": "staticwebassets\\assets\\images\\visa-and-mastercard-logo-26.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\worker-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\worker-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\worker-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\worker-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\worker-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\worker-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\xbox.png",
+      "PackagePath": "staticwebassets\\assets\\images\\xbox.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\js\\about.js",
+      "PackagePath": "staticwebassets\\assets\\js\\about.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\js\\card.js",
+      "PackagePath": "staticwebassets\\assets\\js\\card.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\js\\contact.js",
+      "PackagePath": "staticwebassets\\assets\\js\\contact.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\js\\help.js",
+      "PackagePath": "staticwebassets\\assets\\js\\help.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\js\\login.js",
+      "PackagePath": "staticwebassets\\assets\\js\\login.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\js\\myacc.js",
+      "PackagePath": "staticwebassets\\assets\\js\\myacc.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\js\\product-detail.js",
+      "PackagePath": "staticwebassets\\assets\\js\\product-detail.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\js\\wishlist.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wishlist.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\about.css",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\about.css.map",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\about.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\blog-detail.css",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\blog-detail.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\blog-detail.css.map",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\blog-detail.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\blog.css",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\blog.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\blog.css.map",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\blog.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\card.css",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\card.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\card.css.map",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\card.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\category-products.css",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\category-products.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\category-products.css.map",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\category-products.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\contact.css",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\contact.css.map",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\contact.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\help.css",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\help.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\help.css.map",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\help.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\myacc.css",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\myacc.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\myacc.css.map",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\myacc.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\product-detail.css",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\product-detail.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\product-detail.css.map",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\product-detail.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\wishlist.css",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\wishlist.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\static\\css\\wishlist.css.map",
+      "PackagePath": "staticwebassets\\assets\\static\\css\\wishlist.css.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Final Project.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Final Project.props",
+      "PackagePath": "build\\Final Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Final Project.props",
+      "PackagePath": "buildMultiTargeting\\Final Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Final Project.props",
+      "PackagePath": "buildTransitive\\Final Project.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

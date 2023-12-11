@@ -1,0 +1,35 @@
+.help{
+    padding: 2rem 4rem;
+    .header{
+        h1{
+            color: #3498db;
+            font-size: 50px;
+        }
+    }
+    .questions{
+        .question{
+            margin: .5rem 0;
+            .accordion {
+                background-color: #eee;
+                color: #444;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                transition: 0.4s;
+                .active, &:hover{
+                    background-color: #ccc; 
+                }
+              }
+              .panel {
+                padding: 1rem;
+                display: none;
+                background-color: white;
+                overflow: hidden;
+              }
+        }
+    }
+}

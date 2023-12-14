@@ -6,6 +6,9 @@ namespace Final_Project.DAL
 {
     public class AppDbContext : IdentityDbContext<AppUser>
     {
+        public DbSet<Slider> Sliders { get; set; }
+        public DbSet<Banner> Banners { get; set; }
+        public DbSet<Workers> Workers { get; set; }
         public AppDbContext(DbContextOptions options) : base(options)
         {
         }

@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home - Gametronica - Playing is Easy Now!";
 }
 @model HomeVM
-<section class="slider">    
+<section class="slider">
     <div class="slideshow-container">
         @foreach (var slider in Model.Sliders)
         {
@@ -413,72 +413,31 @@
         <h1 class="header">Our Team</h1>
     </div>
     <div class="workers">
-        <div class="worker">
-            <div class="worker-image">
-                <img src="~/assets/images/worker-3.jpg" alt="">
+        @foreach (var worker in Model.Workers)
+        {
+            <div class="worker">
+                <div class="worker-image">
+                    <img src="~/assets/images/@worker.ImageUrl" alt="">
+                </div>
+                <div class="worker-name">
+                    <h1>@worker.FullName</h1>
+                </div>
+                <div class="worker-position">
+                    <p>@worker.Position</p>
+                </div>
+                <div class="worker-location">
+                    <p>@worker.Location</p>
+                </div>
+                <div class="worker-number">
+                    <p>@worker.PhoneNumber</p>
+                </div>
+                <div class="worker-contact">
+                    <a href="@worker.FacebookUrl"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="@worker.InstagramUrl"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="@worker.LinkedinUrl"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
-            <div class="worker-name">
-                <h1>Qara Qarayev</h1>
-            </div>
-            <div class="worker-position">
-                <p>General salesman</p>
-            </div>
-            <div class="worker-location">
-                <p>Baku,Azerbaijan</p>
-            </div>
-            <div class="worker-number">
-                <p>050-289-91-41</p>
-            </div>
-            <div class="worker-contact">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="worker">
-            <div class="worker-image">
-                <img src="~/assets/images/worker-2.jpg" alt="">
-            </div>
-            <div class="worker-name">
-                <h1>Vaqif Mustafazade</h1>
-            </div>
-            <div class="worker-position">
-                <p>Salesman</p>
-            </div>
-            <div class="worker-location">
-                <p>Baku,Azerbaijan</p>
-            </div>
-            <div class="worker-number">
-                <p>050-289-91-41</p>
-            </div>
-            <div class="worker-contact">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="worker">
-            <div class="worker-image">
-                <img src="~/assets/images/worker-1.jpg" alt="">
-            </div>
-            <div class="worker-name">
-                <h1>Akif Islamzade</h1>
-            </div>
-            <div class="worker-position">
-                <p>Salesman</p>
-            </div>
-            <div class="worker-location">
-                <p>Baku,Azerbaijan</p>
-            </div>
-            <div class="worker-number">
-                <p>050-289-91-41</p>
-            </div>
-            <div class="worker-contact">
-                <div class="facebook"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
-                <div class="instagram"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
-                <div class="linkedin"><a href=""><i class="fa-brands fa-linkedin"></i></a></div>
-            </div>
-        </div>
+        }
     </div>
 </section>
 <section class="newsletter">
@@ -497,20 +456,11 @@
 </section>
 <section class="sponsore">
     <div class="sponsores">
-        <div class="sponsore">
-            <img src="~/assets/images/Acer.png" alt="">
-        </div>
-        <div class="sponsore">
-            <img src="~/assets/images/asus.png" alt="">
-        </div>
-        <div class="sponsore">
-            <img src="~/assets/images/Nintendo.png" alt="">
-        </div>
-        <div class="sponsore">
-            <img src="~/assets/images/xbox.png" alt="">
-        </div>
-        <div class="sponsore">
-            <img src="~/assets/images/playstation.png" alt="">
-        </div>
+        @foreach (var sponsore in Model.Sponsores)
+        {
+            <div class="sponsore">
+                <img src="~/assets/images/@sponsore.ImageUrl" alt="">
+            </div>
+        }
     </div>
 </section>

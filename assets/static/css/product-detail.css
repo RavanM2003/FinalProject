@@ -40,6 +40,7 @@ body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  max-height: 600px;
 }
 .product .product-images .main-image {
   width: 100%;
@@ -117,14 +118,14 @@ body {
 .product .product-details .product-detail-review a:hover {
   color: #4b4b4b;
 }
-.product .product-details .product-detail-color {
+.product .product-details .product-detail-color, .product .product-details .product-detail-volume {
   margin: 0.5rem 0;
 }
-.product .product-details .product-detail-color p {
+.product .product-details .product-detail-color p, .product .product-details .product-detail-volume p {
   font-size: 13px;
   font-weight: bold;
 }
-.product .product-details .product-detail-color p span {
+.product .product-details .product-detail-color p span, .product .product-details .product-detail-volume p span {
   font-size: 15px;
   color: #3498db;
 }
@@ -134,10 +135,14 @@ body {
   background-color: #3498db;
   margin: 0.5rem 0;
 }
-.product .product-details .product-details-description {
+.product .product-details .product-details-description, .product .product-details .product-details-usage {
   margin: 0.5rem 0;
 }
-.product .product-details .product-details-description p {
+.product .product-details .product-details-description h1, .product .product-details .product-details-usage h1 {
+  font-size: 30px;
+  color: #3498db;
+}
+.product .product-details .product-details-description p, .product .product-details .product-details-usage p {
   color: #535353;
 }
 .product .product-details .product-details-available {
@@ -476,10 +481,13 @@ body {
   .product .product-details .product-detail-review a {
     font-size: 12px;
   }
-  .product .product-details .product-details-description {
+  .product .product-details .product-details-description, .product .product-details .product-details-usage {
     margin: 0.2rem 0;
   }
-  .product .product-details .product-details-description p {
+  .product .product-details .product-details-description h1, .product .product-details .product-details-usage h1 {
+    font-size: 20px;
+  }
+  .product .product-details .product-details-description p, .product .product-details .product-details-usage p {
     font-size: 12px;
   }
   .product .product-details .product-details-available {

@@ -1,0 +1,75 @@
+﻿@model FooterVM
+
+<footer>
+    <div class="footer">
+        <div class="contact">
+            <div class="header">
+                <h1>@Model.Setting["Company Name"]</h1>
+            </div>
+            <p class="main">Contact</p>
+            <p class="key">Address: <span>@Model.Setting["Address"]</span></p>
+            <p class="key">Phone: <span>@Model.Setting["Phone1"]</span></p>
+            <p class="key">Hour: <span>@Model.Setting["Hour"]</span></p>
+            <p class="main">Follow Us</p>
+            <div class="links">
+                <a href="@Model.Setting["Linkedin"]"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="@Model.Setting["Instagram"]"><i class="fa-brands fa-instagram"></i></a>
+                <a href="@Model.Setting["Facebook"]"><i class="fa-brands fa-facebook"></i></a>
+                <a href="@Model.Setting["Github"]"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="about">
+            <div class="header">
+                <h3>About</h3>
+            </div>
+            <div class="links">
+                <ul>
+                    <a href="">
+                    <li>About us</li></a>
+                    <a href="">
+                    <li>Delivery Information</li></a>
+                    <a href="">
+                    <li>Privacy Policy</li></a>
+                    <a href="">
+                    <li>Terms & Conditions</li></a>
+                    <a href="">
+                    <li>Contact Us</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="myaccount">
+            <div class="header">
+                <h3>My Account</h3>
+            </div>
+            <div class="links">
+                <ul>
+                    <a href="./login.html">
+                    <li>Sign in</li></a>
+                    <a href="">
+                    <li>View Cart</li></a>
+                    <a href="">
+                    <li>My Wishlist</li></a>
+                    <a href="./myacc.html">
+                    <li>My Account</li></a>
+                    <a href="./help.html">
+                    <li>Help <i class="fa-regular fa-circle-question"></i></li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="installapp">
+            <div class="header">
+                <h3>Install App</h3>
+                <p>From Apple Store or Google Play</p>
+            </div>
+            <div class="images">
+                <img src="~/assets/images/apple-app-store-logo.png" alt="">
+                <img src="~/assets/images/play-store-logo-nisi-filters-australia-11.png" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <div class="payment-images">
+                <img src="~/assets/images/visa-and-mastercard-logo-26.png" alt="">
+                <img src="~/assets/images/Paypal-logo.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>

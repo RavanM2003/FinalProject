@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eqGpYOXqY9QLR5n5kbhqHueIva6e+0JQu+0S3uameHw=",
+  "Hash": "qSp7dtot/HI2Na9cp2+MSqmacAJM30pZgVVGUIkTlD0=",
   "Source": "Final Project",
   "BasePath": "_content/Final Project",
   "Mode": "Default",
@@ -2718,6 +2718,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\static\\css\\wishlist.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\theme\\htmlpage.html",
+      "SourceId": "Final Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\",
+      "BasePath": "_content/Final Project",
+      "RelativePath": "theme/htmlpage.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\theme\\htmlpage.html"
     }
   ]
 }

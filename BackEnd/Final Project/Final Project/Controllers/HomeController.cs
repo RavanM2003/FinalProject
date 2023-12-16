@@ -27,6 +27,7 @@ namespace Final_Project.Controllers
                 .Include(p=>p.ProductFeatures)
                 .Include(p=>p.ProductComments)
                 .Where(p=>!p.IsDeleted)
+                .Take(10)
                 .ToList();
             homeVM.Categories = _context.Categories.Where(c => !c.IsDeleted).ToList();
             return View(homeVM);

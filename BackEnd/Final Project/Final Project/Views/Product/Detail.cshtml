@@ -176,7 +176,7 @@
                     <div class="related-product-buttons">
                         <a href="">Wishlist</a>
                         <a href="">Add To Card</a>
-                        <a asp-action="detail" asp-controller="product" asp-route-id="@item.Id">Go To Detail</a>
+                        <a asp-action="detail" asp-controller="product" asp-route-id="@item.Id" asp-route-categoryName="@item.Category.Name">Go To Detail</a>
                     </div>
                 </div>
             }

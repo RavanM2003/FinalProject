@@ -1,0 +1,27 @@
+﻿@model LoginVM
+@{
+    ViewData["Title"] = "Login - Account";
+}
+<div class="body">
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form method="post">
+                <h1>Create Account</h1>
+                <span>Use your Email or Username for registeration</span>
+                <input asp-for="UserNameOrEmail" placeholder="Email or Username">
+                <input asp-for="Password" placeholder="Password">
+                <button class="button">Sign In</button>
+                <span style="margin:1rem 0 0 0 ;">Do not have account?</span>
+                <a asp-action="register" class="button">Register</a>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

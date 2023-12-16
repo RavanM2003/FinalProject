@@ -1,0 +1,42 @@
+﻿@model RegistrVM
+@{
+    ViewData["Title"] = "Registration - Account";
+}
+<div class="body">
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form method="post">
+                <h1>Create Account</h1>
+                <span>Use your email for registeration</span>
+                <input asp-for="FullName" placeholder="Name">
+                <span style="color:red;" asp-validation-for="FullName"></span>
+                <input asp-for="UserName" placeholder="Username">
+                <span style="color:red;" asp-validation-for="UserName"></span>
+                <input asp-for="PhoneNumber" placeholder="Phone Number">
+                <span style="color:red;" asp-validation-for="PhoneNumber"></span>
+                <input asp-for="Country" placeholder="Select Country">
+                <span style="color:red;" asp-validation-for="Country"></span>
+                <input asp-for="Email" placeholder="Email">
+                <span style="color:red;" asp-validation-for="Email"></span>
+                <input asp-for="Password" placeholder="Password">
+                <span style="color:red;" asp-validation-for="Password"></span>
+                <input asp-for="Repeatpassword" placeholder="Confirm Password">
+                <span style="color:red;" asp-validation-for="Repeatpassword"></span>
+                <button class="button">Sign Up</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section script
+{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}

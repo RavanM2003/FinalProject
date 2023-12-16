@@ -11,6 +11,11 @@ namespace Final_Project.DAL
         public DbSet<Workers> Workers { get; set; }
         public DbSet<Sponsore> Sponsores { get; set; }
         public DbSet<Setting> Settings { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductComment> ProductComments { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
+        public DbSet<ProductFeatures> ProductFeatures { get; set; }
+        public DbSet<Category> Categories { get; set; }
         public AppDbContext(DbContextOptions options) : base(options)
         {
         }

@@ -389,6 +389,7 @@ body {
   width: 100%;
   border: 1px solid #3498db;
   padding: 0.5rem 1rem;
+  min-height: 280px;
   max-height: 280px;
   opacity: 0;
   transition: 0.5s;

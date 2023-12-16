@@ -1,0 +1,204 @@
+﻿@{
+    ViewData["Title"] = "Detail - Gametronica - Playing is Easy Now!";
+}
+@model ProductVM
+<section class="product">
+    <div class="product">
+        <div class="product-images">
+            <div class="main-image">
+                <img src="~/assets/images/@Model.Product.ImageUrl" alt="">
+            </div>
+            <div class="other-images">
+                @foreach (var image in Model.Product.ProductImages)
+                {
+                    <div class="other-image">
+                        <img src="~/assets/images/@image.ImageUrl" alt="">
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="product-details">
+            <div class="product-detail-category">
+                <h4>Category: <span>@Model.Product.Category.Name</span></h4>
+            </div>
+            <div class="product-detail-code">
+                <p>Product Code: <span>@Model.Product.ProductCode</span></p>
+            </div>
+            <div class="product-detail-header">
+                <h3>@Model.Product.Name</h3>
+            </div>
+            <div class="product-detail-price">
+                @if (Model.Product.SalePrice == null)
+                {
+                    <p>$<span id="productPrice">@Model.Product.Price</span></p>
+                }
+                else
+                {
+                    <p>$<span id="productPrice">@Model.Product.SalePrice</span></p>
+                }
+            </div>
+            <div class="product-detail-review">
+                <a href="#comment">@Model.Product.ProductComments.Count Comments</a>
+            </div>
+            <div class="product-detail-color">
+                <p>Color: <span>@Model.Product.Color</span></p>
+            </div>
+            <div class="product-detail-volume">
+                <p>Volume: <span>@Model.Product.Volume cm<sup>3</sup></span></p>
+            </div>
+            <hr>
+            <div class="product-details-description">
+                <p>@Model.Product.Description</p>
+            </div>
+            <div class="product-details-usage">
+                <h1>How to Use?</h1>
+                <p>@Model.Product.HowToUse</p>
+            </div>
+            <div class="product-details-available">
+                @if (Model.Product.StockCount != 0)
+                {
+                    <p>Availability: <span>In Stock</span></p>
+                }
+                else
+                {
+                    <p>Availability: <span>Not In Stock</span></p>
+                }
+            </div>
+            <div class="product-details-count">
+                <form action="">
+                    <input id="count" type="number" min="1" value="1">
+                    @if (Model.Product.SalePrice != null)
+                    {
+                        <input id="price" type="text" name="" id="" value="$@Model.Product.SalePrice" disabled>
+                    }
+                    else
+                    {
+                        <input id="price" type="text" name="" id="" value="$@Model.Product.Price" disabled>
+                    }
+                </form>
+            </div>
+            <div class="product-details-addcart">
+                <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i> Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="product-features">
+    <div class="product-features">
+        <div class="header">
+            <h1>Features</h1>
+        </div>
+        <hr>
+        <div class="features-body">
+            <table>
+                <thead>
+                <th>Name</th>
+                <th>Value</th>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Product.ProductFeatures)
+                    {
+                        <tr>
+                            <th>@item.Name</th>
+                            <td>@item.Value</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<section class="comments">
+    <div class="comments" id="comment">
+        <div class="header">
+            <h3>@Model.Product.ProductComments.Count Comments</h3>
+            <i class="fa-solid fa-caret-down"></i>
+            <i class="fa-solid fa-caret-up" style="display: none;"></i>
+        </div>
+        <hr>
+        <div class="commnetdiv" style="display: none;">
+            @foreach (var comment in Model.Product.ProductComments)
+            {
+                <div class="comment">
+                    <div class="message">
+                        <div class="message-detail">
+                            <p>@comment.WriteTime.ToString("h:mm tt MM/dd/yyyy")</p>
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <div class="edit" style="display: none;">
+                                <a href=""><i class="fa-solid fa-trash"></i> Delete Comment</a>
+                            </div>
+                        </div>
+                        <div class="message-body">
+                            <p>@comment.Message</p>
+                        </div>
+                        <div class="author">
+                            <img src="./assets/images/worker-1.jpg" alt="">
+                            <p>@comment.AppUser.FullName</p>
+                        </div>
+                    </div>
+                </div>
+            }
+            <h1>Add New Comment</h1>
+            <form action="">
+                <textarea></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+<secction class="related-products">
+    <div class="related-products">
+        <div class="header">
+            <h1>Related Products</h1>
+        </div>
+        <hr>
+        <div class="related-products-products">
+            @foreach (var item in Model.Products)
+            {
+                <div class="related-product">
+                    <div class="related-product-image">
+                        <img src="~/assets/images/@item.ImageUrl" alt="">
+                    </div>
+                    <div class="related-product-name">
+                        <h4>@item.Name</h4>
+                    </div>
+                    <div class="related-product-price">
+                        @if (item.SalePrice!=null)
+                        {
+                            <p class="price">$@item.Price</p>
+                            <p class="discount-price">$@item.SalePrice</p>
+                        }
+                        else
+                        {
+                            <p class="discount-price">$@item.Price</p>
+                        }
+                    </div>
+                    <div class="related-product-buttons">
+                        <a href="">Wishlist</a>
+                        <a href="">Add To Card</a>
+                        <a asp-action="detail" asp-controller="product" asp-route-id="@item.Id">Go To Detail</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</secction>
+<section class="sponsore">
+    <div class="sponsores">
+        <div class="sponsore">
+            <img src="~/assets/images/Acer.png" alt="">
+        </div>
+        <div class="sponsore">
+            <img src="~/assets/images/asus.png" alt="">
+        </div>
+        <div class="sponsore">
+            <img src="~/assets/images/Nintendo.png" alt="">
+        </div>
+        <div class="sponsore">
+            <img src="~/assets/images/xbox.png" alt="">
+        </div>
+        <div class="sponsore">
+            <img src="~/assets/images/playstation.png" alt="">
+        </div>
+    </div>
+</section>

@@ -358,8 +358,8 @@ body {
 }
 .related-products .related-products-products {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   padding: 0 1rem;
   margin: 2rem 0;
 }
@@ -368,6 +368,8 @@ body {
   background-color: #fff;
   padding: 0.5rem;
   border-radius: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 .related-products .related-products-products .related-product .related-product-image {
   width: 50%;

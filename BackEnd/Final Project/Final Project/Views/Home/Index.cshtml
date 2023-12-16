@@ -28,96 +28,15 @@
         <h1>Categories</h1>
     </div>
     <div class="carousel">
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Appareal</div></a>
-                <img src="~/assets/images/CategoryApparel.jpg" />
+        @foreach (var category in Model.Categories)
+        {
+            <div class="carousel-item">
+                <div class="carousel-box">
+                    <a href="./category-products.html"><div class="title">@category.Name</div></a>
+                    <img src="~/assets/images/@category.ImageUrl" />
+                </div>
             </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Chair</div></a>
-                <img src="~/assets/images/CategoryChair.jpg" />
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Mouse</div></a>
-                <img src="~/assets/images/CategoryMouse.jpg" />
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Controller</div></a>
-                <img src="~/assets/images/CategoryController.png" />
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Figure</div></a>
-                <img src="~/assets/images/CategoryFigure.jpg" />
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Game</div></a>
-                <img src="~/assets/images/CategoryGame.png" />
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Hat</div></a>
-                <img src="~/assets/images/CategoryHat.jpg" />
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">HeadSet</div></a>
-                <img src="~/assets/images/CategoryHeadset.jpg" />
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Keyboard</div></a>
-                <img src="~/assets/images/CategoryKeyboard.jpg" />
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Laptop</div></a>
-                <img src="~/assets/images/CategoryLaptop.png" />
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Mug</div></a>
-                <img src="~/assets/images/CategoryMug.jpg" />
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Nintendo</div></a>
-                <img src="~/assets/images/CategoryNintendo.png" />
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Oculus</div></a>
-                <img src="~/assets/images/CategoryOculus.jpg" />
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">Playstation</div></a>
-                <img src="~/assets/images/CategoryPlaystation.jpg" />
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-box">
-                <a href="./category-products.html"><div class="title">XBOX</div></a>
-                <img src="~/assets/images/CategoryXBOX.png" />
-            </div>
-        </div>
+        }
     </div>
 </section>
 <section class="products">
@@ -129,276 +48,44 @@
             </form>
         </div>
         <div class="cards">
-            <div class="card">
-                <div class="card-main">
-                    <img src="~/assets/images/ASUS Chromebook Vibe CX55 Flip.png" alt="">
-                    <div class="name">
-                        <h4>Nintendo Switch - OLED Model White set</h4>
-                    </div>
-                    <div class="card-desc">
-                        <div class="prices">
-                            <p class="price">$300.00</p>
-                            <p class="sale-price">$250.00</p>
+            @foreach (var product in Model.Product)
+            {
+                <div class="card">
+                    <div class="card-main">
+                        <img src="~/assets/images/@product.ImageUrl" alt="">
+                        <div class="name">
+                            <h4>@product.Name</h4>
                         </div>
-                        <div class="desc">
-                            <p class="desc-text">Get the gaming system that lets you play the games you want</p>
+                        <div class="card-desc">
+                            <div class="prices">
+                                @if (product.SalePrice != null)
+                                {
+                                    <p class="price">$@product.Price</p>
+                                    <p class="sale-price">$@product.SalePrice</p>
+                                }
+                                else
+                                {
+                                    <p style="font-size: 20px;">No Discount</p>
+                                    <p class="sale-price">$@product.Price</p>
+                                }
+                            </div>
+                            <div class="desc">
+                                <p class="desc-text">@product.Description.Substring(0,47)...</p>
+                            </div>
+                            <div class="link">
+                                <a class="wish-btn">WISHLIST</a>
+                                <a class="cart-btn">ADD TO CART</a>
+                                <a asp-controller="product" asp-action="detail" asp-route-id="@product.Id" asp-route-categoryName="@product.Category.Name" class="cart-btn">GO TO DETAIL</a>
+                            </div>
                         </div>
-                        <div class="link">
+                        <div class="link-phone">
                             <a class="wish-btn">WISHLIST</a>
                             <a class="cart-btn">ADD TO CART</a>
-                            <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
+                            <a asp-controller="product" asp-action="detail" asp-route-id="@product.Id" asp-route-categoryName="@product.Category.Name" class="cart-btn">GO TO DETAIL</a>
                         </div>
-                    </div>
-                    <div class="link-phone">
-                        <a class="wish-btn">WISHLIST</a>
-                        <a class="cart-btn">ADD TO CART</a>
-                        <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-main">
-                    <img src="~/assets/images/Head_Strap_Compatible_with_Oculus_Quest_2.png" alt="">
-                    <div class="name">
-                        <h4>Head Strap Compatible with Oculus Quest 2</h4>
-                    </div>
-                    <div class="card-desc">
-                        <div class="prices">
-                            <p class="price">$300.00</p>
-                            <p class="sale-price">$250.00</p>
-                        </div>
-                        <div class="desc">
-                            <p class="desc-text">Get the gaming system that lets you play the games you want</p>
-                        </div>
-                        <div class="link">
-                            <a class="wish-btn">WISHLIST</a>
-                            <a class="cart-btn">ADD TO CART</a>
-                            <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                        </div>
-                    </div>
-                    <div class="link-phone">
-                        <a class="wish-btn">WISHLIST</a>
-                        <a class="cart-btn">ADD TO CART</a>
-                        <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-main">
-                    <img src="~/assets/images/Microsoft_Xbox_One_S_1TB.png" alt="">
-                    <div class="name">
-                        <h4>Microsoft Xbox One S 1TB</h4>
-                    </div>
-                    <div class="card-desc">
-                        <div class="prices">
-                            <p class="price">$300.00</p>
-                            <p class="sale-price">$250.00</p>
-                        </div>
-                        <div class="desc">
-                            <p class="desc-text">Get the gaming system that lets you play the games you want</p>
-                        </div>
-                        <div class="link">
-                            <a class="wish-btn">WISHLIST</a>
-                            <a class="cart-btn">ADD TO CART</a>
-                            <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                        </div>
-                    </div>
-                    <div class="link-phone">
-                        <a class="wish-btn">WISHLIST</a>
-                        <a class="cart-btn">ADD TO CART</a>
-                        <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-main">
-                    <img src="~/assets/images/Acer_Nitro_5_AN515-58-57Y8_Gaming_Laptop.png" alt="">
-                    <div class="name">
-                        <h4>Acer Nitro 5 AN515-58-57Y8 Gaming Laptop</h4>
-                    </div>
-                    <div class="card-desc">
-                        <div class="prices">
-                            <p class="price">$300.00</p>
-                            <p class="sale-price">$250.00</p>
-                        </div>
-                        <div class="desc">
-                            <p class="desc-text">Get the gaming system that lets you play the games you want</p>
-                        </div>
-                        <div class="link">
-                            <a class="wish-btn">WISHLIST</a>
-                            <a class="cart-btn">ADD TO CART</a>
-                            <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                        </div>
-                    </div>
-                    <div class="link-phone">
-                        <a class="wish-btn">WISHLIST</a>
-                        <a class="cart-btn">ADD TO CART</a>
-                        <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-main">
-                    <img src="~/assets/images/Official_Luna_Wireless_Controller.png" alt="">
-                    <div class="name">
-                        <h4>Official Luna Wireless Controller</h4>
-                    </div>
-                    <div class="card-desc">
-                        <div class="prices">
-                            <p class="price">$300.00</p>
-                            <p class="sale-price">$250.00</p>
-                        </div>
-                        <div class="desc">
-                            <p class="desc-text">Get the gaming system that lets you play the games you want</p>
-                        </div>
-                        <div class="link">
-                            <a class="wish-btn">WISHLIST</a>
-                            <a class="cart-btn">ADD TO CART</a>
-                            <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                        </div>
-                    </div>
-                    <div class="link-phone">
-                        <a class="wish-btn">WISHLIST</a>
-                        <a class="cart-btn">ADD TO CART</a>
-                        <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-main">
-                    <img src="~/assets/images/PlayStation_5_Enhanced.png" alt="">
-                    <div class="name">
-                        <h4>PlayStation 5 Enhanced</h4>
-                    </div>
-                    <div class="card-desc">
-                        <div class="prices">
-                            <p class="price">$300.00</p>
-                            <p class="sale-price">$250.00</p>
-                        </div>
-                        <div class="desc">
-                            <p class="desc-text">Get the gaming system that lets you play the games you want</p>
-                        </div>
-                        <div class="link">
-                            <a class="wish-btn">WISHLIST</a>
-                            <a class="cart-btn">ADD TO CART</a>
-                            <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                        </div>
-                    </div>
-                    <div class="link-phone">
-                        <a class="wish-btn">WISHLIST</a>
-                        <a class="cart-btn">ADD TO CART</a>
-                        <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-main">
-                    <img src="~/assets/images/Super_Smash_Bros._Ultimate.png" alt="">
-                    <div class="name">
-                        <h4>Super Smash Bros. Ultimate</h4>
-                    </div>
-                    <div class="card-desc">
-                        <div class="prices">
-                            <p class="price">$300.00</p>
-                            <p class="sale-price">$250.00</p>
-                        </div>
-                        <div class="desc">
-                            <p class="desc-text">Get the gaming system that lets you play the games you want</p>
-                        </div>
-                        <div class="link">
-                            <a class="wish-btn">WISHLIST</a>
-                            <a class="cart-btn">ADD TO CART</a>
-                            <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                        </div>
-                    </div>
-                    <div class="link-phone">
-                        <a class="wish-btn">WISHLIST</a>
-                        <a class="cart-btn">ADD TO CART</a>
-                        <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-main">
-                    <img src="~/assets/images/Corsair_HS65_SURROUND_Gaming_Headset.png" alt="">
-                    <div class="name">
-                        <h4>Corsair HS65 SURROUND Gaming Headset</h4>
-                    </div>
-                    <div class="card-desc">
-                        <div class="prices">
-                            <p class="price">$300.00</p>
-                            <p class="sale-price">$250.00</p>
-                        </div>
-                        <div class="desc">
-                            <p class="desc-text">Get the gaming system that lets you play the games you want</p>
-                        </div>
-                        <div class="link">
-                            <a class="wish-btn">WISHLIST</a>
-                            <a class="cart-btn">ADD TO CART</a>
-                            <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                        </div>
-                    </div>
-                    <div class="link-phone">
-                        <a class="wish-btn">WISHLIST</a>
-                        <a class="cart-btn">ADD TO CART</a>
-                        <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-main">
-                    <img src="~/assets/images/SteelSeries_USB_Apex_5_Hybrid_Mechanical_Gaming_Keyboard.png" alt="">
-                    <div class="name">
-                        <h4>SteelSeries USB Apex 5 Hybrid Mechanical Gaming Keyboard</h4>
-                    </div>
-                    <div class="card-desc">
-                        <div class="prices">
-                            <p class="price">$300.00</p>
-                            <p class="sale-price">$250.00</p>
-                        </div>
-                        <div class="desc">
-                            <p class="desc-text">Get the gaming system that lets you play the games you want</p>
-                        </div>
-                        <div class="link">
-                            <a class="wish-btn">WISHLIST</a>
-                            <a class="cart-btn">ADD TO CART</a>
-                            <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                        </div>
-                    </div>
-                    <div class="link-phone">
-                        <a class="wish-btn">WISHLIST</a>
-                        <a class="cart-btn">ADD TO CART</a>
-                        <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-main">
-                    <img src="~/assets/images/BestOffice_High-Back_Gaming_Chair.png" alt="">
-                    <div class="name">
-                        <h4>BestOffice High-Back Gaming Chair</h4>
-                    </div>
-                    <div class="card-desc">
-                        <div class="prices">
-                            <p class="price">$300.00</p>
-                            <p class="sale-price">$250.00</p>
-                        </div>
-                        <div class="desc">
-                            <p class="desc-text">Get the gaming system that lets you play the games you want</p>
-                        </div>
-                        <div class="link">
-                            <a class="wish-btn">WISHLIST</a>
-                            <a class="cart-btn">ADD TO CART</a>
-                            <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                        </div>
-                    </div>
-                    <div class="link-phone">
-                        <a class="wish-btn">WISHLIST</a>
-                        <a class="cart-btn">ADD TO CART</a>
-                        <a href="./product-detail.html" class="cart-btn">GO TO DETAIL</a>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </section>

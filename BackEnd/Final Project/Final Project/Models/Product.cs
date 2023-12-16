@@ -14,5 +14,10 @@ namespace Final_Project.Models
         public string HowToUse { get; set; }
         public int StockCount { get; set; }
         public double Volume { get; set; }
+        public Category Category { get; set; }
+        public int CategoryId { get; set; }
+        public List<ProductImage> ProductImages { get; set; }
+        public List<ProductComment> ProductComments { get; set; }
+        public List<ProductFeatures> ProductFeatures { get; set; }
     }
 }

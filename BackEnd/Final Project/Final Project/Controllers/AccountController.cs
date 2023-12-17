@@ -167,13 +167,13 @@ namespace Final_Project.Controllers
             AppUser user = await _userManager.FindByEmailAsync(email);
             if (user == null)
             {
-                ModelState.AddModelError("Email", "bele mail movcud deil");
+                ModelState.AddModelError("Email", "Email is not true!");
                 return View();
             }
             var token = await _userManager.GeneratePasswordResetTokenAsync(user);
             var link = Url.Action(nameof(ResetPassword), "Account", new { email = user.Email, token }, Request.Scheme, Request.Host.ToString());
             MailMessage mailMessage = new();
-            mailMessage.From = new MailAddress("ravannm@code.edu.az", "Email form AllUp");
+            mailMessage.From = new MailAddress("ravannm@code.edu.az", "Email form Gametronica");
             mailMessage.To.Add(new MailAddress(user.Email));
             mailMessage.Subject = "reset password";
             mailMessage.Body = $"<a href={link}>Please click here to reset your password</a>";

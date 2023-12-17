@@ -6,11 +6,16 @@
     <div class="container" id="container">
         <div class="form-container sign-in">
             <form method="post">
+                <div asp-validation-summary="All" style="color:red;"></div>
                 <h1>Create Account</h1>
                 <span>Use your Email or Username for registeration</span>
                 <input asp-for="UserNameOrEmail" placeholder="Email or Username">
+                <span style="color:red;" asp-validation-for="UserNameOrEmail"></span>
                 <input asp-for="Password" placeholder="Password">
+                <span style="color:red;" asp-validation-for="Password"></span>
                 <button class="button">Sign In</button>
+                <span style="margin:1rem 0 0 0 ;"></span>
+                <a asp-action="ForgetPassword" class="button">Forgot Password?</a>
                 <span style="margin:1rem 0 0 0 ;">Do not have account?</span>
                 <a asp-action="register" class="button">Register</a>
             </form>
@@ -25,3 +30,8 @@
         </div>
     </div>
 </div>
+@section script
+    {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}

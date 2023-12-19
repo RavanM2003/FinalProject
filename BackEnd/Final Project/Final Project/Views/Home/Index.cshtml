@@ -32,7 +32,7 @@
         {
             <div class="carousel-item">
                 <div class="carousel-box">
-                    <a href="./category-products.html"><div class="title">@category.Name</div></a>
+                    <a asp-controller="product" asp-action="ProductCategory" asp-route-name="@category.Name"><div class="title">@category.Name</div></a>
                     <img src="~/assets/images/@category.ImageUrl" />
                 </div>
             </div>

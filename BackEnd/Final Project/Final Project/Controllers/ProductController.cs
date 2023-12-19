@@ -31,5 +31,14 @@ namespace Final_Project.Controllers
             _context.Categories.FirstOrDefault(x=>x.Name == categoryName).Id).ToList();
             return View(productVM);
         }
+        public IActionResult ProductCategory(string name)
+        {
+            if (name == null) return NotFound();
+            ProductVM productVM = new();
+            productVM.Category = _context.Categories
+                .Include(c=>c.Products)
+                .FirstOrDefault(c => c.Name == name);
+            return View(productVM);
+        }
     }
 }

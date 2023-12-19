@@ -1,0 +1,54 @@
+﻿@model ProductVM
+@{
+    ViewData["Title"] = "Products";
+}
+    <section class="products">
+        <div class="products">
+            <div class="header">
+                <h1>@Model.Category.Name</h1>
+                <form action="">
+                    <input id="searchProduct" type="text" placeholder="Search">
+                </form>
+            </div>
+            <div class="cards">
+                @foreach (var item in Model.Category.Products)
+            {
+                <div class="card-category">
+                    <div class="card-main">
+                        <img src="~/assets/images/@item.ImageUrl" alt="">
+                        <div class="name">
+                            <h4>@item.Name</h4>
+                        </div>
+                        <div class="card-desc-a">
+                            <div class="prices">
+                                @if (item.SalePrice != null)
+                                {
+                                    <p class="price">$@item.Price</p>
+                                    <p class="sale-price">$@item.SalePrice</p>
+                                }
+                                else
+                                {
+                                    <p>No Discount</p>
+                                    <p class="sale-price">$@item.Price</p>
+                                }
+                            </div>
+                            <div class="desc">
+                                <p class="desc-text">@item.Description.Substring(0,47)...</p>
+                            </div>
+                            <div class="link">
+                                <a class="wish-btn">WISHLIST</a>
+                                <a class="cart-btn">ADD TO CART</a>
+                                <a class="cart-btn" asp-action="detail" asp-controller="product" asp-route-id="@item.Id" asp-route-categoryName="@item.Category.Name">Go To Detail</a>
+                            </div>
+                        </div>
+                        <div class="link-phone">
+                            <a class="wish-btn">WISHLIST</a>
+                            <a class="cart-btn">ADD TO CART</a>
+                            <a class="cart-btn" asp-action="detail" asp-controller="product" asp-route-id="@item.Id" asp-route-categoryName="@item.Category.Name">Go To Detail</a>
+                        </div>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+    </section>

@@ -24,15 +24,15 @@
             </div>
             <div class="links">
                 <ul>
-                    <a href="">
+                    <a asp-action="index" asp-controller="about">
                     <li>About us</li></a>
-                    <a href="">
+                    <a asp-action="index" asp-controller="about">
                     <li>Delivery Information</li></a>
-                    <a href="">
+                    <a asp-action="index" asp-controller="about">
                     <li>Privacy Policy</li></a>
-                    <a href="">
+                    <a asp-action="index" asp-controller="about">
                     <li>Terms & Conditions</li></a>
-                    <a href="">
+                    <a asp-action="index" asp-controller="contact">
                     <li>Contact Us</li></a>
                 </ul>
             </div>
@@ -43,8 +43,16 @@
             </div>
             <div class="links">
                 <ul>
-                    <a href="./login.html">
-                    <li>Sign in</li></a>
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <a asp-controller="Account" asp-action="Login">
+                            <li>Sign in</li></a>
+                    }
+                    else
+                    {
+                        <a href="">
+                        <li>@User.Identity.Name</li></a>
+                    }
                     <a href="">
                     <li>View Cart</li></a>
                     <a href="">

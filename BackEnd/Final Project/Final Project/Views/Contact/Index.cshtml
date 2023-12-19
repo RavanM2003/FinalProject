@@ -1,0 +1,67 @@
+﻿@model ContactVM
+@{
+    ViewData["Title"] = "Contact - Gametronica";
+}
+
+<section class="contact">
+    <div class="contact-box">
+        <div class="box-info">
+            <div class="header">
+                <h3>Contact Info</h3>
+            </div>
+            <div class="info-links">
+                <div class="info-link">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>@Model.Setting["Address"]</p>
+                </div>
+                <div class="info-link">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>@Model.Setting["Mail"]</p>
+                </div>
+                <div class="info-link">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>@Model.Setting["Phone1"]</p>
+                    <p>@Model.Setting["Phone2"]</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="@Model.Setting["Instagram"]"><i class="fa-brands fa-instagram"></i></a>
+                <a href="@Model.Setting["Facebook"]"><i class="fa-brands fa-facebook"></i></a>
+                <a href="@Model.Setting["Linkedin"]"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="@Model.Setting["Github"]"><i class="fa-brands fa-github"></i></a>
+                <a href="@Model.Setting["Twitter"]"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="box-form">
+            <div class="header">
+                <h2>Send a Message</h2>
+            </div>
+            <div class="form">
+                <form action="">
+                    <div class="name">
+                        <input type="text" name="" id="name" autocomplete="off">
+                        <label for="name">First Name</label>
+                    </div>
+                    <div class="surname">
+                        <input type="text" name="" id="surname" autocomplete="off">
+                        <label for="surname">Last Name</label>
+                    </div>
+                    <div class="email">
+                        <input type="email" name="" id="email">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="phone">
+                        <input type="tel" name="" id="phone">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="message">
+                        <textarea id="message" placeholder="Write your message here"></textarea>
+                    </div>
+                    <div class="buttona">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

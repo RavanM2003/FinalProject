@@ -16,6 +16,7 @@ namespace Final_Project.DAL
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<ProductFeatures> ProductFeatures { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
         public AppDbContext(DbContextOptions options) : base(options)
         {
         }

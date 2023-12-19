@@ -160,7 +160,6 @@ namespace Final_Project.Controllers
         {
             return View();
         }
-
         [HttpPost]
         public async Task<IActionResult> ForgetPassword(string email)
         {
@@ -192,7 +191,6 @@ namespace Final_Project.Controllers
 
             return RedirectToAction("index", "home");
         }
-
         public IActionResult ResetPassword()
         {
             return View();

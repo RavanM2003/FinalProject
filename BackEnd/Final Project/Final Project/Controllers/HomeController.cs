@@ -1,5 +1,8 @@
 ﻿using Final_Project.DAL;
+using Final_Project.Helper;
+using Final_Project.Models;
 using Final_Project.ViewModels.Home;
+using Final_Project.ViewModels.ProductViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -26,10 +29,12 @@ namespace Final_Project.Controllers
                 .Include(p=>p.ProductImages)
                 .Include(p=>p.ProductFeatures)
                 .Include(p=>p.ProductComments)
-                .Where(p=>!p.IsDeleted)
                 .Take(10)
+                .Where(p=>!p.IsDeleted)
+                .OrderByDescending(p=>p.CreatedTime)
                 .ToList();
             homeVM.Categories = _context.Categories.Where(c => !c.IsDeleted).ToList();
+
             return View(homeVM);
         }
     }

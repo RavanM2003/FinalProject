@@ -1,0 +1,65 @@
+﻿@model AboutVM
+@{
+    ViewData["Title"] = "About Page";
+}
+
+<main>
+    <section class="about">
+        <div class="about-us">
+            <div class="image">
+                <img src="~/assets/images/about-us.png" alt="">
+            </div>
+            <div class="text">
+                <div class="header">
+                    <h1>About us</h1>
+                </div>
+                <hr>
+                <div class="main-description">
+                    <p>@Model.Setting["About1"]</p>
+                </div>
+                <div class="sub-description">
+                    <p>@Model.Setting["About2"]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature">
+        <div class="features">
+            <div class="feature">
+                <div class="header">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="description">
+                    <h3>24/7 Support</h3>
+                    <p>@Model.Setting["24/7 Support"]</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="header">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <div class="description">
+                    <h3>Fast Delivery</h3>
+                    <p>@Model.Setting["Fast Delivery"]</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="header">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="description">
+                    <h3>2 Year Guarantee</h3>
+                    <p>@Model.Setting["2 Year Guarantee"]</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="header">
+                    <i class="fa-solid fa-ranking-star"></i>
+                </div>
+                <div class="description">
+                    <h3>Quality of Products</h3>
+                    <p>@Model.Setting["Quality of Products"]</p>
+                </div>
+            </div>
+    </section>
+</main>

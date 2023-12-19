@@ -1,12 +1,12 @@
 ﻿@model HeaderVM
 <header>
     <div class="navbar">
-        <a href="./index.html" class="site-name">@Model.Setting["Company Name"]</a>
+        <a asp-action="index" asp-controller="home" class="site-name">@Model.Setting["Company Name"]</a>
         <ul class="nav-links">
-            <li><a href="./index.html" class="nav-link">Home</a></li>
-            <li><a href="./about.html" class="nav-link">About</a></li>
-            <li><a href="./contact.html" class="nav-link">Contact</a></li>
-            <li><a href="./blog.html" class="nav-link">Blog</a></li>
+            <li><a asp-action="index" asp-controller="home" class="nav-link">Home</a></li>
+            <li><a asp-action="index" asp-controller="about" class="nav-link">About</a></li>
+            <li><a asp-action="index" asp-controller="contact" class="nav-link">Contact</a></li>
+            <li><a asp-action="index" asp-controller="blog" class="nav-link">Blog</a></li>
             <li><a href="#team" class="nav-link">Team</a></li>
         </ul>
         <div class="icons">

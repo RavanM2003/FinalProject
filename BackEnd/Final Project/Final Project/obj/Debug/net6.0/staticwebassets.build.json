@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qSp7dtot/HI2Na9cp2+MSqmacAJM30pZgVVGUIkTlD0=",
+  "Hash": "I7Qc2pUpCOq+VjojzhibvRMT4ZIEhg4YXlsaEcPY2Ug=",
   "Source": "Final Project",
   "BasePath": "_content/Final Project",
   "Mode": "Default",
@@ -221,6 +221,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\wishlist.scss"
     },
     {
+      "Identity": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\791bdc71-e3bb-4ee9-a92e-6cfbf0b40135732bec45-5da7-43a2-a56e-225a8235308a.jpg",
+      "SourceId": "Final Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\",
+      "BasePath": "_content/Final Project",
+      "RelativePath": "assets/images/791bdc71-e3bb-4ee9-a92e-6cfbf0b40135732bec45-5da7-43a2-a56e-225a8235308a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\791bdc71-e3bb-4ee9-a92e-6cfbf0b40135732bec45-5da7-43a2-a56e-225a8235308a.jpg"
+    },
+    {
       "Identity": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\about-us.png",
       "SourceId": "Final Project",
       "SourceType": "Discovered",
@@ -389,6 +406,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\asus.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\b1024faa-bcd3-4200-9067-4c69043d5a07profile-pic.png",
+      "SourceId": "Final Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\",
+      "BasePath": "_content/Final Project",
+      "RelativePath": "assets/images/b1024faa-bcd3-4200-9067-4c69043d5a07profile-pic.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\b1024faa-bcd3-4200-9067-4c69043d5a07profile-pic.png"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\banner_bg.jpg",

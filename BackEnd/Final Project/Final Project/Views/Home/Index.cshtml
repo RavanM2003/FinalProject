@@ -74,13 +74,15 @@
                             </div>
                             <div class="link">
                                 <a class="wish-btn">WISHLIST</a>
-                                <a class="cart-btn">ADD TO CART</a>
+                                <form asp-controller="Basket" asp-action="Add" asp-route-id="@product.Id" method="post">
+                                    <li style="list-style:none;"><button style="border:2px solid #3498db; padding:.5rem 1rem; color:#3498db; background:#fff; border-radius:30px; margin:.3rem 0; font-size:18px;">Add To Cart</button></li>
+                                </form>
                                 <a asp-controller="product" asp-action="detail" asp-route-id="@product.Id" asp-route-categoryName="@product.Category.Name" class="cart-btn">GO TO DETAIL</a>
                             </div>
                         </div>
                         <div class="link-phone">
                             <a class="wish-btn">WISHLIST</a>
-                            <a class="cart-btn">ADD TO CART</a>
+                            <a  class="cart-btn">ADD TO CART</a>
                             <a asp-controller="product" asp-action="detail" asp-route-id="@product.Id" asp-route-categoryName="@product.Category.Name" class="cart-btn">GO TO DETAIL</a>
                         </div>
                     </div>

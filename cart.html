@@ -191,14 +191,58 @@
               <p id="final">$700.00</p>
             </div>
             <form action="">
-              <button>Buy With One Click</button>
+              <button id="checkout">Checkout</button>
             </form>
 
           </div>
         </div>
       </section>
-      <div class="modal"></div>
+      
+    <div class="card-detail" style="display: none;">
+      <div class="card-code">
+        <label for="cardCode">Code</label>
+        <input id="cardCode" type="text" placeholder="**** - **** - **** - ****">
+      </div>
+      <div class="card-date_cvv">
+        <div class="card-date">
+          <label for="card-date">Expire Date</label>
+          <input id="card-date" type="date">
+        </div>
+        <div class="cvv">
+          <label for="cvv">CVV</label>
+          <input id="cvv" type="password">
+        </div>
+      </div>
+      <div class="card-address">
+        <div class="card-country">
+          <label for="card-country">Country</label>
+          <input id="card-country" type="text" placeholder="Country">
+        </div>
+        <div class="card-city">
+          <label for="card-city">City</label>
+          <input id="card-city" type="text" placeholder="City">
+        </div>
+        <div class="card-address1">
+          <label for="card-address1">Address 1</label>
+          <input id="card-address1" type="text" placeholder="Adress 1">
+        </div>
+        <div class="card-address2">
+          <label for="card-address2">Address 2</label>
+          <input id="card-address2" type="text" placeholder="Adress 2">
+        </div>
+        <div class="zip-code">
+          <label for="zip-code">Zip Code</label>
+          <input id="zip-code" type="text" placeholder="Zip Code">
+        </div>
+        <div class="pay">
+          <form action="">
+            <button id="buy">Buy with one click</button>
+          </form>
+        </div>
+      </div>
+    </div>
     </main>
+    
     <footer>
       <div class="footer">
         <div class="contact">

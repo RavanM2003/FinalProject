@@ -430,6 +430,57 @@ namespace Final_Project.DAL.Migrations
                     b.ToTable("ProductImages");
                 });
 
+            modelBuilder.Entity("Final_Project.Models.Sale", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("AppUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("Total")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
+
+                    b.ToTable("Sales");
+                });
+
+            modelBuilder.Entity("Final_Project.Models.SaleProduct", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SaleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("SaleId");
+
+                    b.ToTable("SalesProducts");
+                });
+
             modelBuilder.Entity("Final_Project.Models.Setting", b =>
                 {
                     b.Property<int>("Id")
@@ -816,6 +867,36 @@ namespace Final_Project.DAL.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("Final_Project.Models.Sale", b =>
+                {
+                    b.HasOne("Final_Project.Models.AppUser", "AppUser")
+                        .WithMany()
+                        .HasForeignKey("AppUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppUser");
+                });
+
+            modelBuilder.Entity("Final_Project.Models.SaleProduct", b =>
+                {
+                    b.HasOne("Final_Project.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Final_Project.Models.Sale", "Sale")
+                        .WithMany("SaleProducts")
+                        .HasForeignKey("SaleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("Sale");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -879,6 +960,11 @@ namespace Final_Project.DAL.Migrations
                     b.Navigation("ProductFeatures");
 
                     b.Navigation("ProductImages");
+                });
+
+            modelBuilder.Entity("Final_Project.Models.Sale", b =>
+                {
+                    b.Navigation("SaleProducts");
                 });
 #pragma warning restore 612, 618
         }

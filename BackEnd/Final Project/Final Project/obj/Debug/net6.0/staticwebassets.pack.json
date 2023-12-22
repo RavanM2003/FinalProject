@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\assets\\css\\wishlist.scss"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\791bdc71-e3bb-4ee9-a92e-6cfbf0b40135732bec45-5da7-43a2-a56e-225a8235308a.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\791bdc71-e3bb-4ee9-a92e-6cfbf0b40135732bec45-5da7-43a2-a56e-225a8235308a.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\ASUS Chromebook Vibe CX55 Flip-1.png",
       "PackagePath": "staticwebassets\\assets\\images\\ASUS Chromebook Vibe CX55 Flip-1.png"
     },
@@ -427,6 +431,10 @@
     {
       "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\asus.png",
       "PackagePath": "staticwebassets\\assets\\images\\asus.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\b1024faa-bcd3-4200-9067-4c69043d5a07profile-pic.png",
+      "PackagePath": "staticwebassets\\assets\\images\\b1024faa-bcd3-4200-9067-4c69043d5a07profile-pic.png"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\banner_bg.jpg",

@@ -1,5 +1,6 @@
-﻿using Final_Project.DAL;
+﻿    using Final_Project.DAL;
 using Final_Project.Models;
+using Final_Project.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +15,13 @@ namespace Final_Project
             {
                 option.UseSqlServer("server=.;database=FinalProjectDb;integrated security=true");
             });
+            services.AddSession(option =>
+            {
+                option.IdleTimeout = TimeSpan.FromMinutes(10);
+            });
+            services.AddHttpContextAccessor();
+            services.AddScoped<IBasketService, BasketService>();
+
             services.AddIdentity<AppUser, IdentityRole>(option =>
             {
                 option.Password.RequireDigit = true;

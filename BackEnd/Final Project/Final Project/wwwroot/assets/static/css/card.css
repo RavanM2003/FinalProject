@@ -1,3 +1,7 @@
+main {
+  position: relative;
+}
+
 .card-basket {
   display: flex;
   justify-content: space-between;
@@ -121,6 +125,98 @@
   transition: 0.5s;
 }
 .card-basket .card-basket-prices button:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.card-detail {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #3498db;
+  border-radius: 10px;
+  width: 50%;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card-detail .card-code {
+  position: relative;
+  margin: 1rem 0;
+}
+.card-detail .card-code label {
+  position: absolute;
+  top: 0;
+  font-size: 20px;
+  color: #3498db;
+}
+.card-detail .card-code #cardCode {
+  outline: 0;
+  border: 1px solid #3498db;
+  padding: 0.5rem;
+  font-size: 20px;
+  margin-top: 1.5rem;
+  width: 90%;
+  border-radius: 10px;
+}
+.card-detail .card-code #cardCode::-moz-placeholder {
+  font-size: 20px;
+}
+.card-detail .card-code #cardCode::placeholder {
+  font-size: 20px;
+}
+.card-detail .card-date_cvv {
+  margin: 1rem 0;
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.card-detail .card-date_cvv label {
+  color: #3498db;
+  font-size: 20px;
+}
+.card-detail .card-date_cvv input {
+  width: 90%;
+  border-radius: 10px;
+  outline: 0;
+  border: 1px solid #3498db;
+  padding: 0.5rem;
+  font-size: 20px;
+  margin: 0 1rem;
+}
+.card-detail .card-address {
+  text-align: left;
+  padding: 0 5%;
+  margin: 1rem 0;
+}
+.card-detail .card-address label {
+  color: #3498db;
+  font-size: 20px;
+}
+.card-detail .card-address input {
+  width: 100%;
+  outline: 0;
+  border: 1px solid #3498db;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin: 0.3rem 0;
+  font-size: 18px;
+}
+.card-detail button {
+  width: 100%;
+  margin: 0.5rem;
+  padding: 0.5rem 0;
+  font-size: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: #3498db;
+  background-color: #fff;
+  border: 1px solid #3498db;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.card-detail button:hover {
   background-color: #3498db;
   color: #fff;
 }
@@ -252,6 +348,97 @@
     transition: 0.5s;
   }
   .card-basket .card-basket-prices button:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  .card-detail {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #3498db;
+    border-radius: 10px;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .card-detail .card-code {
+    position: relative;
+    margin: 1rem 0;
+  }
+  .card-detail .card-code label {
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    color: #3498db;
+  }
+  .card-detail .card-code #cardCode {
+    outline: 0;
+    border: 1px solid #3498db;
+    padding: 0.5rem;
+    font-size: 20px;
+    margin-top: 1.5rem;
+    width: 90%;
+    border-radius: 10px;
+  }
+  .card-detail .card-code #cardCode::-moz-placeholder {
+    font-size: 20px;
+  }
+  .card-detail .card-code #cardCode::placeholder {
+    font-size: 20px;
+  }
+  .card-detail .card-date_cvv {
+    margin: 1rem 0;
+    padding: 0 5% 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-detail .card-date_cvv label {
+    color: #3498db;
+    font-size: 20px;
+  }
+  .card-detail .card-date_cvv input {
+    width: 90%;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid #3498db;
+    padding: 0.5rem;
+    font-size: 20px;
+    margin: 0 1rem;
+  }
+  .card-detail .card-address {
+    text-align: left;
+    padding: 0 5%;
+    margin: 1rem 0;
+  }
+  .card-detail .card-address label {
+    color: #3498db;
+    font-size: 20px;
+  }
+  .card-detail .card-address input {
+    width: 100%;
+    outline: 0;
+    border: 1px solid #3498db;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 0.3rem 0;
+    font-size: 18px;
+  }
+  .card-detail button {
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem 0;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: #3498db;
+    background-color: #fff;
+    border: 1px solid #3498db;
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+  .card-detail button:hover {
     background-color: #3498db;
     color: #fff;
   }

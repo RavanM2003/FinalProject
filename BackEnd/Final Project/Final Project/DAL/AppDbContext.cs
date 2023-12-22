@@ -17,6 +17,8 @@ namespace Final_Project.DAL
         public DbSet<ProductFeatures> ProductFeatures { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Blog> Blogs { get; set; }
+        public DbSet<Sale> Sales { get; set; }
+        public DbSet<SaleProduct> SalesProducts { get; set; }
         public AppDbContext(DbContextOptions options) : base(options)
         {
         }

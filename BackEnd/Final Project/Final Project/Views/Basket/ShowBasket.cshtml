@@ -1,0 +1,140 @@
+﻿@{
+    ViewData["Title"] = "Cart - Gametronica";
+    double total = Model.Sum(p => p.BasketCount * p.Price);
+}
+@model List<BasketVM>
+<div class="row m-5">
+    @if (TempData["Success"] != null)
+    {
+        <div id="successAlert" style="background:#3498db; margin:1rem 0; width:100%; text-align:center; color:#fff; padding:1rem 0; font-size:20px;">
+            @TempData["Success"]
+        </div>
+    }
+</div>
+
+<section class="card-basket">
+    <div class="card-basket">
+        <div class="cards-basket">
+            <div class="card-header">
+                <div class="header-text">
+                    <h3>Basket</h3>
+                    <span>(@Model.Count products)</span>
+                </div>
+            </div>
+            <div class="card-products">
+                @foreach (var item in Model)
+                {
+                    <div class="card-product">
+                        <div class="card-image">
+                            <img src="~/assets/images/@item.ImgUrl" alt="">
+                        </div>
+                        <div class="card-name">
+                            <h3>@item.Name</h3>
+                        </div>
+                        <div class="card-count">
+                            <form action="">
+                                <a asp-action="Decrease" asp-controller="basket" asp-route-id="@item.Id"><i class="fa-solid fa-circle-minus"></i></a>
+                                <input class="priceInput" type="text" value="@item.BasketCount">
+                                <input type="text" hidden value="@item.Price">
+                                <a asp-action="Increase" asp-controller="basket" asp-route-id="@item.Id"><i class="fa-solid fa-circle-plus"></i></a>
+                            </form>
+                        </div>
+                        <div class="card-price">
+                            <p class="prices">$@(item.BasketCount*item.Price)</p>
+                        </div>
+                        <div class="delete" >
+                            <a style="color:#3498db;" asp-action="Delete" asp-route-id="@item.Id"><i class="fa-solid fa-trash"></i></a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="card-basket-prices">
+            <div class="total-price">
+                <p class="key">Total price:</p>
+                <p id="total">$
+                    @if (ViewData["total"] == null)
+                    {
+                        <span>@total</span>
+                    }
+                    else
+                    {
+                        <span>@ViewData["total"]</span>
+                    }
+                </p>
+            </div>
+            <div class="discount-price">
+                <p class="key">Discount:</p>
+                <p id="discount">-$0</p>
+            </div
+            <hr>
+            <div class="final-price">
+                <p class="key">Final price:</p>
+                <p id="final">
+                    $
+                    @if (ViewData["total"] == null)
+                    {
+                        <span>@total</span>
+                    }
+                    else
+                    {
+                        <span>@ViewData["total"]</span>
+                    }
+                </p>
+            </div>
+            <form>
+                <button id="checkout">Checkout</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+    <div class="card-detail" style="display: none;">
+      <div class="card-code">
+        <label for="cardCode">Code</label>
+        <input id="cardCode" type="text" placeholder="**** - **** - **** - ****">
+      </div>
+      <div class="card-date_cvv">
+        <div class="card-date">
+          <label for="card-date">Expire Date</label>
+          <input id="card-date" type="date">
+        </div>
+        <div class="cvv">
+          <label for="cvv">CVV</label>
+          <input id="cvv" type="password">
+        </div>
+      </div>
+      <div class="card-address">
+        <div class="card-country">
+          <label for="card-country">Country</label>
+          <input id="card-country" type="text" placeholder="Country">
+        </div>
+        <div class="card-city">
+          <label for="card-city">City</label>
+          <input id="card-city" type="text" placeholder="City">
+        </div>
+        <div class="card-address1">
+          <label for="card-address1">Address 1</label>
+          <input id="card-address1" type="text" placeholder="Adress 1">
+        </div>
+        <div class="card-address2">
+          <label for="card-address2">Address 2</label>
+          <input id="card-address2" type="text" placeholder="Adress 2">
+        </div>
+        <div class="zip-code">
+          <label for="zip-code">Zip Code</label>
+          <input id="zip-code" type="text" placeholder="Zip Code">
+        </div>
+        <div class="pay">
+            <form asp-action="Sale" asp-controller="basket">
+          <button id="buy">Buy with one click</button>
+            </form>
+        </div>
+      </div>
+    </div>
+<script>
+    setTimeout(function () {
+        document.getElementById("successAlert")?.remove();
+    }, 3000)
+</script>

@@ -1,3 +1,6 @@
+main{
+    position: relative;
+}
 .card-basket{
     display: flex;
     justify-content: space-between;
@@ -125,6 +128,95 @@
                 background-color: #3498db;
                 color: #fff;
             }
+        }
+    }
+}
+.card-detail{
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #3498db;
+    border-radius: 10px;
+    width: 50%;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    .card-code{
+        position: relative;
+        margin: 1rem 0;
+        label{
+            position: absolute;
+            top: 0;
+            font-size: 20px;
+            color: #3498db;
+        }
+        #cardCode{
+            outline: 0;
+            border: 1px solid #3498db;
+            padding: .5rem;
+            font-size: 20px;
+            margin-top:1.5rem;
+            width: 90%;
+            border-radius: 10px;
+            &::placeholder{
+                font-size: 20px;
+            }
+        }
+    }
+    .card-date_cvv{
+        margin: 1rem 0;
+        padding: 0 3%;
+        display: flex;
+        justify-content: space-between;
+        label{
+            color: #3498db;
+            font-size: 20px;
+        }
+        input{
+            width: 90%;
+            border-radius: 10px;
+            outline: 0;
+            border: 1px solid #3498db;
+            padding: .5rem;
+            font-size: 20px;
+            margin:0 1rem;
+        }
+    }
+    .card-address{
+        text-align: left;
+        padding: 0 5%;
+        margin: 1rem 0;
+        label{
+            color: #3498db;
+            font-size: 20px;
+        }
+        input{
+            width: 100%;
+            outline: 0;
+            border: 1px solid #3498db;
+            padding: .5rem;
+            border-radius: 10px;
+            margin: .3rem 0;
+            font-size: 18px;
+        }
+    }
+    
+    button{
+        width: 100%;
+        margin:.5rem;
+        padding: .5rem 0;
+        font-size: 20px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        color: #3498db;
+        background-color: #fff;
+        border: 1px solid #3498db;
+        border-radius: 30px;
+        transition: .5s;
+        &:hover{
+            background-color: #3498db;
+            color: #fff;
         }
     }
 }
@@ -259,6 +351,96 @@
                 background-color: #3498db;
                 color: #fff;
             }
+        }
+    }
+}
+
+.card-detail{
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #3498db;
+    border-radius: 10px;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    .card-code{
+        position: relative;
+        margin: 1rem 0;
+        label{
+            position: absolute;
+            top: 0;
+            font-size: 20px;
+            color: #3498db;
+        }
+        #cardCode{
+            outline: 0;
+            border: 1px solid #3498db;
+            padding: .5rem;
+            font-size: 20px;
+            margin-top:1.5rem;
+            width: 90%;
+            border-radius: 10px;
+            &::placeholder{
+                font-size: 20px;
+            }
+        }
+    }
+    .card-date_cvv{
+        margin: 1rem 0;
+        padding: 0 5% 0 0;
+        display: flex;
+        justify-content: space-between;
+        label{
+            color: #3498db;
+            font-size: 20px;
+        }
+        input{
+            width: 90%;
+            border-radius: 10px;
+            outline: 0;
+            border: 1px solid #3498db;
+            padding: .5rem;
+            font-size: 20px;
+            margin:0 1rem;
+        }
+    }
+    .card-address{
+        text-align: left;
+        padding: 0 5%;
+        margin: 1rem 0;
+        label{
+            color: #3498db;
+            font-size: 20px;
+        }
+        input{
+            width: 100%;
+            outline: 0;
+            border: 1px solid #3498db;
+            padding: .5rem;
+            border-radius: 10px;
+            margin: .3rem 0;
+            font-size: 18px;
+        }
+    }
+    
+    button{
+        width: 100%;
+        margin:.5rem;
+        padding: .5rem 0;
+        font-size: 20px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        color: #3498db;
+        background-color: #fff;
+        border: 1px solid #3498db;
+        border-radius: 30px;
+        transition: .5s;
+        &:hover{
+            background-color: #3498db;
+            color: #fff;
         }
     }
 }

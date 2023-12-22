@@ -101,3 +101,17 @@ else if(total.innerHTML.substring(1)>=3000){
     discount.innerHTML = `-$${600}`
 }
 finalPrice.innerHTML = `$${total.innerHTML.substring(1) - discount.innerHTML.substring(2)}`
+
+var detail = document.querySelector(".card-detail")
+var checkout = document.querySelector("#checkout")
+var buy = document.querySelector("#buy")
+var card_basket = document.querySelector(".card-basket")
+checkout.addEventListener("click",function(e){
+    e.preventDefault()
+    detail.style.display = "block";
+    card_basket.style.opacity = 0
+})
+buy.addEventListener("click",function(){
+    detail.style.display = "none";
+    card_basket.style.opacity = 1
+})

@@ -1,0 +1,39 @@
+﻿@model DashboardVM
+@{
+    ViewData["Title"] = "Dashboard - Gametronica";
+}
+
+<section class="main">
+    <div class="dashboard">
+        <div class="header">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="chart">
+            <h1>Workers Salary</h1>
+            <canvas id="barChart"></canvas>
+
+            @foreach (var item in Model.Workers)
+            {
+                <input class="name-worker" type="text" value="@item.FullName" hidden>
+            }
+
+            @foreach (var item in Model.Workers)
+            {
+
+                <input class="salary-worker" type="text" value="@item.Salary" hidden>
+            }
+        </div>
+        <div class="doughnut">
+            <h1>Top 10 Sale Per User</h1>
+            <canvas id="doughnutChart"></canvas>
+            @foreach (var item in Model.Sales)
+            {
+                <input class="name-category" type="text" value="@item.AppUser.FullName" hidden>
+            }
+            @foreach (var item in Model.Sales)
+            {
+                <input class="total-category" type="text" value="@item.Total" hidden>
+            }
+        </div>
+    </div>
+</section>

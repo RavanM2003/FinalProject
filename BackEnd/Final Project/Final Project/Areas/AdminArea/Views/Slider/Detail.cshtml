@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Detail - Slider";
+}
+@model Slider
+<div class="container" style="margin-left:260px; margin-top:20px;">
+    <div class="row">
+        <div class="card p-2" style="width: 18rem;">
+            <img src="~/assets/images/@Model.ImageUrl" class="card-img-top" >
+            <div class="card-body">
+                <h5 class="card-title">@Html.Raw(Model.Title)</h5>
+                <p class="card-text">@Model.Description</p>
+                <a href="@Model.Link" class="btn btn-primary">Link</a>
+                <a asp-action="index" class="btn btn-primary">Close</a>
+            </div>
+        </div>
+    </div>
+</div>

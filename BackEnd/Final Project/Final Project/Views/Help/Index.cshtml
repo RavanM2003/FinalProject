@@ -1,0 +1,21 @@
+﻿@model List<HelpQuestion>
+@{
+    ViewData["Title"] = "Help - Gametronica";
+}
+
+<section class="help">
+    <div class="header">
+        <h1>Questions</h1>
+    </div>
+    <div class="questions">
+        @foreach (var item in Model)
+        {
+            <div class="question">
+                <button class="accordion">@item.Question</button>
+                <div class="panel">
+                    <p>@item.Answer</p>
+                </div>
+            </div>
+        }
+    </div>
+</section>

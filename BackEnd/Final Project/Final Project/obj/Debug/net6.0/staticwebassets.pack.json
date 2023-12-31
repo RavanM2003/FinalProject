@@ -1,6 +1,86 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\css\\style.scss",
+      "PackagePath": "staticwebassets\\adminAssests\\css\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\adminAssests\\js\\Chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\js\\chart.js",
+      "PackagePath": "staticwebassets\\adminAssests\\js\\chart.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\static\\css\\style.css",
+      "PackagePath": "staticwebassets\\adminAssests\\static\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\static\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\adminAssests\\static\\css\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\.DS_Store",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\base\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\base\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\base\\vendor.bundle.base.css",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\base\\vendor.bundle.base.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\base\\vendor.bundle.base.js",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\base\\vendor.bundle.base.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\chart.js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\chart.js\\Chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.css",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\datatables.net\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\datatables.net\\jquery.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\mdi\\css\\materialdesignicons.min.css",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\mdi\\css\\materialdesignicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\mdi\\css\\materialdesignicons.min.css.map",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\mdi\\css\\materialdesignicons.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\mdi\\fonts\\materialdesignicons-webfont.svg",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\mdi\\fonts\\materialdesignicons-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\adminAssests\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2",
+      "PackagePath": "staticwebassets\\adminAssests\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\css\\about.scss",
       "PackagePath": "staticwebassets\\assets\\css\\about.scss"
     },
@@ -49,8 +129,40 @@
       "PackagePath": "staticwebassets\\assets\\css\\wishlist.scss"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\2a901b13-82ec-46fb-a513-952ccfb358a5slider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\2a901b13-82ec-46fb-a513-952ccfb358a5slider-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\346ea7e5-5212-40bf-9efd-33f5170cf7dbslider-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\346ea7e5-5212-40bf-9efd-33f5170cf7dbslider-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\3667eaed-60db-4004-8484-6f8124d44e75slider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\3667eaed-60db-4004-8484-6f8124d44e75slider-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\5fdd9dcf-fdc7-43f2-968f-38ad9eff45c0slider-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\5fdd9dcf-fdc7-43f2-968f-38ad9eff45c0slider-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\6929aa5c-b046-4e2e-ad63-75bd17f27e81slider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\6929aa5c-b046-4e2e-ad63-75bd17f27e81slider-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\6d48b03a-afa6-42ef-a2b1-1c3d187b6cc7CategoryXBOX.png",
+      "PackagePath": "staticwebassets\\assets\\images\\6d48b03a-afa6-42ef-a2b1-1c3d187b6cc7CategoryXBOX.png"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\791bdc71-e3bb-4ee9-a92e-6cfbf0b40135732bec45-5da7-43a2-a56e-225a8235308a.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\791bdc71-e3bb-4ee9-a92e-6cfbf0b40135732bec45-5da7-43a2-a56e-225a8235308a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\7df6ca3c-bffc-41fd-9a86-9b9a949322cbslider-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\7df6ca3c-bffc-41fd-9a86-9b9a949322cbslider-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\7f6d6c2b-9dd2-4df5-804b-3a052f31d0f4CategoryApparel.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\7f6d6c2b-9dd2-4df5-804b-3a052f31d0f4CategoryApparel.jpg"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\ASUS Chromebook Vibe CX55 Flip-1.png",
@@ -437,6 +549,14 @@
       "PackagePath": "staticwebassets\\assets\\images\\b1024faa-bcd3-4200-9067-4c69043d5a07profile-pic.png"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\b21f128c-a14d-4ee7-9ee2-7600edacf809slider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\b21f128c-a14d-4ee7-9ee2-7600edacf809slider-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\b83895e8-c5b6-4a03-9fb4-f6a32e9ed000CategoryApparel.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\b83895e8-c5b6-4a03-9fb4-f6a32e9ed000CategoryApparel.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\banner_bg.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\banner_bg.jpg"
     },
@@ -465,8 +585,28 @@
       "PackagePath": "staticwebassets\\assets\\images\\blog-6.jpg"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\d34b5978-1efe-4316-adea-2ee4dc3a4cd3slider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\d34b5978-1efe-4316-adea-2ee4dc3a4cd3slider-1.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\discount.png",
       "PackagePath": "staticwebassets\\assets\\images\\discount.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\e3c35d1d-57d8-4b2c-b112-0558f6b2d40eCategoryApparel.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\e3c35d1d-57d8-4b2c-b112-0558f6b2d40eCategoryApparel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\e8763857-e5ad-454f-9f7a-e7a6cc24e50eslider-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\e8763857-e5ad-454f-9f7a-e7a6cc24e50eslider-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\ea81a402-dfbb-4984-baec-d9ce89b6922dslider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\ea81a402-dfbb-4984-baec-d9ce89b6922dslider-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\eafafab7-f608-4fbe-9e42-45a983a01b7cslider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\eafafab7-f608-4fbe-9e42-45a983a01b7cslider-1.jpg"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\Final Project\\BackEnd\\Final Project\\Final Project\\wwwroot\\assets\\images\\icon.png",

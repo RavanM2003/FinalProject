@@ -32,7 +32,7 @@ namespace Final_Project.Areas.AdminArea.Controllers
                 .Take(take)
                 .ToList();
 
-            var count = _context.Categories.Where(p => !p.IsDeleted).Count();
+            var count = _context.Products.Where(p => !p.IsDeleted).Count();
             int pageCount = (int)Math.Ceiling((decimal)count / take);
 
             Pagination<Product> pagination = new(productVM.Products, pageCount, page);

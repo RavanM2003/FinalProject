@@ -1,0 +1,11 @@
+﻿@model Banner
+@{
+    ViewData["Title"] = "Detail - Banner";
+}
+<a asp-action="index" class="btn btn-danger my-2" style="margin-left:260px;">Back</a>
+<div class="card" style="width: 18rem; margin-left:260px;">
+    <img src="~/assets/images/@Model.ImageUrl" class="card-img-top p-2" alt="...">
+    <div class="card-body">
+        <p class="card-text">@Html.Raw(Model.Title)</p>
+    </div>
+</div>

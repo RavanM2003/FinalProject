@@ -1,0 +1,27 @@
+﻿@model UpdateBannerVM
+@{
+    ViewData["Title"] = "Update - Banner";
+}
+
+<div class="container my-5" style="margin-left:260px;">
+    <div asp-validation-summary="ModelOnly" style="color:red;"></div>
+    <div class="row">
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-check">
+                <label asp-for="Photo"></label>
+                <input class="form-control" asp-for="Photo">
+            </div>
+            <div class="form-check">
+                <label asp-for="Title"></label>
+                <input class="form-control" asp-for="Title">
+            </div>
+            <button type="submit" class="btn btn-primary my-2 mx-4">Submit</button>
+            <a asp-action="index" class="btn btn-danger">Close</a>
+
+        </form>
+    </div>
+</div>
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js" integrity="sha512-xq+Vm8jC94ynOikewaQXMEkJIOBp7iArs3IhFWSWdRT3Pq8wFz46p+ZDFAR7kHnSFf+zUv52B3prRYnbDRdgog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+}

@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "WorkerAdmin - Gametronica";
+    var count = (Model.CurrentPage - 1) * 5 + 1;
+}
+@model Pagination<Workers>
+
+<section class="main">
+    <div class="header">
+        <h1>Workers</h1>
+    </div>
+    <a class="btn btn-outline-success my-2" asp-action="create">Add New Worker</a>
+    <div class="container">
+        <div class="row">
+            <table class="table table-striped table-info">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Fullname</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Salary</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Number</th>
+                        <th scope="col">Setting</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Items)
+                    {
+                        <tr>
+                            <th scope="row">@count</th>
+                            <td><img width="60" height="60" src="~/assets/images/@item.ImageUrl"></td>
+                            <td>@item.FullName</td>
+                            <td>@item.Position</td>
+                            <td>$@item.Salary</td>
+                            <td>@item.Location</td>
+                            <td>@item.Email</td>
+                            <td>@item.PhoneNumber</td>
+                            <td>
+                                <a class="btn btn-danger text-white" asp-action="delete" asp-route-id="@item.Id"><i class="fa-solid fa-trash"></i></a>
+                                <a class="btn btn-info text-white" asp-action="detail" asp-route-id="@item.Id"><i class="fa-solid fa-circle-info"></i></a>
+                                <a class="btn btn-warning text-white" asp-action="update" asp-route-id="@item.Id"><i class="fa-solid fa-pen-to-square"></i></a>
+                            </td>
+                        </tr>
+                        count++;
+                    }
+                </tbody>
+            </table>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            @if (Model.CurrentPage > 1)
+                            {
+                                <li class="page-item">
+                                    <a class="page-link" asp-action="index" asp-route-page="@(Model.CurrentPage - 1)" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                            }
+                            @for (int i = 1; i <= Model.PageCount; i++)
+                            {
+                                <li class="page-item @(Model.CurrentPage == i ? "active" : "")">
+                                    <a class="page-link" asp-action="index" asp-route-page="@i">@i</a>
+                                </li>
+                            }
+                            @if (Model.CurrentPage < Model.PageCount)
+                            {
+                                <li class="page-item">
+                                    <a class="page-link" asp-action="index" asp-route-page="@(Model.CurrentPage + 1)" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

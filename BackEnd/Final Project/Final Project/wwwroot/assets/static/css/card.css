@@ -135,9 +135,9 @@ main {
   border: 1px solid #3498db;
   border-radius: 10px;
   width: 50%;
-  top: 50%;
+  top: 37%;
   left: 50%;
-  transform: translate(0%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 .card-detail .card-code {

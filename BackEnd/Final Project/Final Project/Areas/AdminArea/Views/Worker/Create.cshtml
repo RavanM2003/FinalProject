@@ -1,0 +1,65 @@
+﻿@model CreateWorkerVM
+@{
+    ViewData["Title"] = "Create - Worker";
+}
+
+<div class="col-md-6 grid-margin stretch-card my-3" style="margin-left:260px;">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title"> Create Worker</h4>
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-check">
+                    <label asp-for="Image"></label>
+                    <input class="form-control" asp-for="Image">
+                </div>
+                <div class="form-check">
+                    <label asp-for="FullName"></label>
+                    <input class="form-control" asp-for="FullName">
+                </div>
+                <div class="form-check">
+                    <label asp-for="Position"></label>
+                    <input class="form-control" asp-for="Position">
+                </div>
+                <div class="form-check">
+                    <label asp-for="FacebookUrl"></label>
+                    <input class="form-control" asp-for="FacebookUrl">
+                </div>
+                <div class="form-check">
+                    <label asp-for="InstagramUrl"></label>
+                    <input class="form-control" asp-for="InstagramUrl">
+                </div>
+                <div class="form-check">
+                    <label asp-for="LinkedinUrl"></label>
+                    <input class="form-control" asp-for="LinkedinUrl">
+                </div>
+                <div class="form-check">
+                    <label asp-for="Location"></label>
+                    <input class="form-control" asp-for="Location">
+                </div>
+                <div class="form-check">
+                    <label asp-for="PhoneNumber"></label>
+                    <input class="form-control" asp-for="PhoneNumber">
+                </div>
+                <div class="form-check">
+                    <label asp-for="Email"></label>
+                    <input class="form-control" asp-for="Email">
+                </div>
+                <div class="form-check">
+                    <label asp-for="Salary"></label>
+                    <input class="form-control" asp-for="Salary">
+                </div>
+                <div class="form-check">
+                    <label asp-for="Experience"></label>
+                    <input class="form-control" asp-for="Experience">
+                </div>
+                <button type="submit" class="btn btn-primary my-2 mx-4">Submit</button>
+                <a asp-action="index" class="btn btn-danger">Close</a>
+
+            </form>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js" integrity="sha512-xq+Vm8jC94ynOikewaQXMEkJIOBp7iArs3IhFWSWdRT3Pq8wFz46p+ZDFAR7kHnSFf+zUv52B3prRYnbDRdgog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+}

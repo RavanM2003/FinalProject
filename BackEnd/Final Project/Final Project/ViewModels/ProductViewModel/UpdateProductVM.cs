@@ -1,4 +1,6 @@
-﻿namespace Final_Project.ViewModels.ProductViewModel
+﻿using Final_Project.Models;
+
+namespace Final_Project.ViewModels.ProductViewModel
 {
     public class UpdateProductVM
     {

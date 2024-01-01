@@ -125,25 +125,29 @@
                     <div class="message">
                         <div class="message-detail">
                             <p>@comment.WriteTime.ToString("h:mm tt MM/dd/yyyy")</p>
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <div class="edit" style="display: none;">
-                                <a href=""><i class="fa-solid fa-trash"></i> Delete Comment</a>
-                            </div>
+                            @if (comment.AppUser.UserName == User.Identity.Name)
+                            {
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <div class="edit" style="display: none;">
+                                    <a asp-action="deleteComment" asp-route-id="@comment.Id">Delete</a>
+                                </div>
+                            }
                         </div>
                         <div class="message-body">
                             <p>@comment.Message</p>
                         </div>
                         <div class="author">
-                            <img src="./assets/images/worker-1.jpg" alt="">
+                            <img src="~/assets/images/@comment.AppUser.ImageUrl" alt="">
                             <p>@comment.AppUser.FullName</p>
                         </div>
                     </div>
                 </div>
             }
             <h1>Add New Comment</h1>
-            <form action="">
-                <textarea></textarea>
-                <button type="submit">Send</button>
+            <form asp-action="AddComment" method="post">
+                <input type="hidden" name="Id" value="@Model.Product.Id" />
+                <textarea name="message" placeholder="Write a review"></textarea>
+                <button type="submit" name="submit">Send</button>
             </form>
         </div>
     </div>
@@ -165,7 +169,7 @@
                         <h4>@item.Name</h4>
                     </div>
                     <div class="related-product-price">
-                        @if (item.SalePrice!=null)
+                        @if (item.SalePrice != null)
                         {
                             <p class="price">$@item.Price</p>
                             <p class="discount-price">$@item.SalePrice</p>

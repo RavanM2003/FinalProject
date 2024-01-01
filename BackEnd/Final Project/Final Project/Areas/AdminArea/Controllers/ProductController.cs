@@ -52,6 +52,7 @@ namespace Final_Project.Areas.AdminArea.Controllers
         {
             var existProduct = _context.Products
                 .Include(p => p.Category)
+                .Include(p => p.ProductFeatures)
                 .FirstOrDefault(p => p.Id == id);
             if (existProduct == null) return NotFound();
             ViewBag.Category = new SelectList(_context.Categories.Where(x => !x.IsDeleted).ToList(), "Id", "Name");
@@ -133,6 +134,82 @@ namespace Final_Project.Areas.AdminArea.Controllers
             return RedirectToAction("index");
 
 
+        }
+        public IActionResult Create()
+        {
+            ViewBag.Catagories = new SelectList(_context.Categories.Where(x => !x.IsDeleted).ToList(), "Id", "Name");
+            return View();
+        }
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult Create(CreateProductVM createProductVM)
+        {
+            ViewBag.Catagories = new SelectList(_context.Categories.Where(x => !x.IsDeleted).ToList(), "Id", "Name");
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            else if (_context.Products.Any(p => p.Name.ToLower() == createProductVM.Name.ToLower()))
+            {
+                ModelState.AddModelError("Name", "Name must be unique");
+                return View();
+            }
+            foreach (var image in createProductVM.Images)
+            {
+                if (!image.IsImage())
+                {
+                    ModelState.AddModelError("Image", "only image");
+                    return View();
+                }
+                else if (!image.IsLenghSuit(1000))
+                {
+                    ModelState.AddModelError("Image", "Length of file must be smaller than 1kb");
+                    return View();
+                }
+            }
+
+            string fileName = Guid.NewGuid().ToString() + createProductVM.Images[0].FileName;
+            string path = Path.Combine(_webHostEnvironment.WebRootPath, "assets", "images", fileName);
+            using (FileStream stream = new FileStream(path, FileMode.Create))
+            {
+                createProductVM.Images[0].CopyTo(stream);
+            }
+            Product product = new()
+            {
+                ImageUrl = fileName,
+                Name = createProductVM.Name,
+                Description = createProductVM.Description,
+                Color = createProductVM.Color,
+                Price = createProductVM.Price,
+                SalePrice = createProductVM.SalePrice,
+                ProductCode = createProductVM.ProductCode,
+                CategoryId = createProductVM.CategoryId,
+                AddedBy = User.Identity.Name,
+                StockCount = createProductVM.StockCount,
+                HowToUse = createProductVM.HowToUse,
+                Volume = createProductVM.Volume
+            };
+
+            List<ProductImage> productImages = new List<ProductImage>();
+            for (int i = 0; i < createProductVM.Images.Count; i++)
+            {
+                string ExtrafileName = Guid.NewGuid().ToString() + createProductVM.Images[i].FileName;
+                string Extrapath = Path.Combine(_webHostEnvironment.WebRootPath, "assets", "images", ExtrafileName);
+                using (FileStream streamExtra = new FileStream(Extrapath, FileMode.Create))
+                {
+                    createProductVM.Images[i].CopyTo(streamExtra);
+                }
+                productImages.Add(new ProductImage
+                {
+                    ImageUrl = ExtrafileName,
+                    ProductId = product.Id,
+                    AddedBy = User.Identity.Name
+                });
+            }
+            product.ProductImages = productImages;
+            _context.Products.Add(product);
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Product");
         }
     }
 }

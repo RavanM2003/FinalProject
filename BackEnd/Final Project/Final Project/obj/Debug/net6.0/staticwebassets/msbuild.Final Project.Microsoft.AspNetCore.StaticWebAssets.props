@@ -512,6 +512,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\css\wishlist.scss))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\02161ce1-44a6-4d51-9b01-9a48048dca58ASUS Chromebook Vibe CX55 Flip-2.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Final Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Final Project</BasePath>
+      <RelativePath>assets/images/02161ce1-44a6-4d51-9b01-9a48048dca58ASUS Chromebook Vibe CX55 Flip-2.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\02161ce1-44a6-4d51-9b01-9a48048dca58ASUS Chromebook Vibe CX55 Flip-2.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\2a901b13-82ec-46fb-a513-952ccfb358a5slider-1.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Final Project</SourceId>
@@ -560,6 +576,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\3667eaed-60db-4004-8484-6f8124d44e75slider-1.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\4dbfff37-eed5-4e46-a42f-1d686ebac778ASUS Chromebook Vibe CX55 Flip-2.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Final Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Final Project</BasePath>
+      <RelativePath>assets/images/4dbfff37-eed5-4e46-a42f-1d686ebac778ASUS Chromebook Vibe CX55 Flip-2.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\4dbfff37-eed5-4e46-a42f-1d686ebac778ASUS Chromebook Vibe CX55 Flip-2.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\5fdd9dcf-fdc7-43f2-968f-38ad9eff45c0slider-2.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Final Project</SourceId>
@@ -575,6 +607,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\5fdd9dcf-fdc7-43f2-968f-38ad9eff45c0slider-2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\639b1804-7251-4ef2-9eb6-c99961378dbdASUS Chromebook Vibe CX55 Flip-1.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Final Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Final Project</BasePath>
+      <RelativePath>assets/images/639b1804-7251-4ef2-9eb6-c99961378dbdASUS Chromebook Vibe CX55 Flip-1.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\639b1804-7251-4ef2-9eb6-c99961378dbdASUS Chromebook Vibe CX55 Flip-1.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\6929aa5c-b046-4e2e-ad63-75bd17f27e81slider-1.jpg))">
       <SourceType>Package</SourceType>
@@ -608,6 +656,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\6d48b03a-afa6-42ef-a2b1-1c3d187b6cc7CategoryXBOX.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\77a50767-f2c0-4251-8a50-a6a9aabc7e69Microsoft Xbox Series S 512GB All-Digital.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Final Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Final Project</BasePath>
+      <RelativePath>assets/images/77a50767-f2c0-4251-8a50-a6a9aabc7e69Microsoft Xbox Series S 512GB All-Digital.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\77a50767-f2c0-4251-8a50-a6a9aabc7e69Microsoft Xbox Series S 512GB All-Digital.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\791bdc71-e3bb-4ee9-a92e-6cfbf0b40135732bec45-5da7-43a2-a56e-225a8235308a.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Final Project</SourceId>
@@ -623,6 +687,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\791bdc71-e3bb-4ee9-a92e-6cfbf0b40135732bec45-5da7-43a2-a56e-225a8235308a.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\7a79fadd-67f5-4fb1-ad31-83aa9bbbb53aASUS Chromebook Vibe CX55 Flip.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Final Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Final Project</BasePath>
+      <RelativePath>assets/images/7a79fadd-67f5-4fb1-ad31-83aa9bbbb53aASUS Chromebook Vibe CX55 Flip.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\7a79fadd-67f5-4fb1-ad31-83aa9bbbb53aASUS Chromebook Vibe CX55 Flip.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\7df6ca3c-bffc-41fd-9a86-9b9a949322cbslider-2.jpg))">
       <SourceType>Package</SourceType>
@@ -655,6 +735,70 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\7f6d6c2b-9dd2-4df5-804b-3a052f31d0f4CategoryApparel.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\844c8b4b-3b1d-4cf3-909c-4040e17cb6ceASUS Chromebook Vibe CX55 Flip-1.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Final Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Final Project</BasePath>
+      <RelativePath>assets/images/844c8b4b-3b1d-4cf3-909c-4040e17cb6ceASUS Chromebook Vibe CX55 Flip-1.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\844c8b4b-3b1d-4cf3-909c-4040e17cb6ceASUS Chromebook Vibe CX55 Flip-1.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\8b5613ca-058d-4f07-b07b-b5fc58152756ASUS Chromebook Vibe CX55 Flip-2.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Final Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Final Project</BasePath>
+      <RelativePath>assets/images/8b5613ca-058d-4f07-b07b-b5fc58152756ASUS Chromebook Vibe CX55 Flip-2.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\8b5613ca-058d-4f07-b07b-b5fc58152756ASUS Chromebook Vibe CX55 Flip-2.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\9a77e2e3-3cfe-4727-a4d7-b7d3c7f4430eASUS Chromebook Vibe CX55 Flip.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Final Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Final Project</BasePath>
+      <RelativePath>assets/images/9a77e2e3-3cfe-4727-a4d7-b7d3c7f4430eASUS Chromebook Vibe CX55 Flip.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\9a77e2e3-3cfe-4727-a4d7-b7d3c7f4430eASUS Chromebook Vibe CX55 Flip.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\9ba04219-2631-49a6-8731-f52f6ad5561dASUS Chromebook Vibe CX55 Flip.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Final Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Final Project</BasePath>
+      <RelativePath>assets/images/9ba04219-2631-49a6-8731-f52f6ad5561dASUS Chromebook Vibe CX55 Flip.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\9ba04219-2631-49a6-8731-f52f6ad5561dASUS Chromebook Vibe CX55 Flip.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\about-us.png))">
       <SourceType>Package</SourceType>
@@ -992,6 +1136,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\blog-6.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\c1359248-0c2c-4eb2-8682-b3c6c07b7059Microsoft Xbox Series S 512GB All-Digital.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Final Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Final Project</BasePath>
+      <RelativePath>assets/images/c1359248-0c2c-4eb2-8682-b3c6c07b7059Microsoft Xbox Series S 512GB All-Digital.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\c1359248-0c2c-4eb2-8682-b3c6c07b7059Microsoft Xbox Series S 512GB All-Digital.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\CategoryApparel.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Final Project</SourceId>
@@ -1327,6 +1487,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\e3c35d1d-57d8-4b2c-b112-0558f6b2d40eCategoryApparel.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\e78d10a0-6bd7-4087-9091-4cbd1fa38ed7ASUS Chromebook Vibe CX55 Flip-1.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Final Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Final Project</BasePath>
+      <RelativePath>assets/images/e78d10a0-6bd7-4087-9091-4cbd1fa38ed7ASUS Chromebook Vibe CX55 Flip-1.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\e78d10a0-6bd7-4087-9091-4cbd1fa38ed7ASUS Chromebook Vibe CX55 Flip-1.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\e8763857-e5ad-454f-9f7a-e7a6cc24e50eslider-3.jpg))">
       <SourceType>Package</SourceType>

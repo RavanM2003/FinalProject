@@ -6,6 +6,7 @@ namespace Final_Project.ViewModels.ProductViewModel
     {
         public Product Product { get; set; }
         public List<Product> Products { get; set; }
+        public List<ProductComment> ProductComments { get; set; }
         public Category Category { get; set; }
     }
 }

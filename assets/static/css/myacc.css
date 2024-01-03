@@ -15,10 +15,6 @@
   background-color: transparent;
 }
 
-.d-none {
-  display: none;
-}
-
 ul, ol {
   list-style: none;
 }
@@ -610,12 +606,12 @@ body {
 @media (max-width: 500px) {
   .box {
     width: 90%;
-    height: 80vh;
+    height: 50vh;
     margin: 2rem auto;
     display: flex;
   }
   .box .box-left {
-    width: 30%;
+    width: 10%;
     height: 100%;
   }
   .box .box-left .site-name {
@@ -624,152 +620,18 @@ body {
   .box .box-left img {
     display: none;
   }
-  .box .box-left .links {
-    margin: 3rem 0.3rem;
-  }
-  .box .box-left .links p {
-    margin: 1.5rem 0;
-    padding: 0.2rem;
-    font-size: 12px;
-  }
-  .box .box-left .links .active::before {
-    content: "";
-    width: 2px;
-    height: 15px;
-  }
   .box .box-left .fa-right-from-bracket {
-    top: 70%;
-    left: 11%;
-    padding: 1rem;
-    font-size: 20px;
+    top: 55%;
+    left: 6%;
+    padding: 0.5rem;
+    font-size: 10px;
   }
   .box .box-right {
-    width: 70%;
+    width: 90%;
     padding: 0.1rem;
   }
   .box .box-right .header {
     font-size: 15px;
-  }
-  .box .box-right .home .personal-data {
-    display: flex;
-    padding: 0.5rem 0;
-  }
-  .box .box-right .home .personal-data .edit {
-    padding: 0.1rem;
-    color: #3498db;
-    font-size: 10px;
-  }
-  .box .box-right .home .personal-data .edit:hover {
-    cursor: pointer;
-  }
-  .box .box-right .home .personal-data img {
-    width: 20%;
-    height: 20%;
-    margin: 0 0.1rem;
-  }
-  .box .box-right .home .personal-data .personal-name h1 {
-    font-size: 15px;
-  }
-  .box .box-right .home .personal-data .personal-name .role {
-    font-size: 10px;
-  }
-  .box .box-right .home .personal-data .personal-name span {
-    font-size: 10px;
-  }
-  .box .box-right .home hr {
-    width: 98%;
-    margin: 0 auto;
-    height: 2px;
-    background-color: #3498db;
-  }
-  .box .box-right .home .phone-email {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0.4rem 0;
-  }
-  .box .box-right .home .phone-email .phone {
-    border: 2px solid #3498db;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-    display: flex;
-    align-items: center;
-    font-size: 10px;
-    margin: 1rem 0;
-  }
-  .box .box-right .home .phone-email .phone:hover {
-    transform: translateY(-5px);
-  }
-  .box .box-right .home .phone-email .phone i {
-    margin-right: 0.1rem;
-    font-size: 10px;
-    color: #3498db;
-  }
-  .box .box-right .home .phone-email .email {
-    border: 2px solid #3498db;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-    display: flex;
-    align-items: center;
-    font-size: 10px;
-  }
-  .box .box-right .home .phone-email .email:hover {
-    transform: translateY(-5px);
-  }
-  .box .box-right .home .phone-email .email i {
-    margin-right: 0.1rem;
-    font-size: 10px;
-    color: #3498db;
-  }
-  .box .box-right .wishlist .wishlist-products {
-    padding: 0.1rem 0.5rem;
-  }
-  .box .box-right .wishlist .wishlist-products .wishlist-product {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-  .box .box-right .wishlist .wishlist-products .wishlist-product:hover {
-    transform: translateY(0px);
-    box-shadow: 0px 0px 0px 0px rgba(120, 120, 120, 0.75);
-  }
-  .box .box-right .wishlist .wishlist-products .wishlist-product .wshlist-product-image .mainImage {
-    width: 45%;
-  }
-  .box .box-right .wishlist .wishlist-products .wishlist-product .wshlist-product-image .discounImage {
-    top: -13px;
-  }
-  .box .box-right .wishlist .wishlist-products .wishlist-product .wshlist-product-image span {
-    left: 15px;
-    top: 10px;
-    font-size: 16px;
-  }
-  .box .box-right .wishlist .wishlist-products .wishlist-product .links {
-    top: 45%;
-    padding: 0.5rem 0;
-    opacity: 1;
-  }
-  .box .box-right .wishlist .wishlist-products .wishlist-product .links a {
-    font-size: 15px;
-  }
-  .box .box-right .wishlist .wishlist-products .wishlist-product .product-details .name {
-    padding: 0.2rem;
-    font-size: 12px;
-  }
-  .box .box-right .wishlist .wishlist-products .wishlist-product .product-details .description {
-    font-size: 9px;
-    padding: 0.2rem;
-  }
-  .box .box-right .wishlist .wishlist-products .wishlist-product .product-details .price {
-    padding: 0.1rem;
-  }
-  .box .box-right .wishlist .wishlist-products .wishlist-product .product-details .price .oldprice {
-    font-size: 12px;
-  }
-  .box .box-right .wishlist .wishlist-products .wishlist-product .product-details .price .newprice {
-    font-size: 17px;
-    margin: 0 0.5rem;
   }
   .box .box-right .messages .message-section-header {
     display: flex;
@@ -800,6 +662,7 @@ body {
   .box .box-right .messages .mesage-section-body {
     padding: 0.1rem;
     overflow: hidden;
+    height: 340px;
   }
   .box .box-right .messages .mesage-section-body .receive {
     padding: 0.2rem;
@@ -812,12 +675,12 @@ body {
     font-size: 10px;
   }
   .box .box-right .messages .mesage-section-body form {
-    top: 90%;
-    width: 55%;
+    top: 55%;
+    width: 80%;
     padding: 0.4rem 0.5rem;
   }
   .box .box-right .messages .mesage-section-body form input[type=text] {
-    width: 70%;
+    width: 80%;
     padding: 0.4rem;
     font-size: 11px;
   }
@@ -832,105 +695,5 @@ body {
   }
   .box .box-right .messages .mesage-section-body form .fa-paper-plane {
     font-size: 8px;
-  }
-  .box .box-right .security .security-body {
-    padding: 0.1rem 0;
-  }
-  .box .box-right .security .security-body form .input {
-    margin: 0.5rem 0;
-  }
-  .box .box-right .security .security-body form .input label {
-    font-size: 15px;
-    margin: 0.5rem;
-  }
-  .box .box-right .security .security-body form .input input {
-    width: 220px;
-    padding: 0.7rem 0.4rem;
-    font-size: 12px;
-  }
-  .box .box-right .security .security-body form button {
-    padding: 0.4rem 1rem;
-    bottom: -20px;
-    right: 10px;
-    font-size: 15px;
-  }
-  .box .box-right .security .security-body form .passChange {
-    margin: 1rem 0;
-    padding: 0.5rem 0;
-    font-size: 12px;
-  }
-  .box .box-right .basket .basket-products {
-    padding: 0.1rem 0.5rem;
-  }
-  .box .box-right .basket .basket-products .basket-product {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-  .box .box-right .basket .basket-products .basket-product:hover {
-    transform: translateY(0px);
-    box-shadow: 0px 0px 0px 0px rgba(120, 120, 120, 0.75);
-  }
-  .box .box-right .basket .basket-products .basket-product .basket-product-image .mainImage {
-    width: 45%;
-  }
-  .box .box-right .basket .basket-products .basket-product .basket-product-image .discounImage {
-    top: -13px;
-  }
-  .box .box-right .basket .basket-products .basket-product .basket-product-image span {
-    left: 15px;
-    top: 10px;
-    font-size: 16px;
-  }
-  .box .box-right .basket .basket-products .basket-product .links {
-    top: 45%;
-    padding: 0.5rem 0;
-    opacity: 1;
-  }
-  .box .box-right .basket .basket-products .basket-product .links a {
-    font-size: 15px;
-  }
-  .box .box-right .basket .basket-products .basket-product .product-details .name {
-    padding: 0.2rem;
-    font-size: 12px;
-  }
-  .box .box-right .basket .basket-products .basket-product .product-details .description {
-    font-size: 9px;
-    padding: 0.2rem;
-  }
-  .box .box-right .basket .basket-products .basket-product .product-details .price {
-    padding: 0.1rem;
-  }
-  .box .box-right .basket .basket-products .basket-product .product-details .price .oldprice {
-    font-size: 12px;
-  }
-  .box .box-right .basket .basket-products .basket-product .product-details .price .newprice {
-    font-size: 17px;
-    margin: 0 0.5rem;
-  }
-  .box .box-right .sale table {
-    padding: 0 0.1rem;
-    margin-top: 0.5rem;
-  }
-  .box .box-right .sale table td {
-    font-size: 10px;
-  }
-  .box .box-right .sale table thead th {
-    padding: 0rem;
-    font-size: 10px;
-  }
-  .box .box-right .sale table ul li {
-    width: 100%;
-    margin: 0.1rem;
-    font-size: 10px;
-  }
-  .box .box-right .sale table .open {
-    padding: 0.1rem 0.2rem;
-  }
-  .box .box-right .sale .export {
-    color: #efefef;
-    background-color: #3498db;
-    padding: 0.2rem 0.5rem;
-    border-radius: 30px;
-    font-size: 15px;
   }
 }/*# sourceMappingURL=myacc.css.map */

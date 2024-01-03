@@ -34,6 +34,9 @@ namespace Final_Project.DAL.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ConnectionId")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Country")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -268,6 +271,34 @@ namespace Final_Project.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("HelpQuestions");
+                });
+
+            modelBuilder.Entity("Final_Project.Models.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FromUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("SendTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ToUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("Final_Project.Models.Product", b =>

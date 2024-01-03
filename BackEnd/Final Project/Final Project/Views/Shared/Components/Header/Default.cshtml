@@ -21,7 +21,7 @@
                     }
                     else
                     {
-                        <a asp-controller="profile" asp-action="index" asp-route-name="@User.Identity.Name" class="dropdown-item">@User.Identity.Name</a>
+                        <a asp-controller="chat" asp-action="chat" class="dropdown-item">@User.Identity.Name</a>
                         <a asp-controller="Account" asp-action="Logout" class="dropdown-item">Log out</a>
                     }
                     @if (User.IsInRole("Admin") || User.IsInRole("SuperAdmin"))

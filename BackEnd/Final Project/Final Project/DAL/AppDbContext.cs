@@ -20,6 +20,7 @@ namespace Final_Project.DAL
         public DbSet<Sale> Sales { get; set; }
         public DbSet<HelpQuestion> HelpQuestions { get; set; }
         public DbSet<SaleProduct> SalesProducts { get; set; }
+        public DbSet<Message> Messages { get; set; }
         public AppDbContext(DbContextOptions options) : base(options)
         {
         }

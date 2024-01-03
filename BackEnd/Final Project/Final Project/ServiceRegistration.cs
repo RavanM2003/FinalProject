@@ -11,6 +11,7 @@ namespace Final_Project
         public static void Registration(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddControllersWithViews();
+            services.AddSignalR();
             services.AddDbContext<AppDbContext>(option =>
             {
                 option.UseSqlServer("server=.;database=FinalProjectDb;integrated security=true");

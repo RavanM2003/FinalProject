@@ -208,6 +208,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User/Desktop/Final Project/BackEnd/Final Project/Final Project/Views/Chat/chat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxjaGF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/Desktop/Final Project/BackEnd/Final Project/Final Project/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -226,10 +230,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/User/Desktop/Final Project/BackEnd/Final Project/Final Project/Views/Product/ProductCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0Q2F0ZWdvcnkuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Desktop/Final Project/BackEnd/Final Project/Final Project/Views/Profile/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/Desktop/Final Project/BackEnd/Final Project/Final Project/Views/Shared/Components/Footer/Default.cshtml]

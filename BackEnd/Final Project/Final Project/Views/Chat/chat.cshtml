@@ -1,0 +1,257 @@
+﻿@model List<AppUser>
+@{
+    ViewData["Title"] = "Chat";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Gametronica</title>
+    <link rel="stylesheet" href="~/assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/assets/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ChatSignalR.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <section class="message-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="chat-area">
+                                <!-- chatlist -->
+                                <div class="chatlist">
+                                    <div class="modal-dialog-scrollable">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <!-- chat-list -->
+                                                <div class="chat-lists">
+                                                    <div class="tab-content" id="myTabContent">
+                                                        <div class="tab-pane fade show active" id="Open" role="tabpanel" aria-labelledby="Open-tab">
+                                                            <!-- chat-list -->
+                                                            @foreach (var user in Model)
+                                                            {
+                                                                <div data-id="@user.Id" class="chat-list">
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="~/assets/images/@user.ImageUrl" width="50" alt="user img">
+                                                                            <span id="@user.Id" class="active d-none"></span>
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>@user.UserName</h3>
+                                                                            <p class="d-none" id="typing@(user.Id)">Typing...</p>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            }
+                                                        </div>
+                                                        <div class="tab-pane fade" id="Closed" role="tabpanel" aria-labelledby="Closed-tab">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="chatboxId" class="chatbox d-none">
+                                    <div class="modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="msg-head">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="flex-shrink-0">
+                                                            </div>
+                                                            <div class="flex-grow-1 ms-3">
+                                                                <h3 id="currentUserName">
+                                                                </h3>
+                                                                <span id="userId" class="d-none"></span>
+                                                                <p id="currentUserPosition"></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="modal-body">
+                                                <div class="msg-body">
+                                                    <ul id="msgList">
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="send-box">
+                                                <form action="">
+                                                    <input id="msgInput" type="text" class="form-control" aria-label="message…" placeholder="Write message…">
+
+                                                    <button id="sendButton" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- chatbox -->
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+    </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.12/signalr.min.js" integrity="sha512-rQm2bvVuqEjdaJKcVj/+bx+FnccQCHZpBIMQRJkyDACamQ12m6XuFb2aHQYgdTEnnHNIsAMeh1hODKwm2Uvy5A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function formatTime(timeString) {
+            const date = new Date(timeString);
+
+            // Get hours and minutes
+            const hours = date.getHours();
+            const minutes = date.getMinutes();
+
+            // Format hours in 12-hour format
+            const formattedHours = hours % 12 === 0 ? 12 : hours % 12;
+
+            // Add leading zero to minutes if needed
+            const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+
+            // Determine if it's AM or PM
+            const period = hours < 12 ? 'am' : 'pm';
+
+            // Construct the formatted time string
+            const formattedTime = `${formattedHours}:${formattedMinutes} ${period}`;
+
+            return formattedTime;
+        }
+        var currentUserId = "";
+        var previousChatList = "";
+
+        document.querySelectorAll('.chat-list').forEach(function (chatList) {
+            chatList.addEventListener('click', function (event) {
+                document.getElementById('chatboxId').classList.remove("d-none");
+                document.getElementById('msgList').innerHTML = "";
+                if (previousChatList) {
+                    previousChatList.classList.remove("bg-success");
+                }
+                chatList.classList.add("bg-success");
+
+                var dataId = chatList.getAttribute('data-id');
+                currentUserId = dataId;
+                fetch('/Chat/Messages?toUserId=' + currentUserId)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok: ' + response.statusText);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        document.getElementById('currentUserName').innerHTML = data.user.userName;
+                        document.getElementById('currentUserPosition').innerHTML = data.user.fullName;
+                        document.getElementById("userId").setAttribute("data-id", currentUserId);
+                        for (const message of data.messages) {
+                            var li;
+                            console.log(message);
+                            var formattedTime = formatTime(message.sendTime);
+                            if (message.fromUserId == data.user.id) {
+                                li = `
+                                                                            <li class="sender">
+                                                                                <p> ${message.content} </p>
+                                                                                <span class="time">${formattedTime}</span>
+                                                                            </li>`
+                            }
+                            else {
+                                li = `
+                                                                            <li class="repaly">
+                                                                                <p>${message.content}</p>
+                                                                                <span class="time">${formattedTime}</span>
+                                                                            </li>`
+                            }
+                            document.getElementById('msgList').innerHTML += li;
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Fetch Error:', error);
+                    });
+
+                previousChatList = chatList;
+            });
+        });
+        var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+        connection.start()
+            .then(function () {
+                console.log("SignalR Connected");
+            })
+            .catch(function (err) {
+                console.error("SignalR Connection Error: ", err);
+            });
+        console.log(connection);
+        document.getElementById('sendButton').addEventListener("click", function () {
+            let messageValue = document.getElementById('msgInput').value;
+            if (messageValue == "") {
+                return;
+            }
+            document.getElementById('msgList').innerHTML += `
+                                                                    <li class="repaly">
+                                                                        <p>${messageValue}</p>
+                                                                        <span class="time">Now</span>
+                                                                    </li>`;
+            connection.invoke("SendMessage", currentUserId, messageValue)
+            document.getElementById('msgInput').value = "";
+        });
+        connection.on("ReceiveMessage", function (userId, message) {
+            var li;
+            if (currentUserId == userId) {
+                li = `
+                                                            <li class="repaly">
+                                                                <p>${message}</p>
+                                                                <span class="time">Now</span>
+                                                            </li>`
+            }
+            else {
+                li = `
+                                                            <li class="sender">
+                                                                <p>${message}</p>
+                                                                <span class="time">Now</span>
+                                                            </li>`
+            }
+            document.getElementById('msgList').innerHTML += li;
+        });
+        connection.on("OnConnect", function (userId) {
+            document.getElementById(userId).classList.remove("d-none");
+        });
+        connection.on("DisConnect", function (userId) {
+            document.getElementById(userId).classList.add("d-none");
+        });
+
+
+        document.getElementById("msgInput").addEventListener("keyup", function () {
+            // Triggered when a user types in the input field
+            console.log("keyup")
+            var toUserId = document.getElementById("userId").getAttribute("data-id");;
+            connection.invoke("Typing", toUserId);
+        });
+
+        connection.on("Typing", function (fromUserId) {
+            // Triggered when a "Typing" event is received from the server
+            console.log(fromUserId)
+            document.getElementById(`typing${fromUserId}`).classList.remove("d-none");
+
+            // You might want to hide the typing status after a certain period
+            setTimeout(function () {
+                document.getElementById(`typing${fromUserId}`).classList.add("d-none");
+            }, 3000); // Adjust the time according to your preference (e.g., 3000 milliseconds = 3 seconds)
+        });
+
+    </script>
+</body>
+</html>

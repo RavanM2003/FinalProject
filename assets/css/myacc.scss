@@ -14,9 +14,6 @@
     background-color: transparent;
   }
 }
-.d-none{
-  display: none;
-}
 ul,ol{
     list-style: none;
 }
@@ -618,11 +615,11 @@ body{
   
 .box{
   width: 90%;
-  height: 80vh;
+  height: 50vh;
   margin: 2rem auto;
   display: flex;
   .box-left{
-      width: 30%;
+      width: 10%;
       height: 100%;
       .site-name{
         display: none;
@@ -630,164 +627,18 @@ body{
       img{
         display: none;
       }
-      .links{
-          margin: 3rem .3rem;
-          p{
-              margin: 1.5rem 0;
-              padding: .2rem;
-              font-size: 12px;
-          }
-          .active{
-            &::before{
-              content: "";
-              width: 2px;
-              height: 15px;
-            }
-          }
-      }
       .fa-right-from-bracket{
-          top: 70%;
-          left: 11%;
-          padding: 1rem;
-          font-size: 20px;
+          top: 55%;
+          left: 6%;
+          padding: .5rem;
+          font-size: 10px;
       }
   }
   .box-right{
-      width: 70%;
+      width: 90%;
       padding: .1rem;
       .header{
         font-size: 15px;
-      }
-      .home{
-        .personal-data{
-          display: flex;
-          padding: .5rem 0;
-          .edit{
-              padding: .1rem;
-              color: #3498db;
-              font-size: 10px;
-              &:hover{
-                  cursor: pointer;
-              }
-          }
-          img{
-            width: 20%;
-            height: 20%;
-            margin: 0 .1rem;
-          }
-          .personal-name{
-            h1{
-              font-size: 15px;
-            }
-            .role{
-              font-size: 10px;
-            }
-            span{
-              font-size: 10px;
-            }
-          }
-        }
-        hr{
-          width: 98%;
-          margin: 0 auto;
-          height: 2px;
-          background-color: #3498db;
-        }
-        .phone-email{
-          display: flex;
-          justify-content: space-around;
-          flex-wrap: wrap;
-          padding: .4rem 0;
-          .phone{
-            border: 2px solid #3498db;
-            padding: 10px;
-            cursor: pointer;
-            transition: .5s;
-            display: flex;
-            align-items: center;
-            font-size: 10px;
-            margin: 1rem 0;
-            &:hover{
-              transform: translateY(-5px);
-            }
-            i{
-              margin-right: .1rem;
-              font-size: 10px;
-              color: #3498db;
-            }
-          }
-          .email{
-            border: 2px solid #3498db;
-            padding: 10px;
-            cursor: pointer;
-            transition: .5s;
-            display: flex;
-            align-items: center;
-            font-size: 10px;
-            &:hover{
-              transform: translateY(-5px);
-            }
-            i{
-              margin-right: .1rem;
-              font-size: 10px;
-              color: #3498db;
-            }
-          }
-        }
-      }
-      .wishlist{
-        .wishlist-products{
-          padding: .1rem .5rem;
-          .wishlist-product{
-            width: 100%;
-            margin-bottom: 1rem;
-            &:hover{
-              transform: translateY(0px);
-              box-shadow: 0px 0px 0px 0px rgba(120,120,120,0.75);
-            }
-            .wshlist-product-image{
-              .mainImage{
-                width: 45%;
-              }
-              .discounImage{
-                top: -13px;
-              }
-              span{
-                left: 15px;
-                top: 10px;
-                font-size: 16px;
-              }
-            }
-            .links{
-              top: 45%;
-              padding: .5rem 0;
-              opacity: 1;
-              a{
-                font-size: 15px;
-              }
-            }
-            .product-details{
-              .name{
-                padding: .2rem;
-                font-size: 12px;
-              }
-              .description{
-                font-size: 9px;
-                padding: .2rem;
-              }
-              .price{
-                padding: .1rem;
-                .oldprice{
-                  font-size: 12px;
-                }
-                .newprice{
-                  font-size: 17px;
-                  margin: 0 .5rem;
-                }
-              }
-            }
-          }
-        }
       }
       .messages{
         .message-section-header{
@@ -819,6 +670,7 @@ body{
         .mesage-section-body{
           padding: .1rem;
           overflow: hidden;
+          height: 340px;
           .receive{
             padding: .2rem;
             margin: .1rem 60% .1rem .1rem;
@@ -830,11 +682,11 @@ body{
             font-size: 10px;
           }
           form{
-            top: 90%;
-            width:55%;
+            top: 55%;
+            width:80%;
             padding: .4rem .5rem;
             input[type="text"]{
-              width: 70%;
+              width: 80%;
               padding: .4rem;
               font-size: 11px;
 
@@ -852,122 +704,6 @@ body{
               font-size: 8px;
             }
           }
-        }
-      }
-      .security{
-        .security-body{
-          padding: .1rem 0;
-          form{
-            .input{
-              margin: .5rem 0;
-              label{
-                font-size: 15px;
-                margin: .5rem;
-              }
-              input{
-                width: 220px;
-                padding: .7rem .4rem;
-                font-size: 12px;
-              }
-            }
-            button{
-              padding: .4rem 1rem;
-              bottom: -20px;
-              right: 10px;
-              font-size: 15px;
-            }
-            .passChange{
-              margin: 1rem 0;
-              padding: .5rem 0;
-              font-size: 12px;
-            }
-          }
-        }
-      }
-      .basket{
-        .basket-products{
-          padding: .1rem .5rem;
-          .basket-product{
-            width: 100%;
-            margin-bottom: 1rem;
-            &:hover{
-              transform: translateY(0px);
-              box-shadow: 0px 0px 0px 0px rgba(120,120,120,0.75);
-            }
-            .basket-product-image{
-              .mainImage{
-                width: 45%;
-              }
-              .discounImage{
-                top: -13px;
-              }
-              span{
-                left: 15px;
-                top: 10px;
-                font-size: 16px;
-              }
-            }
-            .links{
-              top: 45%;
-              padding: .5rem 0;
-              opacity: 1;
-              a{
-                font-size: 15px;
-              }
-            }
-            .product-details{
-              .name{
-                padding: .2rem;
-                font-size: 12px;
-              }
-              .description{
-                font-size: 9px;
-                padding: .2rem;
-              }
-              .price{
-                padding: .1rem;
-                .oldprice{
-                  font-size: 12px;
-                }
-                .newprice{
-                  font-size: 17px;
-                  margin: 0 .5rem;
-                }
-              }
-            }
-          }
-        }
-      }
-      .sale{
-        table{
-          padding: 0 .1rem;
-          margin-top: .5rem;
-          td{
-            font-size: 10px
-          }
-          thead{
-            th{
-              padding: 0rem;
-              font-size: 10px;
-            }
-          }
-          ul{
-            li{
-              width: 100%;
-              margin: .1rem;
-              font-size: 10px;
-            }
-          }
-          .open{
-            padding: .1rem .2rem;
-          }
-        }
-        .export{
-          color: #efefef;
-          background-color: #3498db;
-          padding: .2rem .5rem;
-          border-radius: 30px;
-          font-size: 15px;
         }
       }
   }

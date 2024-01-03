@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "CreateProduct - Gametronica";
+    var count = 1;
+}
+@model FeatureVM
+<div class="d-flex">
+    <div class="col-md-6 grid-margin stretch-card my-3" style="margin-left:260px;">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"> Add Feature</h4>
+                <form class="forms-sample" asp-action="addfeature" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" class="form-control">
+                        <span asp-validation-for="Name" class=" text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Value"></label>
+                        <input asp-for="Value" class="form-control">
+                        <span asp-validation-for="Value" class=" text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Features"></label>
+                        <input asp-for="Features" class="form-control" hidden>
+                        <span asp-validation-for="Features" class=" text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary my-2">Submit</button>
+                    <a asp-action="Index" class="btn btn-light">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <table class="table table-info table-striped m-2">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Value</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Features)
+            {
+                <tr>
+                    <th scope="row">@count</th>
+                    <td>@item.Name</td>
+                    <td>@item.Value</td>
+                    <td>
+                        <a class="btn btn-danger text-white" asp-action="DeleteFeature" asp-route-id="@item.Id"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                </tr>
+                count++;
+            }
+        </tbody>
+    </table>
+</div>

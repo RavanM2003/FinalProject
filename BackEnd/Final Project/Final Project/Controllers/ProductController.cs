@@ -24,14 +24,14 @@ namespace Final_Project.Controllers
             ProductVM productVM = new();
             productVM.Product = _context.Products
                 .Where(c => !c.IsDeleted)
-                .Include(p => p.ProductFeatures)
+                .Include(p => p.ProductFeatures.Where(p=>!p.IsDeleted))
                 .Include(p => p.Category)
                 .Include(p => p.ProductImages)
                 .Include(b => b.ProductComments)
                 .ThenInclude(c => c.AppUser)
                 .FirstOrDefault(p => p.Id == id);
             productVM.Products= _context.Products.Where(x=>x.CategoryId == 
-            _context.Categories.FirstOrDefault(x=>x.Name == categoryName).Id).ToList();
+            _context.Categories.FirstOrDefault(x=>x.Name == categoryName).Id && x.IsDeleted==false).ToList();
             return View(productVM);
         }
         public IActionResult ProductCategory(string name)
@@ -40,6 +40,7 @@ namespace Final_Project.Controllers
             ProductVM productVM = new();
             productVM.Category = _context.Categories
                 .Include(c=>c.Products)
+                .Where(c=>!c.IsDeleted)
                 .FirstOrDefault(c => c.Name == name);
             return View(productVM);
         }

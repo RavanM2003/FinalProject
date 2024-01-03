@@ -3,14 +3,17 @@ using Final_Project.Helper;
 using Final_Project.Models;
 using Final_Project.ViewModels.AdminCategory;
 using Final_Project.ViewModels.AdminSlider;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Data;
 
 namespace Final_Project.Areas.AdminArea.Controllers
 {
     [Area("AdminArea")]
+    [Authorize(Roles = "Admin")]
     public class CategoryController : Controller
     {
         private readonly AppDbContext _context;
@@ -28,7 +31,7 @@ namespace Final_Project.Areas.AdminArea.Controllers
             CategoryVM categoryVM = new CategoryVM();
             categoryVM.Categories = _context.Categories
                 .Where(s => !s.IsDeleted)
-                .Include(p=>p.Products)
+                .Include(p=>p.Products.Where(c => !c.IsDeleted))
                 .Skip((page - 1) * take)
                 .Take(take)
                 .ToList();
@@ -54,7 +57,8 @@ namespace Final_Project.Areas.AdminArea.Controllers
         {
             if (id == null) return NotFound();
             var existElement = _context.Categories
-                .Include(x=>x.Products)
+                .Where(c=>!c.IsDeleted)
+                .Include(x=>x.Products.Where(c => !c.IsDeleted))
                 .FirstOrDefault(x => x.Id == id);
             return View(existElement);
         }

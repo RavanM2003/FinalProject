@@ -3,13 +3,16 @@ using Final_Project.Helper;
 using Final_Project.Models;
 using Final_Project.ViewModels.AdminBanner;
 using Final_Project.ViewModels.AdminCategory;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace Final_Project.Areas.AdminArea.Controllers
 {
     [Area("AdminArea")]
+    [Authorize(Roles = "Admin")]
     public class BannerController : Controller
     {
         private readonly AppDbContext _context;

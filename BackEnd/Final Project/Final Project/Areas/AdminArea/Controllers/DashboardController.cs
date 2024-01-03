@@ -1,11 +1,14 @@
 ﻿using Final_Project.DAL;
+using Final_Project.Helper;
 using Final_Project.ViewModels.Dahboard;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Final_Project.Areas.AdminArea.Controllers
 {
     [Area("AdminArea")]
+    [Authorize(Roles = "Admin")]
     public class DashboardController : Controller
     {
         private readonly AppDbContext _context;

@@ -3,14 +3,17 @@ using Final_Project.Helper;
 using Final_Project.Models;
 using Final_Project.ViewModels.AdminCategory;
 using Final_Project.ViewModels.ProductViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace Final_Project.Areas.AdminArea.Controllers
 {
     [Area("AdminArea")]
+    [Authorize(Roles = "Admin")]
     public class ProductController : Controller
     {
         private readonly AppDbContext _context;
@@ -28,6 +31,7 @@ namespace Final_Project.Areas.AdminArea.Controllers
             productVM.Products = _context.Products
                 .Where(s => !s.IsDeleted)
                 .Include(p=>p.Category)
+                .OrderByDescending(p=>p.CreatedTime)
                 .Skip((page - 1) * take)
                 .Take(take)
                 .ToList();
@@ -51,6 +55,7 @@ namespace Final_Project.Areas.AdminArea.Controllers
         public IActionResult Update(int? id)
         {
             var existProduct = _context.Products
+                .Where(p=>!p.IsDeleted)
                 .Include(p => p.Category)
                 .Include(p => p.ProductFeatures)
                 .FirstOrDefault(p => p.Id == id);
@@ -73,8 +78,9 @@ namespace Final_Project.Areas.AdminArea.Controllers
         public IActionResult Update(int? id, UpdateProductVM updateProductVM)
         {
             if (!ModelState.IsValid) return View();
-            ViewBag.Category = new SelectList(_context.Categories.ToList(), "Id", "Name");
+            ViewBag.Category = new SelectList(_context.Categories.Where(c=>!c.IsDeleted).ToList(), "Id", "Name");
             var existProduct = _context.Products
+                .Where(p => !p.IsDeleted)
                 .Include(p => p.Category)
                 .Include(p => p.ProductImages)
                 .FirstOrDefault(p => p.Id == id);
@@ -187,7 +193,8 @@ namespace Final_Project.Areas.AdminArea.Controllers
                 AddedBy = User.Identity.Name,
                 StockCount = createProductVM.StockCount,
                 HowToUse = createProductVM.HowToUse,
-                Volume = createProductVM.Volume
+                Volume = createProductVM.Volume,
+                CreatedTime = DateTime.Now,
             };
 
             List<ProductImage> productImages = new List<ProductImage>();
@@ -203,13 +210,52 @@ namespace Final_Project.Areas.AdminArea.Controllers
                 {
                     ImageUrl = ExtrafileName,
                     ProductId = product.Id,
-                    AddedBy = User.Identity.Name
+                    AddedBy = User.Identity.Name,
+                    CreatedTime = DateTime.Now
                 });
             }
             product.ProductImages = productImages;
             _context.Products.Add(product);
             _context.SaveChanges();
             return RedirectToAction("Index", "Product");
+        }
+        public IActionResult AddFeature(int id)
+        {
+            FeatureVM feature = new();
+            var existItem = _context.Products
+                .Include(p=>p.ProductFeatures.Where(p=>!p.IsDeleted))
+                .Where(p => !p.IsDeleted)
+                .FirstOrDefault(p => p.Id == id);
+            feature.Features = existItem.ProductFeatures;
+            return View(feature);
+        }
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult AddFeature(int id, FeatureVM featureVM)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            
+            var product = _context.Products
+                .Include(p=>p.ProductFeatures)
+                .FirstOrDefault(x => x.Id == id);
+            ProductFeatures feature = new ProductFeatures();
+            feature.Name = featureVM.Name;
+            feature.Value = featureVM.Value;
+            product.ProductFeatures.Add(feature);
+            _context.SaveChanges();
+            return RedirectToAction("AddFeature", new {id = product.Id});
+        }
+        public IActionResult DeleteFeature(int id)
+        {
+            if (id == null) return NotFound();
+            var existItem = _context.ProductFeatures.FirstOrDefault(x=>x.Id == id);
+            if (existItem == null) return NotFound();
+            existItem.IsDeleted = true;
+            _context.SaveChanges();
+            return RedirectToAction("AddFeature", new { id = existItem.ProductId });
         }
     }
 }

@@ -26,7 +26,7 @@
                     }
                     @if (User.IsInRole("Admin") || User.IsInRole("SuperAdmin"))
                     {
-                        <a href="./myacc.html" class="dropdown-item">Admin Panel</a>
+                        <a asp-action="index" asp-area="AdminArea" asp-controller="dashboard" class="dropdown-item">Admin Panel</a>
                     }
                 </div>
             </span>

@@ -29,9 +29,8 @@ namespace Final_Project.Controllers
                 .Include(p=>p.ProductImages)
                 .Include(p=>p.ProductFeatures)
                 .Include(p=>p.ProductComments)
-                .Take(10)
-                .Where(p=>!p.IsDeleted)
-                .OrderByDescending(p=>p.CreatedTime)
+                .Where(p => !p.IsDeleted && p.SalePrice != null)
+                .OrderBy(p => p.SalePrice)
                 .ToList();
             homeVM.Categories = _context.Categories.Where(c => !c.IsDeleted).ToList();
 

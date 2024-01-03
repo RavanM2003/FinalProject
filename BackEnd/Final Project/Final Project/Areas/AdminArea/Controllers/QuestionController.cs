@@ -3,12 +3,15 @@ using Final_Project.Helper;
 using Final_Project.Models;
 using Final_Project.ViewModels.AdminBlog;
 using Final_Project.ViewModels.AdminQuestion;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace Final_Project.Areas.AdminArea.Controllers
 {
     [Area("AdminArea")]
+    [Authorize(Roles = "Admin")]
     public class QuestionController : Controller
     {
         private readonly AppDbContext _context;

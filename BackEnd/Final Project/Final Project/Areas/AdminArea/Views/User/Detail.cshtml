@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "DetailUser - Gametronica";
+}
+@model DetaillVM
+<div class="container">
+    <div class="row">
+        <div class="card mt-3" style="width: 18rem; margin-left:260px;">
+            <img src="~/assets/images/@Model.User.ImageUrl" class="card-img-top p-3" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@Model.User.UserName</h5>
+                <p class="card-text">@Model.User.FullName</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Email: @Model.User.Email</li>
+                <li class="list-group-item">Phone Number: @Model.User.PhoneNumber</li>
+                <li class="list-group-item">Country: @Model.User.Country</li>
+                @if (Model.User.isBlocked)
+                {
+                    <li class="list-group-item">Status: Blocked</li>
+                }
+                else
+                {
+                    <li class="list-group-item">Status: Active</li>
+                }
+            </ul>
+            <div class="card-body">
+                <a asp-action="index" class="card-link">Back</a>
+            </div>
+        </div>
+        <ul class="list-group mt-3" style="width: 30rem; margin-left:20px;">
+            @foreach (var item in Model.Sales)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    @item.CreatedAt.ToString("d MMMM yyyy HH:mm")
+                    <span class="badge bg-primary rounded-pill">$ @item.Total</span>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+﻿@model HelpQuestion
+@{
+    ViewData["Title"] = "Detail - Question";
+}
+<div class="card mt-3" style="margin-left:260px;">
+    <div class="card-header">
+        @((DateTime.Now - Model.CreatedTime).Days) Days Ago
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">@Model.Question</h5>
+        <p class="card-text">@Model.Answer</p>
+        <a asp-action="index" class="btn btn-primary">Back</a>
+    </div>
+</div>

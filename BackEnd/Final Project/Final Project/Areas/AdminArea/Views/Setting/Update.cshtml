@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "UpdateSetting - Gametronica";
+}
+@model UpdateSettingVM
+
+<div class="container" style="margin-left:260px;">
+    <div asp-validation-summary="ModelOnly" style="color:red;"> </div>
+    <div class="row">
+        <form method="post">
+            <h1 class="text-danger">@Model.Key</h1>
+            <div class="form-check">
+                <input class="form-control" asp-for="Value">
+            </div>
+            <button type="submit" class="btn btn-primary m-4">Submit</button>
+            <a asp-action="index" class="btn btn-danger">Close</a>
+
+        </form>
+    </div>
+</div>

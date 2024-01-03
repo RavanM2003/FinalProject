@@ -181,7 +181,9 @@
                     </div>
                     <div class="related-product-buttons">
                         <a href="">Wishlist</a>
-                        <a href="">Add To Card</a>
+                        <form asp-controller="Basket" asp-action="Add" asp-route-id="@Model.Product.Id" method="post">
+                            <button style=" border:0;padding:.5rem; width:100%; background-color:#3498db; color:#fff; border-radius:10px; margin:.3rem 0; cursor:pointer;">Add To Cart</button>
+                        </form>
                         <a asp-action="detail" asp-controller="product" asp-route-id="@item.Id" asp-route-categoryName="@item.Category.Name">Go To Detail</a>
                     </div>
                 </div>

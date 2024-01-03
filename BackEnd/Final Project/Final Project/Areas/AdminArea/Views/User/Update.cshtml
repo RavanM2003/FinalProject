@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Update";
+}
+@model UpdateUserVM;
+<div class="container mt-3" style="margin-left:260px;">
+    <div asp-validation-summary="ModelOnly" style="color:red;"> </div>
+
+    <div class="row">
+        <form method="post">
+            <div class="form-check">
+                <label asp-for="Fullname"></label>
+                <input class="form-control" asp-for="Fullname">
+            </div>
+            <div class="form-check">
+                <label asp-for="Username"></label>
+                <input class="form-control" asp-for="Username">
+            </div>
+            <div class="form-check">
+                <label asp-for="PhoneNumber"></label>
+                <input class="form-control" asp-for="PhoneNumber">
+            </div>
+            <div class="form-check">
+                <label asp-for="Country"></label>
+                <input class="form-control" asp-for="Country">
+            </div>
+            <button type="submit" class="btn btn-primary m-4">Submit</button>
+            <a asp-action="index" class="btn btn-danger">Close</a>
+
+        </form>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "Detail - Blog";
+}
+<a asp-action="index" class="btn btn-danger my-2" style="margin-left:260px;">Back</a>
+<div class="card" style="width: 38rem; margin-left:260px;">
+    <img src="~/assets/images/@Model.ImageUrl" class="card-img-top p-2" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Title</h5>
+        <p class="card-text">@Model.Description</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Topic: @Model.Topic</li>
+        <li class="list-group-item">WriteTime: @Model.WriteTime.ToString("MM/dd/yyyy hh:mm tt")</li>
+        <li class="list-group-item">Author: @Model.AddedBy</li>
+    </ul>
+    <div class="card-body">
+        <a asp-area="" asp-action="detail" asp-controller="blog" asp-route-id="@Model.Id" class="btn btn-success">Blog Detail</a>
+        <a asp-action="index" class="btn btn-danger">Back</a>
+    </div>
+</div>

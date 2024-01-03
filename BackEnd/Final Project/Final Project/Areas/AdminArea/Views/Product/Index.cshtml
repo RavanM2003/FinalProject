@@ -46,7 +46,7 @@
                     <td>@item.Category.Name</td>
                     <td>
                         <a class="btn btn-danger text-white" asp-action="delete" asp-route-id="@item.Id"><i class="fa-solid fa-trash"></i></a>
-                        <a class="btn btn-info text-white"asp-area="" asp-controller="product" asp-action="detail" asp-route-id="@item.Id"><i class="fa-solid fa-circle-info"></i></a>
+                        <a class="btn btn-info text-white" asp-area="" asp-controller="product" asp-action="detail" asp-route-id="@item.Id" asp-route-categoryName="@item.Category.Name"><i class="fa-solid fa-circle-info"></i></a>
                         <a class="btn btn-warning text-white" asp-action="update" asp-route-id="@item.Id"><i class="fa-solid fa-pen-to-square"></i></a>
                     </td>
                 </tr>

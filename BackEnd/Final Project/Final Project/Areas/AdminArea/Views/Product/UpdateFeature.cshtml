@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "UpdateFeature - Gametronica";
+    var count = 1;
+}
+@model FeatureVM
+<div class="d-flex">
+    <div class="col-md-6 grid-margin stretch-card my-3" style="margin-left:260px;">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"> Update Feature</h4>
+                <form class="forms-sample" asp-action="updatefeature" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" class="form-control">
+                        <span asp-validation-for="Name" class=" text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Value"></label>
+                        <input asp-for="Value" class="form-control">
+                        <span asp-validation-for="Value" class=" text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Features"></label>
+                        <input asp-for="Features" class="form-control" hidden>
+                        <span asp-validation-for="Features" class=" text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary my-2">Submit</button>
+                    <a asp-action="Index" class="btn btn-light">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <table class="table table-info table-striped m-2">
+        <tbody>
+            @for (int i = 0; i < Model.Features.Count; i++)
+            {
+                if (i == 0)
+                {
+                    <tr>
+                        <td colspan="5" class="text-center"><img src="~/assets/images/@Model.Features[i].Product.ImageUrl" width="200" /></td>
+                    </tr>
+                }
+                <tr>
+                    <th scope="row">@count</th>
+                    <td>@Model.Features[i].Name</td>
+                    <td>@Model.Features[i].Value</td>
+                    <td>
+                        <a class="btn btn-danger text-white" asp-action="DeleteFeature" asp-route-id="@Model.Features[i].Id"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                    <td>
+                        <a class="btn btn-warning text-white" asp-action="UpdateFeature" asp-route-id="@Model.Features[i].Id" asp-route-productid="@Model.Features[i].Product.Id"><i class="fa-solid fa-pen-to-square"></i></a>
+                    </td>
+                </tr>
+                if (i == Model.Features.Count-1)
+                {
+                    <tr>
+                        <td colspan="5" class="text-center">
+                            <a class="btn btn-success text-white w-100" asp-action="AddFeature" asp-route-id="@Model.Features[i].Product.Id"><i class="fa-solid fa-plus"></i></a>
+                        </td>
+                    </tr>
+                }
+                count++;
+            }
+        </tbody>
+    </table>
+</div>

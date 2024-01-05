@@ -31,23 +31,24 @@
         </div>
     </div>
     <table class="table table-info table-striped m-2">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Value</th>
-                <th scope="col">Delete</th>
-            </tr>
-        </thead>
         <tbody>
-            @foreach (var item in Model.Features)
+            @for (int i = 0; i < Model.Features.Count ; i++)
             {
+                if (i == 0)
+                {
+                    <tr>
+                        <td colspan="5" class="text-center"><img src="~/assets/images/@Model.Features[i].Product.ImageUrl" width="200"/></td>
+                    </tr>
+                }
                 <tr>
                     <th scope="row">@count</th>
-                    <td>@item.Name</td>
-                    <td>@item.Value</td>
+                    <td>@Model.Features[i].Name</td>
+                    <td>@Model.Features[i].Value</td>
                     <td>
-                        <a class="btn btn-danger text-white" asp-action="DeleteFeature" asp-route-id="@item.Id"><i class="fa-solid fa-trash"></i></a>
+                        <a class="btn btn-danger text-white" asp-action="DeleteFeature" asp-route-id="@Model.Features[i].Id"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                    <td>
+                        <a class="btn btn-warning text-white" asp-action="UpdateFeature" asp-route-id="@Model.Features[i].Id" asp-route-productid="@Model.Features[i].Product.Id"><i class="fa-solid fa-pen-to-square"></i></a>
                     </td>
                 </tr>
                 count++;

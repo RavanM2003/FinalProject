@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
+using System.Diagnostics;
 
 namespace Final_Project.Areas.AdminArea.Controllers
 {
@@ -256,6 +257,33 @@ namespace Final_Project.Areas.AdminArea.Controllers
             existItem.IsDeleted = true;
             _context.SaveChanges();
             return RedirectToAction("AddFeature", new { id = existItem.ProductId });
+        }
+        public IActionResult UpdateFeature(int id, int productid)
+        {
+            if(id==null) return NotFound();
+            var existItem = _context.ProductFeatures.Include(p=>p.Product).FirstOrDefault(x => x.Id == id);
+            if(existItem == null) return NotFound();
+            FeatureVM featureVM = new FeatureVM();
+            featureVM.Name = existItem.Name;
+            featureVM.Value = existItem.Value;
+            featureVM.Features = _context.ProductFeatures.Where(p=>p.ProductId == productid && !p.IsDeleted).ToList();
+            return View(featureVM);
+        }
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult UpdateFeature(int id, int productid,FeatureVM featureVM)
+        {
+            if (id == null) return NotFound();
+            var existItem = _context.ProductFeatures.Include(p => p.Product).FirstOrDefault(x => x.Id == id);
+            if (existItem == null) return NotFound();
+            existItem.Name = featureVM.Name;
+            existItem.Value = featureVM.Value;
+            _context.SaveChanges();
+            productid = existItem.ProductId;
+            return RedirectToAction("UpdateFeature", new
+            {
+                productid = productid
+            });
         }
     }
 }
